@@ -1,0 +1,25 @@
+{
+    "name": "__MSG_ext_name__",
+    "description": "__MSG_ext_description__",
+    "default_locale": "en",
+    "background_page": "background.html",
+    "options_page": "options.html",
+    "browser_action": {
+        "popup": "popup.html",
+        "default_icon": "img/19.png"
+    },
+    "icons": {
+        "16": "img/16.png",
+        "19": "img/19.png",
+        "48": "img/48.png",
+        "64": "img/64.png",
+        "72": "img/72.png",
+        "128": "img/128.png"
+    },
+    "permissions": [
+          "http://*/*",
+          "https://*/*",
+          "tabs"
+    ],
+    "version": "0.1.5"
+}

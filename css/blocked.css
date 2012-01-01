@@ -1,0 +1,71 @@
+
+html, body {
+    overflow-y: hidden;
+}
+body {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+#blocked-container {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    padding: 15px;
+    background-color: #333;
+    position: absolute;
+}
+
+h1 {
+    background: url('chrome-extension://__MSG_@@extension_id__/img/16.png') 0 2px no-repeat;
+    font-size: 14px;
+    font-weight: bold;
+    color: #aaa;
+    padding: 3px 0 3px 25px;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    text-shadow: -2px -2px 2px rgba(40, 40, 40, .6);
+}
+
+.inner {
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.blocked-body {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    white-space: pre-wrap;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.blocked-url {
+}
+.blocked-url a {
+    display: block;
+    text-align: left;
+    padding: 4px 8px;
+    font-size: 90%;
+}
+
+
+.blocked-footer {
+    padding-top: 10px;
+    text-align: right;
+    text-shadow: 0 -1px -1px rgba(0, 0, 0, 0.3);
+}
+.blocked-footer small,
+.blocked-footer small a {
+    font-size: 11px;
+    color: #aaa;
+}
+.blocked-footer small a:hover {
+    color: #fff;
+}
+
