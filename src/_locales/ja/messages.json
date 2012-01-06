@@ -1,0 +1,131 @@
+{
+    "ext_name": {
+        "message": "ウェブサイトブロッカー (Beta)"
+    },
+    "ext_description": {
+        "message": "よそ見をせずに集中したい人のための拡張機能です。"
+    },
+    "font_family": {
+        "message": "'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Meiryo,Helvetica,Arial,Verdana,sans-serif"
+    },
+    "block_already": {
+        "message": "このページは既にブロックリストに入っています。修正は「オプション」からおこなってください。"
+    },
+    "block_ng": {
+        "message": "このページはブロックできません。"
+    },
+    "add_block_time": {
+        "message": "ブロックする時間"
+    },
+    "add_time_1": {
+        "message": ""
+    },
+    "add_time_2": {
+        "message": "から"
+    },
+    "add_time_3": {
+        "message": "まで"
+    },
+    "add_blockthis": {
+        "message": "これでブロックする！"
+    },
+    "changelog": {
+        "message": "改訂履歴"
+    },
+    "special_thanks": {
+        "message": "スペシャルサンクス"
+    },
+    "nav_blocking": {
+        "message": "ブロックしているサイト"
+    },
+    "nav_message": {
+        "message": "ブロック時のメッセージ"
+    },
+    "nav_function": {
+        "message": "各機能のON/OFF"
+    },
+    "nav_password": {
+        "message": "パスワード"
+    },
+    "nav_changelog": {
+        "message": "改訂履歴"
+    },
+    "nav_about": {
+        "message": "この拡張機能について"
+    },
+    "blocked_title": {
+        "message": "This page is blocked."
+    },
+    "blocked_message": {
+        "message": "Can't access to this page."
+    },
+    "setting": {
+        "message": "設定画面へ"
+    },
+    "apply": {
+        "message": "適用する"
+    },
+    "save" : {
+        "message": "保存する"
+    },
+    "save_and_close" : {
+        "message": "保存して閉じる"
+    },
+    "close": {
+        "message": "閉じる"
+    },
+    "back": {
+        "message": "戻る"
+    },
+    "applied": {
+        "message": "適用しました。"
+    },
+    "facebook_page": {
+        "message": "Facebookページへ"
+    },
+    "please_support_me": {
+        "message": "応援する (PayPal)"
+    },
+    "bug_report": {
+        "message": "バグ報告"
+    },
+    "options": {
+        "message": "オプション"
+    },
+    "document": {
+        "message": "ドキュメント"
+    },
+    "input": {
+        "message": "入力欄"
+    },
+    "example": {
+        "message": "入力例"
+    },
+    "format": {
+        "message": "フォーマット"
+    },
+    "websites_to_block": {
+        "message": "ブロックするWebサイト"
+    },
+    "title_when_blocked": {
+        "message": "ブロック時のタイトル"
+    },
+    "message_when_blocked": {
+        "message": "ブロック時のメッセージ"
+    },
+    "basic_settings": {
+        "message": "基本設定"
+    },
+    "blocked_disabled": {
+        "message": "ブロック機能を無効"
+    },
+    "time_limit_disabled": {
+        "message": "時間設定を無効"
+    },
+    "option_page_link_disabled": {
+        "message": "設定ページへのリンクを無効"
+    },
+    "popup_page_control_disabled": {
+        "message": "ポップアップからの各機能制御を無効"
+    }
+}
