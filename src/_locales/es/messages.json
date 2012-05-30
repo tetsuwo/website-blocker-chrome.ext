@@ -3,52 +3,10 @@
         "message": "Website Blocker (Beta)"
     },
     "ext_description": {
-        "message": "Website Blocker es muy util cuando intentas concentrarte en tu trabajo."
+        "message": "Website Blocker es muy útil cuando intentas concentrarte en tu trabajo."
     },
     "font_family": {
         "message": "Arial, Helvetica, Verdana, sans-serif"
-    },
-    "block_already": {
-        "message": "This page is already blocked. This block data edit do from [Options] page."
-    },
-    "add_block_time": {
-        "message": "Block Time"
-    },
-    "add_time_1": {
-        "message": "between"
-    },
-    "add_time_2": {
-        "message": "and"
-    },
-    "add_time_3": {
-        "message": ""
-    },
-    "add_blockthis": {
-        "message": "Block This!"
-    },
-    "changelog": {
-        "message": "改訂履歴"
-    },
-    "special_thanks": {
-        "message": "スペシャルサンクス"
-    },
-    "nav_blocking": {
-        "message": "Blocking Website"
-    },
-    "nav_message": {
-        "message": "Messages of when blocked"
-    },
-    "nav_function": {
-        "message": "ON/OFF of each functions"
-    },
-    "nav_password": {
-        "message": "Password"
-    },
-    "nav_changelog": {
-        "message": "Changelog"
-    },
-    "nav_about": {
-        "message": "About this extension"
     },
     "blocked_title": {
         "message": "This page is blocked."
@@ -57,37 +15,31 @@
         "message": "No se puede acceder a esta pagina"
     },
     "setting": {
-        "message": "Configuracion"
+        "message": "Configuración"
     },
     "apply": {
         "message": "Aplicar"
-    },
-    "save" : {
-        "message": "Save"
-    },
-    "save_and_close" : {
-        "message": "Save and Close"
     },
     "close": {
         "message": "Cerrar"
     },
     "back": {
-        "message": "Atras"
+        "message": "Atrás"
     },
     "applied": {
-        "message": "!Listo!"
+        "message": "¡Listo!"
     },
     "facebook_page": {
-        "message": "Pagina de Facebook"
+        "message": "Página de Facebook"
     },
     "please_support_me": {
         "message": "Por favor, me apoyen! (PayPal)"
     },
     "bug_report": {
-        "message": "Reporte de averias"
+        "message": "Reporte de averías"
     },
     "document": {
-        "message": "Documentacion"
+        "message": "Documentación"
     },
     "options": {
         "message": "Opciones"
@@ -102,7 +54,7 @@
         "message": "Formato"
     },
     "websites_to_block": {
-        "message": "Paginas web a bloqueark"
+        "message": "Páginas web a bloqueark"
     },
     "title_when_blocked": {
         "message": "Title when blocked"
@@ -111,16 +63,16 @@
         "message": "Mensaje cuando bloqueado"
     },
     "basic_settings": {
-        "message": "Configuracion basica"
+        "message": "Configuración básica"
     },
     "blocked_disabled": {
-        "message": "Inhabilitar la funcion de bloqueo"
+        "message": "Inhabilitar la función de bloqueo"
     },
     "time_limit_disabled": {
-        "message": "Inhabilitar el limite de tiempo"
+        "message": "Inhabilitar el límite de tiempo"
     },
     "option_page_link_disabled": {
-        "message": "Inhabilitar el atajo a la pagina de opciones"
+        "message": "Inhabilitar el atajo a la página de opciones"
     },
     "popup_page_control_disabled": {
         "message": "Inhabilitar las funciones de control en la ventana emergente"

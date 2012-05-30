@@ -1,138 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Website Blocker</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/options.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <script src="lib/jquery-1.6.4.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/website-blocker.js"></script>
-    <script src="js/controller.js"></script>
+	<meta charset="utf-8" />
+	<title>Website Blocker</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/options.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<script src="lib/jquery-1.6.4.min.js"></script>
+	<script src="js/i18n.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/options.js"></script>
 </head>
 <body>
-<div id="popup-container" style="display: none; width: 300px;">
 
-    <header class="padding">
-        <h1><b i18n="ext_name">Website Blocker</b></h1>
-    </header>
+<header class="padding">
+	<h1>
+		<b i18n="ext_name+setting">Website Blocker</b>
+	</h1>
+</header>
 
-    <section id="popup-body" class="top-shadow clearfix">
-        <h1 class="hide">POPUP BODY</h1>
-        <article id="block-ng" i18n="block_ng" class="hide">This page cannot block.</article>
-        <article id="block-already" i18n="block_already" class="hide">This page is already blocked.</article>
-        <article id="block-ok" class="hide">
-            <h3 i18n="add_domain" class="mt0">URL</h3>
-            <input type="text" id="tmp-hostname" style="width: 95%;" placeholder="www.facebook.com" />
-            <h3 i18n="add_block_time">--</h3>
-            <div class="time-group">
-                <span i18n="add_time_1"></span>
-                <input type="time" id="tmp-time-start" style="width: 4em;" placeholder="00:00" />
-                <span i18n="add_time_2"></span>
-                <input type="time" id="tmp-time-end" style="width: 4em;" placeholder="23:59" />
-                <span i18n="add_time_3"></span>
-            </div>
-            <button id="blockthis" i18n="add_blockthis" class="submit blue">Block this!</button>
-        </article>
-    </section>
+<article class="top-shadow pagebody clearfix">
+	<div class="clearfix">
+		<small class="description" i18n="ext_description"></small>
+	</div>
+	<div class="clearfix">
 
-    <nav id="control-nav" class="top-shadow button-zone clearfix">
-        <h1 class="hide">CONTROL NAVIGATION</h1>
-        <button i18n="close" class="close submit">--</button>
-        <button i18n="please_support_me" class="please_support_me submit">--</button>
-        <button i18n="bug_report" class="bug_report submit">--</button>
-        <button i18n="options" class="options submit">--</button>
-    </nav>
+		<fieldset id="each_function_controler" style="display:none;">
+			<legend i18n="basic_settings">--</legend>
+			<div class="clearfix">
+				<p>
+					<label>
+						<input type="checkbox" id="blocked_disabled" />
+						<span i18n="blocked_disabled">--</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" id="time_limit_disabled" />
+                        <span i18n="time_limit_disabled">--</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" id="option_page_link_disabled" />
+						<span i18n="option_page_link_disabled">--</span>
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" id="popup_page_control_disabled" />
+						<span i18n="popup_page_control_disabled">--</span>
+					</label>
+				</p>
+			</div>
+		</fieldset>
 
-    <footer id="footer" class="clearfix">
-        <h1 class="hide">FOOTER</h1>
-        <div class="inner clearfix">
-            <div class="clearfix">
-                <g:plusone size="medium"
-                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
+		<fieldset>
+			<legend i18n="websites_to_block">--</legend>
+			<h4><span i18n="format">--</span>:</h4>
+<pre class="mb">
+URL
+URL hhmm-hhmm
+URL hhmm-hhmm,hhmm-hhmm
+</pre>
+		<h4><span i18n="example">--</span>:</h4>
+<pre class="mb">
+facebook.com 0930-1259,1300-1530
+twitter.com 1000-1259
+(facebook|twitter).com 0000-0730,0945-1159
+</pre>
+			<h4><span i18n="input">--</span>:</h4>
+			<div class="clearfix">
+				<textarea id="blocked_text" style="width:300px; height:10em;"></textarea>
+			</div>
+		</fieldset>
 
-                <a href="http://twitter.com/share"
-                   class="twitter-share-button"
-                   data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
-                   data-count="horizontal">Tweet</a>
+		<fieldset>
+			<legend i18n="title_when_blocked">--</legend>
+			<div class="clearfix">
+				<input type="text" id="blocked_title" style="width:240px;" value="" />
+			</div>
+		</fieldset>
 
-                <a data-hatena-bookmark-layout="standard"
-                   data-hatena-bookmark-title="Website Blocker"
-                   target="_blank" class="hatena-bookmark-button"
-                   href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
-                    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
-            </div>
-            <div class="clearfix">
-                <small class="copyright">
-                    Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.
-                </small>
-            </div>
-        </div>
-    </footer>
+		<fieldset>
+			<legend i18n="message_when_blocked">--</legend>
+			<div class="clearfix">
+				<textarea id="blocked_message" style="width:250px; height:10em;"></textarea>
+			</div>
+		</fieldset>
 
-    <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="MVTPVJW3QACLW" />
-    </form>
+	</div>
+</article><!-- /article -->
 
-</div><!-- /container -->
+<div class="top-shadow button-zone clearfix">
+	<div class="msg-zone"></div>
+	<div class="">
+		<button i18n="close" class="close submit">--</button>
+		<button i18n="back" class="back submit">--</button>
+	</div>
+	<div class="">
+		<button i18n="facebook_page" class="facebook_page submit">--</button>
+		<button i18n="please_support_me" class="please_support_me submit">--</button>
+		<button i18n="document" class="document submit">--</button>
+		<button i18n="bug_report" class="bug_report submit">--</button>
+		<button i18n="options" class="options submit">--</button>
+	</div>
+</div>
+
+<footer id="footer" class="clearfix">
+	<div class="inner clearfix">
+		<div class="clearfix">
+			<g:plusone size="medium" href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
+			<a href="http://twitter.com/share" class="twitter-share-button" data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" data-count="horizontal">Tweet</a>
+			<a href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" target="_blank" class="hatena-bookmark-button" data-hatena-bookmark-title="Website Blocker" data-hatena-bookmark-layout="standard"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
+		</div>
+		<div class="clearfix">
+			<div class="copyright">
+				<p>Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer><!-- /footer -->
+
+<form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+	<input type="hidden" name="cmd" value="_s-xclick" />
+	<input type="hidden" name="hosted_button_id" value="MVTPVJW3QACLW" />
+</form>
 
 <script>
 
-    var WB = new WebsiteBlocker();
-    var is_bg_executed = false;
+	$(window).load(function() {
+		OptionPages.run();
+	});
 
-    chrome.extension.getBackgroundPage().getUrl(function(tab) {
-        is_bg_executed = true;
-        $('#popup-body article').hide();
-//        console.log(tab);
+	$(window).unload(function() {
+		OptionPages.save();
+	});
 
-        if (tab && tab.url) {
-//            console.log(WB.checkUrl(null, tab.url.href, true));
-            if (WB.checkUrl(null, tab.url.href, true)) {
-                $('#block-already').show();
-            }
-            else {
-                $('#tmp-hostname').val(tab.url.hostname).end().focus();
-                $('#block-ok').show();
-            }
-        }
-        else {
-            $('#block-ng').show();
-        }
-    });
-    setTimeout(function() {
-        if (!is_bg_executed) {
-            $('#block-ng').show();
-        }
-    }, 3000);
+	$('.options').click(function() {
+		check2go(chrome.extension.getURL('options.html'), false);
+	});
 
-    $(window).load(function() {
-        Controller.popupPage();
-        i18n(function(){ $('#popup-container').show(); });
-    });
-
-    $('.options').click(function() {
-        check2go(chrome.extension.getURL('options.html'), false);
-    });
-
-    $('#blockthis').click(function() {
-        var domain, time1, time2, times = [];
-        domain = $('#tmp-hostname').val();
-        time1  = $('#tmp-time-start').val().replace(':', '');
-        time2  = $('#tmp-time-end').val().replace(':', '');
-        if (time1 && time2) {
-            times = [time1 + '-' + time2];
-        }
-        Controller.addBlockData(domain, times);
-    });
-
-    $('[i18n="options"]').css('display', ls.get('option_page_link_disabled') ? 'none' : 'block');
-    $('#each_function_controler').css('display', ls.get('popup_page_control_disabled') ? 'none' : 'block');
+	$('[i18n="options"]').css('display', getStorage('option_page_link_disabled') ? 'none' : 'block');
+	$('#each_function_controler').css('display', getStorage('popup_page_control_disabled') ? 'none' : 'block');
 
 </script>
 <script src="http://apis.google.com/js/plusone.js" async></script>

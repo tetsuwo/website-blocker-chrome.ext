@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/blocked.css" />
 	<script src="lib/jquery-1.6.4.min.js"></script>
-	<script src="js/utils.js"></script>
+	<script src="js/i18n.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/functions.js"></script>
-	<script src="js/controller.js"></script>
+	<script src="js/options.js"></script>
 </head>
 <body>
 
@@ -49,7 +49,7 @@
     $('.blocked-footer').css('display', getStorage('option_page_link_disabled') ? 'none' : 'block');
 
 	$('.go-option').click(function() {
-		goOptions(encodeURIComponent(url));
+		goOptions(url);
 	});
 
 	resizer();

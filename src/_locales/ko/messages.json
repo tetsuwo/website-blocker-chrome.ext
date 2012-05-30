@@ -8,48 +8,6 @@
     "font_family": {
         "message": "Gulim, sans-serif"
     },
-    "block_already": {
-        "message": "This page is already blocked. This block data edit do from [Options] page."
-    },
-    "add_block_time": {
-        "message": "Block Time"
-    },
-    "add_time_1": {
-        "message": "between"
-    },
-    "add_time_2": {
-        "message": "and"
-    },
-    "add_time_3": {
-        "message": ""
-    },
-    "add_blockthis": {
-        "message": "Block This!"
-    },
-    "changelog": {
-        "message": "Changelog"
-    },
-    "special_thanks": {
-        "message": "Special Thanks"
-    },
-    "nav_blocking": {
-        "message": "Blocking Website"
-    },
-    "nav_message": {
-        "message": "Messages of when blocked"
-    },
-    "nav_function": {
-        "message": "ON/OFF of each functions"
-    },
-    "nav_password": {
-        "message": "Password"
-    },
-    "nav_changelog": {
-        "message": "Changelog"
-    },
-    "nav_about": {
-        "message": "About this extension"
-    },
     "blocked_title": {
         "message": "This page is blocked."
     },
@@ -61,12 +19,6 @@
     },
     "apply": {
         "message": "적용"
-    },
-    "save" : {
-        "message": "Save"
-    },
-    "save_and_close" : {
-        "message": "Save and Close"
     },
     "close": {
         "message": "닫기"

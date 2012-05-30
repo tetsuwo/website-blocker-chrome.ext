@@ -8,51 +8,6 @@
     "font_family": {
         "message": "'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Meiryo,Helvetica,Arial,Verdana,sans-serif"
     },
-    "block_already": {
-        "message": "このページは既にブロックリストに入っています。修正は「オプション」からおこなってください。"
-    },
-    "block_ng": {
-        "message": "このページはブロックできません。"
-    },
-    "add_block_time": {
-        "message": "ブロックする時間"
-    },
-    "add_time_1": {
-        "message": ""
-    },
-    "add_time_2": {
-        "message": "から"
-    },
-    "add_time_3": {
-        "message": "まで"
-    },
-    "add_blockthis": {
-        "message": "これでブロックする！"
-    },
-    "changelog": {
-        "message": "改訂履歴"
-    },
-    "special_thanks": {
-        "message": "スペシャルサンクス"
-    },
-    "nav_blocking": {
-        "message": "ブロックしているサイト"
-    },
-    "nav_message": {
-        "message": "ブロック時のメッセージ"
-    },
-    "nav_function": {
-        "message": "各機能のON/OFF"
-    },
-    "nav_password": {
-        "message": "パスワード"
-    },
-    "nav_changelog": {
-        "message": "改訂履歴"
-    },
-    "nav_about": {
-        "message": "この拡張機能について"
-    },
     "blocked_title": {
         "message": "This page is blocked."
     },
@@ -60,16 +15,10 @@
         "message": "Can't access to this page."
     },
     "setting": {
-        "message": "設定画面へ"
+        "message": "設定"
     },
     "apply": {
-        "message": "適用する"
-    },
-    "save" : {
-        "message": "保存する"
-    },
-    "save_and_close" : {
-        "message": "保存して閉じる"
+        "message": "適用"
     },
     "close": {
         "message": "閉じる"

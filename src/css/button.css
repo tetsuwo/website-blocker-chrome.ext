@@ -1,26 +1,3 @@
-@charset "UTF-8";
-
-html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, Verdana, Helvetica, sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
-
-.clearfix:after {
-	content:".";
-	display:block;
-	height:0;
-	clear:both;
-	visibility:hidden;
-}
-
-.fl {float:left;}
-.fr {float:right;}
 
 .submit,
 .submit:visited {
