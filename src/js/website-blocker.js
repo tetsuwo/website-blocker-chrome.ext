@@ -1,9 +1,19 @@
-function WebsiteBlocker () {
-    this.blocked_list = null;
+/*!
+ * Website Blocker
+ *
+ * Copyright 2010-2012, Tetsuwo OISHI.
+ * Dual license under the MIT license.
+ * http://tetsuwo.tumblr.com
+ *
+ * Date: 2010-11-21
+ */
+
+function WebsiteBlocker() {
+    this.blockedList = null;
     this.date = null;
-    this.debug = false;
     this.time = null;
-    this.time_limit_disabled = false;
+    this.debug = false;
+    this.disabledTimeLimit = false;
 }
 
 WebsiteBlocker.prototype = {
@@ -14,83 +24,95 @@ WebsiteBlocker.prototype = {
     },
     isBlocked: function(taburl, regexp, time) {
         if (taburl.search(new RegExp(regexp, 'ig')) > 5) {
-            if (this.time_limit_disabled) {
+            if (this.disabledTimeLimit) {
                 return true;
             }
+
             if (time.length === 0) {
                 return true;
             }
+
             for (var i in time) {
                 var c = time[i].split('-');
+
                 if (Number(c[0]) <= Number(this.time) && Number(this.time) <= Number(c[1])) {
                     return true;
                 }
             }
         }
+
         return false;
     },
     toString: function(list) {
-		var result = [];
-		for (var key in list) {
-			var row = list[key];
-			result.push(row.url + ' ' + row.time.join(','));
-		}
-		return result.join('\n');
+        var result = [];
+
+        for (var key in list) {
+            var row = list[key];
+            result.push(row.url + ' ' + row.time.join(','));
+        }
+
+        return result.join('\n');
     },
     toFormat: function(text) {
-		var rows, row, URLTime, line, BLOCKED = [];
+        var rows, row, URLTime, line, BLOCKED = [];
+        rows = text.split('\n');
 
-		rows = text.split('\n');
-		if (rows.length > 0) {
-			for (var i = 0; i < rows.length; i++) {
-				row = rows[i].trim();
-				if (!row) continue;
-				URLTime = row.split(' ');
-				line = { url: URLTime[0], time: [], regexp: null };
+        if (rows.length > 0) {
+            for (var i = 0; i < rows.length; i++) {
+                row = rows[i].trim();
+                if (!row) continue;
+                URLTime = row.split(' ');
+                line = { url: URLTime[0], time: [], regexp: null };
 
-				if (URLTime.length === 2) {
-					line.time = URLTime[1].split(',');
-				}
-				else if (URLTime.length > 2) {
-					line.time = row.replace(/\s/g, '').replace(URLTime[0], '').split(',');
-				}
+                if (URLTime.length === 2) {
+                    line.time = URLTime[1].split(',');
+                }
+                else if (URLTime.length > 2) {
+                    line.time = row.replace(/\s/g, '').replace(URLTime[0], '').split(',');
+                }
 
-				line.regexp = URLTime[0].replace('.', '\\.');
-				BLOCKED.push(line);
-			}
-		}
-		return BLOCKED;
+                line.regexp = URLTime[0].replace('.', '\\.');
+                BLOCKED.push(line);
+            }
+        }
+
+        return BLOCKED;
     },
     makeTime: function() {
         this.date = new Date();
         var hh = this.date.getHours();
         var mm = this.date.getMinutes();
+
         if (hh < 10) {
             hh = '0' + hh;
         }
+
         if (mm < 10) {
             mm = '0' + mm;
         }
+
         return this.time = hh.toString() + mm.toString();
     },
     checkUrl: function(id, url, testmode) {
-        this.blocked_list = ls.get('blocked_list');
-        if (this.blocked_list) {
+        this.blockedList = ls.get('blocked_list');
+
+        if (this.blockedList) {
             this.makeTime();
-            this.time_limit_disabled = ls.get('time_limit_disabled');
-            for (var key in this.blocked_list) {
-//                this.logger(this.blocked_list[key].regexp);
-                if (this.isBlocked(url, this.blocked_list[key].regexp, this.blocked_list[key].time)) {
-					if (testmode) {
-						return true;
-					}
+            this.disabledTimeLimit = ls.get('time_limit_disabled');
+
+            for (var key in this.blockedList) {
+                this.logger(this.blockedList[key].regexp);
+                if (this.isBlocked(url, this.blockedList[key].regexp, this.blockedList[key].time)) {
+                    if (testmode) {
+                        return true;
+                    }
                     this.blocked(id, url);
                     break;
                 }
             }
         }
-//        this.logger(chrome.extension.lastError);
-		return false;
+
+        return false;
     },
     logger: function(a) {
         if (this.debug) {
@@ -98,13 +120,16 @@ WebsiteBlocker.prototype = {
         }
     },
     run: function(tab) {
-//        this.logger(tab);
+        this.logger(tab);
+
         if (ls.get('blocked_disabled')) {
             return false;
         }
+
         if (tab.url.search(/https?:/) === 0) {
             this.checkUrl(tab.id, tab.url, false);
         }
+
         return true;
     }
 };
