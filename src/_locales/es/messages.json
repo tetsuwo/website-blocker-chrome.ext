@@ -1,80 +1,134 @@
 {
-    "ext_name": {
-        "message": "Website Blocker (Beta)"
-    },
-    "ext_description": {
-        "message": "Website Blocker es muy útil cuando intentas concentrarte en tu trabajo."
-    },
-    "font_family": {
-        "message": "Arial, Helvetica, Verdana, sans-serif"
-    },
-    "blocked_title": {
-        "message": "This page is blocked."
-    },
-    "blocked_message": {
-        "message": "No se puede acceder a esta pagina"
-    },
-    "setting": {
-        "message": "Configuración"
-    },
-    "apply": {
-        "message": "Aplicar"
-    },
-    "close": {
-        "message": "Cerrar"
-    },
-    "back": {
-        "message": "Atrás"
-    },
-    "applied": {
-        "message": "¡Listo!"
-    },
-    "facebook_page": {
-        "message": "Página de Facebook"
-    },
-    "please_support_me": {
-        "message": "Por favor, me apoyen! (PayPal)"
-    },
-    "bug_report": {
-        "message": "Reporte de averías"
-    },
-    "document": {
-        "message": "Documentación"
-    },
-    "options": {
-        "message": "Opciones"
-    },
-    "input": {
-        "message": "Input"
-    },
-    "example": {
-        "message": "Ejemplo"
-    },
-    "format": {
-        "message": "Formato"
-    },
-    "websites_to_block": {
-        "message": "Páginas web a bloqueark"
-    },
-    "title_when_blocked": {
-        "message": "Title when blocked"
-    },
-    "message_when_blocked": {
-        "message": "Mensaje cuando bloqueado"
-    },
-    "basic_settings": {
-        "message": "Configuración básica"
-    },
-    "blocked_disabled": {
-        "message": "Inhabilitar la función de bloqueo"
-    },
-    "time_limit_disabled": {
-        "message": "Inhabilitar el límite de tiempo"
-    },
-    "option_page_link_disabled": {
-        "message": "Inhabilitar el atajo a la página de opciones"
-    },
-    "popup_page_control_disabled": {
-        "message": "Inhabilitar las funciones de control en la ventana emergente"
-    }
+  "ID": {
+    "message": "es"
+  },
+  "add_block_time": {
+    "message": "Tiempo\x20de\x20vuelo"
+  },
+  "add_blockthis": {
+    "message": "Bloquear\x20esta\x21"
+  },
+  "add_time_1": {
+    "message": "entre"
+  },
+  "add_time_2": {
+    "message": "y"
+  },
+  "add_time_3": {
+    "message": ""
+  },
+  "applied": {
+    "message": "\xa1Listo\x21"
+  },
+  "apply": {
+    "message": "Aplicar"
+  },
+  "back": {
+    "message": "Atr\xe1s"
+  },
+  "basic_settings": {
+    "message": "Configuraci\xf3n\x20b\xe1sica"
+  },
+  "block_already": {
+    "message": "Esta\x20p\xe1gina\x20ya\x20est\xe1\x20bloqueado\x2e\x20Esta\x20edici\xf3n\x20bloques\x20de\x20datos\x20a\x20hacer\x20a\x20partir\x20de\x20\x5bOpciones\x5d\x20p\xe1gina\x2e"
+  },
+  "block_ng": {
+    "message": "Esta\x20p\xe1gina\x20no\x20puede\x20bloquear\x2e"
+  },
+  "blocked_disabled": {
+    "message": "Inhabilitar\x20la\x20funci\xf3n\x20de\x20bloqueo"
+  },
+  "blocked_message": {
+    "message": "No\x20se\x20puede\x20acceder\x20a\x20esta\x20pagina"
+  },
+  "blocked_title": {
+    "message": "Esta\x20p\xe1gina\x20est\xe1\x20bloqueada\x2e"
+  },
+  "bug_report": {
+    "message": "Reporte\x20de\x20aver\xedas"
+  },
+  "changelog": {
+    "message": "Historial\x20de\x20revisiones"
+  },
+  "close": {
+    "message": "Cerrar"
+  },
+  "document": {
+    "message": "Documentaci\xf3n"
+  },
+  "example": {
+    "message": "Ejemplo"
+  },
+  "ext_description": {
+    "message": "Website\x20Blocker\x20es\x20muy\x20\xfatil\x20cuando\x20intentas\x20concentrarte\x20en\x20tu\x20trabajo"
+  },
+  "ext_name": {
+    "message": "Website\x20Blocker\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "P\xe1gina\x20de\x20Facebook"
+  },
+  "font_family": {
+    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "Formato"
+  },
+  "input": {
+    "message": "Input"
+  },
+  "message_when_blocked": {
+    "message": "Mensaje\x20cuando\x20bloqueado"
+  },
+  "nav_about": {
+    "message": "Acerca\x20de\x20esta\x20extensi\xf3n"
+  },
+  "nav_blocking": {
+    "message": "Bloqueo\x20de\x20sitios\x20Web"
+  },
+  "nav_changelog": {
+    "message": "Historial\x20de\x20revisiones"
+  },
+  "nav_function": {
+    "message": "ON\x20\x2f\x20OFF\x20de\x20cada\x20una\x20de\x20las\x20funciones"
+  },
+  "nav_message": {
+    "message": "Los\x20mensajes\x20de\x20cuando\x20se\x20bloquea"
+  },
+  "nav_password": {
+    "message": "Contrase\xf1a"
+  },
+  "option_page_link_disabled": {
+    "message": "\x20Inhabilitar\x20el\x20atajo\x20a\x20la\x20p\xe1gina\x20de\x20opciones"
+  },
+  "options": {
+    "message": "Opciones"
+  },
+  "please_support_me": {
+    "message": "Por\x20favor\x2c\x20me\x20apoyen\x21\x20\x28PayPal\x29"
+  },
+  "popup_page_control_disabled": {
+    "message": "Inhabilitar\x20las\x20funciones\x20de\x20control\x20en\x20la\x20ventana\x20emergente"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "save_and_close": {
+    "message": "Guardar\x20y\x20Cerrar"
+  },
+  "setting": {
+    "message": "Configuraci\xf3n"
+  },
+  "special_thanks": {
+    "message": "Gracias\x20especiales"
+  },
+  "time_limit_disabled": {
+    "message": "Inhabilitar\x20el\x20l\xedmite\x20de\x20tiempo"
+  },
+  "title_when_blocked": {
+    "message": "T\xedtulo\x20cuando\x20bloqueado"
+  },
+  "websites_to_block": {
+    "message": "P\xe1ginas\x20web\x20a\x20bloquear"
+  }
 }

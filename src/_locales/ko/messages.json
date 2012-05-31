@@ -1,80 +1,134 @@
 {
-    "ext_name": {
-        "message": "Website Blocker (Beta)"
-    },
-    "ext_description": {
-        "message": "Website Blocker 당신이 작업에 집중하고 싶을 때 유용합니다."
-    },
-    "font_family": {
-        "message": "Gulim, sans-serif"
-    },
-    "blocked_title": {
-        "message": "This page is blocked."
-    },
-    "blocked_message": {
-        "message": "이 페이지에 액세스할 수 없습니다."
-    },
-    "setting": {
-        "message": "설정"
-    },
-    "apply": {
-        "message": "적용"
-    },
-    "close": {
-        "message": "닫기"
-    },
-    "back": {
-        "message": "돌아가기"
-    },
-    "applied": {
-        "message": "적용했습니다"
-    },
-    "facebook_page": {
-        "message": "Facebook 페이지로"
-    },
-    "please_support_me": {
-        "message": "날 지원하십시오! (PayPal)"
-    },
-    "bug_report": {
-        "message": "버그 리포트"
-    },
-    "options": {
-        "message": "옵션"
-    },
-    "document": {
-        "message": "문서"
-    },
-    "input": {
-        "message": "입력란"
-    },
-    "example": {
-        "message": "예제"
-    },
-    "format": {
-        "message": "형식"
-    },
-    "websites_to_block": {
-        "message": "차단 웹사이트"
-    },
-    "title_when_blocked": {
-        "message": "Title when blocked"
-    },
-    "message_when_blocked": {
-        "message": "차단시 메시지"
-    },
-    "basic_settings": {
-        "message": "기본설정"
-    },
-    "blocked_disabled": {
-        "message": "차단 기능을 해제"
-    },
-    "time_limit_disabled": {
-        "message": "시간 설정을 비활성화"
-    },
-    "option_page_link_disabled": {
-        "message": "설정 페이지에서 링크를 해제"
-    },
-    "popup_page_control_disabled": {
-        "message": "팝업의 기능 제어를 사용하지"
-    }
+  "ID": {
+    "message": "ko"
+  },
+  "add_block_time": {
+    "message": "\ucc28\ub2e8\x20\uc2dc\uac04"
+  },
+  "add_blockthis": {
+    "message": "\uc774\uc81c\x20\ucc28\ub2e8\x21"
+  },
+  "add_time_1": {
+    "message": ""
+  },
+  "add_time_2": {
+    "message": "\uc5d0\uc11c"
+  },
+  "add_time_3": {
+    "message": "\uae4c\uc9c0"
+  },
+  "applied": {
+    "message": "\uc801\uc6a9\ud588\uc2b5\ub2c8\ub2e4"
+  },
+  "apply": {
+    "message": "\uc801\uc6a9"
+  },
+  "back": {
+    "message": "\ub3cc\uc544\uac00\uae30"
+  },
+  "basic_settings": {
+    "message": "\uae30\ubcf8\uc124\uc815"
+  },
+  "block_already": {
+    "message": "\uc774\x20\ubb38\uc11c\ub294\x20\uc774\ubbf8\x20\ucc28\ub2e8\x20\ubaa9\ub85d\uc5d0\x20\ub4e4\uc5b4\x20\uc788\uc2b5\ub2c8\ub2e4\x2e\x20\uc218\uc815\x20\x22\uc635\uc158\x22\uc5d0\uc11c\x20\ud589\ud574\uc8fc\uc2ed\uc2dc\uc624\x2e"
+  },
+  "block_ng": {
+    "message": "\uc774\x20\ud398\uc774\uc9c0\ub294\x20\ucc28\ub2e8\ud560\x20\uc218\x20\uc5c6\uc2b5\ub2c8\ub2e4\x2e"
+  },
+  "blocked_disabled": {
+    "message": "\ucc28\ub2e8\x20\uae30\ub2a5\uc744\x20\ud574\uc81c"
+  },
+  "blocked_message": {
+    "message": "\uc774\x20\ud398\uc774\uc9c0\uc5d0\x20\uc561\uc138\uc2a4\ud560\x20\uc218\x20\uc5c6\uc2b5\ub2c8\ub2e4\x2e"
+  },
+  "blocked_title": {
+    "message": "\uc774\x20\ud398\uc774\uc9c0\ub294\x20\ucc28\ub2e8\ub429\ub2c8\ub2e4\x2e"
+  },
+  "bug_report": {
+    "message": "\ubc84\uadf8\x20\ub9ac\ud3ec\ud2b8"
+  },
+  "changelog": {
+    "message": "\uc218\uc815\x20\ub0b4\uc5ed"
+  },
+  "close": {
+    "message": "\ub2eb\uae30"
+  },
+  "document": {
+    "message": "\uc635\uc158"
+  },
+  "example": {
+    "message": "\uc608\uc81c"
+  },
+  "ext_description": {
+    "message": "\ubb34\uc5b8\uac00\uc758\x20\uc791\uc5c5\uc5d0\x20\uc9d1\uc911\ud560\x20\ub54c\x20\x22\uc774\ub2e4\x20\uc2dc\uac04\ub9cc\ubcf4\uace0\x20\uc2f6\uc9c0\x20\uc54a\uc740\x20\uc0ac\uc774\ud2b8\x22\x20\ub97c\x20\ub4f1\ub85d\ud558\uc5ec\ub450\uba74\x20\uacbd\uace0\ub97c\x20\ub0bc\x20\uc218\x20\uc788\uc2b5\ub2c8\ub2e4\x2e"
+  },
+  "ext_name": {
+    "message": "Website\x20Blocker\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "Facebook\x20\ud398\uc774\uc9c0\ub85c"
+  },
+  "font_family": {
+    "message": "Gulim\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "\ud615\uc2dd"
+  },
+  "input": {
+    "message": "\uc785\ub825\ub780"
+  },
+  "message_when_blocked": {
+    "message": "\ucc28\ub2e8\uc2dc\x20\uba54\uc2dc\uc9c0"
+  },
+  "nav_about": {
+    "message": "\uc774\x20\ud655\uc7a5\x20\uae30\ub2a5\uc5d0\x20\ub300\ud574"
+  },
+  "nav_blocking": {
+    "message": "\ucc28\ub2e8\x20\uc0ac\uc774\ud2b8"
+  },
+  "nav_changelog": {
+    "message": "\uc218\uc815\x20\ub0b4\uc5ed"
+  },
+  "nav_function": {
+    "message": "\uac01\x20\uae30\ub2a5\uc758\x20ON\x20\x2f\x20OFF"
+  },
+  "nav_message": {
+    "message": "\ucc28\ub2e8\uc2dc\x20\uba54\uc2dc\uc9c0"
+  },
+  "nav_password": {
+    "message": "\ube44\ubc00\x20\ubc88\ud638"
+  },
+  "option_page_link_disabled": {
+    "message": "\uc124\uc815\x20\ud398\uc774\uc9c0\uc5d0\uc11c\x20\ub9c1\ud06c\ub97c\x20\ud574\uc81c"
+  },
+  "options": {
+    "message": "\ubb38\uc11c"
+  },
+  "please_support_me": {
+    "message": "\uc800\ub97c\x20\uc9c0\uc6d0\ud558\uc2ed\uc2dc\uc624\x21\x20\x28\ud398\uc774\ud314\x29"
+  },
+  "popup_page_control_disabled": {
+    "message": "\ud31d\uc5c5\uc758\x20\uae30\ub2a5\x20\uc81c\uc5b4\ub97c\x20\uc0ac\uc6a9\ud558\uc9c0"
+  },
+  "save": {
+    "message": "\uc800\uc7a5"
+  },
+  "save_and_close": {
+    "message": "\uc800\uc7a5\x20\ud6c4\x20\ub2eb\uae30"
+  },
+  "setting": {
+    "message": "\uc124\uc815"
+  },
+  "special_thanks": {
+    "message": "\uc2a4\ud398\uc15c\x20\ub561\uc2a4"
+  },
+  "time_limit_disabled": {
+    "message": "\uc2dc\uac04\x20\uc124\uc815\uc744\x20\ube44\ud65c\uc131\ud654"
+  },
+  "title_when_blocked": {
+    "message": "\ube14\ub85d\x20\ub54c\x20\uc81c\ubaa9"
+  },
+  "websites_to_block": {
+    "message": "\ucc28\ub2e8\x20\uc6f9\uc0ac\uc774\ud2b8"
+  }
 }
