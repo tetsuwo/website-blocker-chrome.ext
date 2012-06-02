@@ -47,19 +47,24 @@ Yes, you must be right click on hide the toolbar icon. There is "Hide button".
 SUPPORTED LANGUAGES:
 --------------------
 
-- English
-- Spanish
-- Italy
-- German
-- Korean
 - Chinese
+- English
+- German
+- Italy
+- Korean
 - Japanese
+- Portuguese
+- Slovenian
+- Spanish
 
 
 
 CHANGE LOG:
 -----------
 
+- 0.1.8
+  - Translated to Slovenian.
+    Special Thanks: [Mrein Stain](https://www.facebook.com/profile.php?id=100003095811907)
 - 0.1.7
   - Translated to Portuguese.
     Special Thanks: [Lucas, Jean](https://twitter.com/aleattorium)
