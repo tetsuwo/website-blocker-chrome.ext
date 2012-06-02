@@ -1,0 +1,134 @@
+{
+  "ID": {
+    "message": "pt_BR"
+  },
+  "add_block_time": {
+    "message": "Tempo\x20de\x20bloqueio\x2e\x20"
+  },
+  "add_blockthis": {
+    "message": "Bloqueie\x20isso\x21"
+  },
+  "add_time_1": {
+    "message": "entre"
+  },
+  "add_time_2": {
+    "message": "e"
+  },
+  "add_time_3": {
+    "message": ""
+  },
+  "applied": {
+    "message": "Aplicado\x21"
+  },
+  "apply": {
+    "message": "Aplicar"
+  },
+  "back": {
+    "message": "Voltar"
+  },
+  "basic_settings": {
+    "message": "Configura\xe7\xf5es\x20b\xe1sicas"
+  },
+  "block_already": {
+    "message": "Esta\x20p\xe1gina\x20j\xe1\x20est\xe1\x20bloqueada\x2e\x20Este\x20bloqueio\x20veio\x20da\x20p\xe1gina\x20\x5bOptions\x5d\x2e"
+  },
+  "block_ng": {
+    "message": "Esta\x20p\xe1gina\x20n\xe3o\x20pode\x20ser\x20bloqueada\x2e\x20"
+  },
+  "blocked_disabled": {
+    "message": "Desabilite\x20a\x20fun\xe7\xe3o\x20de\x20bloqueio\x2e"
+  },
+  "blocked_message": {
+    "message": "N\xe3o\x20pode\x20acessar\x20esta\x20p\xe1gina\x2e\x20"
+  },
+  "blocked_title": {
+    "message": "A\x20p\xe1gina\x20est\xe1\x20bloqueada\x2e\x20"
+  },
+  "bug_report": {
+    "message": "Bug\x20relat\xf3rio"
+  },
+  "changelog": {
+    "message": "Hist\xf3rico\x20de\x20revis\xf5es"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "document": {
+    "message": "Documento"
+  },
+  "example": {
+    "message": "Exemplo"
+  },
+  "ext_description": {
+    "message": "Website\x20Blocker\x20\xe9\x20\xfatil\x20quando\x20voc\xea\x20deseja\x20se\x20concentrar\x20no\x20trabalho\x2e\x20"
+  },
+  "ext_name": {
+    "message": "Website\x20Blocker\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "P\xe1gina\x20no\x20Facebook"
+  },
+  "font_family": {
+    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "Formato"
+  },
+  "input": {
+    "message": "Entrada"
+  },
+  "message_when_blocked": {
+    "message": "Mensagem\x20quando\x20bloquear"
+  },
+  "nav_about": {
+    "message": "Sobre\x20esta\x20extens\xe3o"
+  },
+  "nav_blocking": {
+    "message": "Bloqueando\x20site"
+  },
+  "nav_changelog": {
+    "message": "Hist\xf3rico\x20da\x20Revis\xe3o"
+  },
+  "nav_function": {
+    "message": "ON\x2fOFF\x20para\x20cada\x20fun\xe7\xe3o"
+  },
+  "nav_message": {
+    "message": "Mensagens\x20quando\x20bloqueado"
+  },
+  "nav_password": {
+    "message": "Senha"
+  },
+  "option_page_link_disabled": {
+    "message": "Onemogo\u010deno\x20za\x20povezavo\x20bli\u017enjico\x20do\x20strani\x20z\x20mo\u017enostmi\x2e"
+  },
+  "options": {
+    "message": "Op\xe7\xf5es"
+  },
+  "please_support_me": {
+    "message": "Prosimo\x2c\x20da\x20me\x20podpira\x21\x20\x28PayPal\x29"
+  },
+  "popup_page_control_disabled": {
+    "message": "Onemogo\u010deno\x20vsake\x20funkcije\x20nadzora\x20iz\x20pojavnega\x20strani\x2e"
+  },
+  "save": {
+    "message": "Salvar\x20"
+  },
+  "save_and_close": {
+    "message": "Salvar\x20e\x20fechar"
+  },
+  "setting": {
+    "message": "Configura\xe7\xf5es"
+  },
+  "special_thanks": {
+    "message": "Posebna\x20zahvala"
+  },
+  "time_limit_disabled": {
+    "message": "Onemogo\u010di\x20funkcije\x20roku"
+  },
+  "title_when_blocked": {
+    "message": "T\xedtulo\x20quando\x20bloqueado"
+  },
+  "websites_to_block": {
+    "message": "Sites\x20para\x20bloquear"
+  }
+}
