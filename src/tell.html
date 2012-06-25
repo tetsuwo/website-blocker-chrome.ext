@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Tell a friend | Website Blocker</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/blocked.css" />
+    <script src="lib/jquery-1.7.2.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/controller.js"></script>
+</head>
+<body>
+
+<div id="blocked-container" style="display:none;">
+	<div class="blocked-header">
+		<h1>This page is blocked.</h1>
+	</div>
+	<div class="inner">
+            <div class="clearfix">
+                <g:plusone size="medium"
+                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
+
+                <a href="http://twitter.com/share"
+                   class="twitter-share-button"
+                   data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
+                   data-count="horizontal">Tweet</a>
+
+                <a data-hatena-bookmark-layout="standard"
+                   data-hatena-bookmark-title="Website Blocker"
+                   target="_blank" class="hatena-bookmark-button"
+                   href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
+                    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
+            </div>
+	</div>
+	<div class="blocked-footer" style="display:none;">
+		<small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
+	</div>
+</div>
+
+<script>
+
+	$('#blocked-container').show();
+
+	function resizer() {
+		var $self = $('#blocked-container');
+		$self.css({
+			left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
+			top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
+		});
+	}
+
+	applyFont();
+
+    var url = getBeforeLocation();
+    $('.blocked-header h1').html(getLSi18n('blocked_title'));
+    $('.blocked-body').html(getLSi18n('blocked_message'));
+    $('.blocked-url').html('<a class="submit url" href="' + url + '">' + url + '</a>');
+
+    $('.blocked-footer').css('display', getStorage('option_page_link_disabled') ? 'none' : 'block');
+
+	$('.go-option').click(function() {
+		goOptions(encodeURIComponent(url));
+	});
+
+	resizer();
+	window.onresize = function() {
+		resizer();
+	};
+
+</script>
+
+</body>
+</html>
