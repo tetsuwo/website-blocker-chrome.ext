@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Website Blocker</title>
+    <title>Popup | Website Blocker</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/options.css" />
+    <link rel="stylesheet" href="css/popup.css" />
     <link rel="stylesheet" href="css/form.css" />
-    <script src="lib/jquery-1.6.4.min.js"></script>
+    <script src="lib/jquery-1.7.2.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/functions.js"></script>
@@ -15,62 +15,53 @@
     <script src="js/controller.js"></script>
 </head>
 <body>
-<div id="popup-container" style="display: none; width: 300px;">
+<div id="container" style="display: none; width: 500px; height: 100%;">
 
-    <header class="padding">
+    <header>
         <h1><b i18n="ext_name">Website Blocker</b></h1>
     </header>
 
-    <section id="popup-body" class="top-shadow clearfix">
-        <h1 class="hide">POPUP BODY</h1>
-        <article id="block-ng" i18n="block_ng" class="hide">This page cannot block.</article>
-        <article id="block-already" i18n="block_already" class="hide">This page is already blocked.</article>
+    <section class="top-shadow clearfix">
+        <article id="block-ng" i18n="block_ng" class="hide">
+            This page cannot block.
+        </article>
+        <article id="block-already" i18n="block_already" class="hide">
+            This page is already blocked.
+        </article>
         <article id="block-ok" class="hide">
-            <h3 i18n="add_domain" class="mt0">URL</h3>
-            <input type="text" id="tmp-hostname" style="width: 95%;" placeholder="www.facebook.com" />
-            <h3 i18n="add_block_time">--</h3>
-            <div class="time-group">
-                <span i18n="add_time_1"></span>
-                <input type="time" id="tmp-time-start" style="width: 4em;" placeholder="00:00" />
-                <span i18n="add_time_2"></span>
-                <input type="time" id="tmp-time-end" style="width: 4em;" placeholder="23:59" />
-                <span i18n="add_time_3"></span>
+
+            <div class="group">
+                <h3 i18n="add_domain">URL</h3>
+                <input type="text" id="tmp-hostname" style="width: 95%;" placeholder="www.facebook.com" />
             </div>
+
+            <div class="group">
+                <h3 i18n="add_block_time">--</h3>
+                <div class="time-group">
+                    <span i18n="add_time_1"></span>
+                    <input type="time" id="tmp-time-start" style="width: 4em;" placeholder="00:00" />
+                    <span i18n="add_time_2"></span>
+                    <input type="time" id="tmp-time-end" style="width: 4em;" placeholder="23:59" />
+                    <span i18n="add_time_3"></span>
+                </div>
+            </div>
+
             <button id="blockthis" i18n="add_blockthis" class="submit blue">Block this!</button>
         </article>
     </section>
 
-    <nav id="control-nav" class="top-shadow button-zone clearfix">
-        <h1 class="hide">CONTROL NAVIGATION</h1>
-        <button i18n="close" class="close submit">--</button>
-        <button i18n="please_support_me" class="please_support_me submit">--</button>
-        <button i18n="bug_report" class="bug_report submit">--</button>
-        <button i18n="options" class="options submit">--</button>
-    </nav>
-
-    <footer id="footer" class="clearfix">
-        <h1 class="hide">FOOTER</h1>
-        <div class="inner clearfix">
-            <div class="clearfix">
-                <g:plusone size="medium"
-                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
-
-                <a href="http://twitter.com/share"
-                   class="twitter-share-button"
-                   data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
-                   data-count="horizontal">Tweet</a>
-
-                <a data-hatena-bookmark-layout="standard"
-                   data-hatena-bookmark-title="Website Blocker"
-                   target="_blank" class="hatena-bookmark-button"
-                   href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
-                    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
-            </div>
-            <div class="clearfix">
-                <small class="copyright">
-                    Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.
-                </small>
-            </div>
+    <footer class="clearfix">
+        <nav id="control-nav" class="clearfix">
+            <button i18n="tell" class="tell submit">--</button>
+            <button i18n="options" class="options submit">--</button>
+            <button i18n="please_support_me" class="please_support_me submit">--</button>
+            <button i18n="bug_report" class="bug_report submit">--</button>
+            <button i18n="close" class="submit" onclick="window.close()">--</button>
+        </nav>
+        <div class="clearfix">
+            <small class="copyright">
+                Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.
+            </small>
         </div>
     </footer>
 
@@ -105,6 +96,7 @@
             $('#block-ng').show();
         }
     });
+
     setTimeout(function() {
         if (!is_bg_executed) {
             $('#block-ng').show();
@@ -113,7 +105,7 @@
 
     $(window).load(function() {
         Controller.popupPage();
-        i18n(function(){ $('#popup-container').show(); });
+        i18n(function(){ $('#container').show(); });
     });
 
     $('.options').click(function() {
@@ -125,19 +117,20 @@
         domain = $('#tmp-hostname').val();
         time1  = $('#tmp-time-start').val().replace(':', '');
         time2  = $('#tmp-time-end').val().replace(':', '');
+
         if (time1 && time2) {
             times = [time1 + '-' + time2];
         }
+
         Controller.addBlockData(domain, times);
+
+        alert('');
     });
 
-    $('[i18n="options"]').css('display', ls.get('option_page_link_disabled') ? 'none' : 'block');
-    $('#each_function_controler').css('display', ls.get('popup_page_control_disabled') ? 'none' : 'block');
+    $('[i18n="options"]').css('display', ls.get('option_page_link_disabled') ? 'none' : 'inline-block');
+    $('#each_function_controler').css('display', ls.get('popup_page_control_disabled') ? 'none' : 'inline-block');
 
 </script>
-<script src="http://apis.google.com/js/plusone.js" async></script>
-<script src="http://platform.twitter.com/widgets.js" async></script>
-<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
 
 </body>
 </html>

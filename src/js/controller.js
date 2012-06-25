@@ -34,6 +34,10 @@ Controller = new function() {
             });
         });
 
+        $('.tell').click(function() {
+            check2go('tell.html');
+        });
+
         $('.back').click(function() {
             that.save();
             location.href = beforepage;

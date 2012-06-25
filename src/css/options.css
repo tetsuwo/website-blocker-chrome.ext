@@ -1,3 +1,7 @@
+/**
+ * OPTIONS PAGE STYLESHEET
+ *
+ */
 
 body {
 	background-color: #070707;
@@ -22,19 +26,18 @@ pre {
 	padding: .5em;
 	background-color: #222;
 	font-family: Arial;
-/*	margin-bottom: .5em;*/
 	line-height: 1.4;
 }
 
 .padding {
 	padding: 10px;
-	background-color: #444;
+/*	background-color: #444;*/
 }
 .top-shadow {
-	box-shadow: inset 0 2em 30px -2em rgba(0, 0, 0, 0.9);
+	/*box-shadow: inset 0 2em .5em -2em rgba(0, 0, 0, .9);*/
+	box-shadow: inset 0 0 .5em .5em rgba(0, 0, 0, .2);
 }
 .button-zone {
-	border-top: 2px solid #070707;
 	padding: 20px 10px 10px;
     background-color: #070707;
 }
@@ -51,16 +54,13 @@ pre {
 
 /* HEADER -- */
 header h1 {
-	background: url('chrome-extension://__MSG_@@extension_id__/img/options.png') 10px 10px no-repeat;
+	background: url(chrome-extension://__MSG_@@extension_id__/img/options.png) 10px 10px no-repeat;
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
 	padding: 10px 10px 10px 37px;
-	background-color: #111;
 	border-radius: 10px;
-	border: 3px solid #000;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 	margin-bottom: 10px;
 }
 header .description {
@@ -71,19 +71,12 @@ header .description {
 	color: #ddd;
 }
 
-/* PAGEBODY */
-#popup-body {
-	border-top: 2px solid #111;
-	padding: 20px 10px;
-	background-color: #222;
-}
 
 /* PAGEBODY */
 #switching {
 	min-height: 345px;
-	border-top: 2px solid #111;
 	padding: 20px 20px 0;
-	background-color: #222;
+	background-color: #111;
 }
 	#switching nav {
 		float: left;
@@ -95,7 +88,7 @@ header .description {
 			width: 190px;
 			padding: 10px;
 			box-sizing: border-box;
-			background-color: #222;
+			background-color: #111;
 			color: #fff;
 			text-decoration: none;
 			cursor: pointer;
@@ -136,12 +129,11 @@ footer .inner {
 }
 footer,
 footer a {
-	text-shadow:0 2px 2px rgba(0, 0, 0, 0.7);
-	font-size:12px;
-	font-weight:bold;
-	line-height:1.5;
-	color:#999;
-	text-decoration:none;
+	font-size: 90%;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #999;
+	text-decoration: none;
 }
 footer a:hover {
 	color: #fff;
@@ -189,12 +181,4 @@ footer a:hover {
 			padding: 0;
 		}
 
-/* POPUP */
-#popup-container #control-nav {
-	padding: 10px;
-}
-#popup-container .submit {
-	display: block;
-	width: 100%;
-}
 
