@@ -122,6 +122,9 @@
   "special_thanks": {
     "message": "Posebna\x20zahvala"
   },
+  "tell_a_friend": {
+    "message": "Mandar\x20para\x20um\x20amigo"
+  },
   "time_limit_disabled": {
     "message": "Onemogo\u010di\x20funkcije\x20roku"
   },
@@ -130,5 +133,8 @@
   },
   "websites_to_block": {
     "message": "Sites\x20para\x20bloquear"
+  },
+  "with_email": {
+    "message": "com\x20E\x2dMail"
   }
 }

@@ -122,6 +122,9 @@
   "special_thanks": {
     "message": "Posebne\x20zahvale"
   },
+  "tell_a_friend": {
+    "message": "Povej\x20prijatelju"
+  },
   "time_limit_disabled": {
     "message": "Izklopi\x20\u010dasovno\x20blokado"
   },
@@ -130,5 +133,8 @@
   },
   "websites_to_block": {
     "message": "Blokirane\x20spletne\x20strani"
+  },
+  "with_email": {
+    "message": "z\x20e\x2dpo\u0161to"
   }
 }

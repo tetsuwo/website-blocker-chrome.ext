@@ -122,6 +122,9 @@
   "special_thanks": {
     "message": "Special\x20Thanks"
   },
+  "tell_a_friend": {
+    "message": "Tell\x20a\x20friend"
+  },
   "time_limit_disabled": {
     "message": "Disable\x20of\x20the\x20time\x20limit\x20function\x2e"
   },
@@ -130,5 +133,8 @@
   },
   "websites_to_block": {
     "message": "Websites\x20to\x20block"
+  },
+  "with_email": {
+    "message": "with\x20E\x2dMail"
   }
 }

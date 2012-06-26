@@ -1,6 +1,6 @@
 {
   "ID": {
-    "message": "zh"
+    "message": "zh_CN"
   },
   "add_block_time": {
     "message": "\u5c4f\u853d\u65f6\u95f4"
@@ -122,6 +122,9 @@
   "special_thanks": {
     "message": "\u7279\u522b\u611f\u8c22"
   },
+  "tell_a_friend": {
+    "message": "\u544a\u8bc9\u670b\u53cb"
+  },
   "time_limit_disabled": {
     "message": "\u7981\u7528\u65f6\u95f4\u9650\u5236\u529f\u80fd"
   },
@@ -130,5 +133,8 @@
   },
   "websites_to_block": {
     "message": "\u8981\u5c4f\u853d\u7684\u7f51\u7ad9"
+  },
+  "with_email": {
+    "message": "\u4e0eE\x2dMAIL"
   }
 }

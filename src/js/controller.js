@@ -34,8 +34,22 @@ Controller = new function() {
             });
         });
 
-        $('.tell').click(function() {
-            check2go('tell.html');
+        $('.tell_a_friend').click(function() {
+            check2go('share.html');
+        });
+
+        $('.with_email').click(function() {
+            var tmp = [], body = '';
+            tmp.push('');
+            tmp.push('----');
+            tmp.push('[' + getMessage('ext_name') + ']');
+            tmp.push('' + getMessage('ext_description') + '');
+            tmp.push('https://chrome.google.com/webstore/detail/' + getMessage('@@extension_id') + '?ref=email');
+            tmp.push('----');
+            tmp.push('');
+            body = encodeURIComponent(tmp.join("\n"));
+
+            window.location.href = 'mailto:?subject=&body=' + body;
         });
 
         $('.back').click(function() {
@@ -123,6 +137,20 @@ Controller = new function() {
     };
 
     this.popupPage = function() {
+        beforepage = getBeforeLocation();
+        applyFont();
+        buildPage();
+        applyEvent();
+    };
+
+    this.sharePage = function() {
+        beforepage = getBeforeLocation();
+        applyFont();
+        buildPage();
+        applyEvent();
+    };
+
+    this.blockedPage = function() {
         beforepage = getBeforeLocation();
         applyFont();
         buildPage();

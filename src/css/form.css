@@ -1,17 +1,17 @@
 
 input, textarea, select {
-	border: 1px solid #111;
-	padding: 0.5em;
-	font-size: 12px;
+	border: 1px solid #000;
+	padding: .5em;
 	font-weight:bold;
 	line-height: 1.2em;
 	width: 80%;
-	background: #444;
+	background-color: #444;
 	color: #fff;
-	font-family: Arial;
-	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
+	font-family: Arial, sans-serif;
+	background: -webkit-gradient(linear, left top, left bottom, #222, #444);
 	-webkit-appearance: none;
-	-webkit-box-shadow: 1px 1px 1px #333;
+	box-shadow: inset 0 0 .75em rgba(0, 0, 0, .6);
+    border-radius: 3px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -25,7 +25,7 @@ textarea {
 
 select {
 	padding: 0.5em 1em 0.5em 0.75em;
-	background: #444 url('chrome-extension://__MSG_@@extension_id__/img/select.png') no-repeat right center;
+	background: #444 url(chrome-extension://__MSG_@@extension_id__/images/select.png) no-repeat right center;
 	-webkit-background-size: 1600px 32px;
 }
 
@@ -54,39 +54,39 @@ input[type=reset] {
 	text-shadow: 0 0 2px #300;
 	font-weight: bold;
 	color: #999;
-	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
 }
 
 input[type=checkbox],
 input[type=radio] {
 	display: inline-block;
-	font-size: 12px;
 	line-height: 1em;
-	margin: 0 0.25em 0 0;
-	padding: 0;
-	width: 1.25em;
-	height: 1.25em;
-	-webkit-border-radius: 0.25em;
-	vertical-align: text-top;
+	margin: 0 .25em 0 0;
+	padding: .25em;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 0.25em;
+	vertical-align: middle; /* |text-top|middle| */
 }
 
 input[type=radio] {
-	-webkit-border-radius: 2em;
+	border-radius: 2em;
 }
 
 input[type=checkbox]:checked {
-	background: url('chrome-extension://__MSG_@@extension_id__/img/checkbox.png') no-repeat center center;
+	background: url('chrome-extension://__MSG_@@extension_id__/images/checkbox.png') no-repeat center center;
 	-webkit-background-size: 28px 28px;
 }
 
 input[type=radio]:checked {
-	background: url('chrome-extension://__MSG_@@extension_id__/img/radio.png') no-repeat center center;
+	background: url('chrome-extension://__MSG_@@extension_id__/images/radio.png') no-repeat center center;
 	-webkit-background-size: 28px 28px;
 }
 
 fieldset p {
-	margin-bottom:0.5em;
+	margin-bottom: 0.5em;
 }
 fieldset p:last-child {
-	margin-bottom:0;
+	margin-bottom: 0;
 }
+

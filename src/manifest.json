@@ -6,20 +6,20 @@
   "options_page": "options.html",
   "browser_action": {
     "popup": "popup.html",
-    "default_icon": "img/19.png"
+    "default_icon": "images/19.png"
   },
   "icons": {
-    "16": "img/16.png",
-    "19": "img/19.png",
-    "48": "img/48.png",
-    "64": "img/64.png",
-    "72": "img/72.png",
-    "128": "img/128.png"
+    "16": "images/16.png",
+    "19": "images/19.png",
+    "48": "images/48.png",
+    "64": "images/64.png",
+    "72": "images/72.png",
+    "128": "images/128.png"
   },
   "permissions": [
       "http://*/*",
       "https://*/*",
       "tabs"
   ],
-  "version": "0.1.8.1"
+  "version": "0.1.9"
 }

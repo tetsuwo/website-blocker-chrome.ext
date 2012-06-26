@@ -53,13 +53,13 @@ header h1 {
 
 /* PAGEBODY */
 section {
-	padding: 2em;
+	padding: 1em 2em;
 	background-color: #222;
 }
 
 
 .group {
-    margin: 1em 0;
+    margin-bottom: 1em;
 }
 
 
@@ -78,6 +78,9 @@ footer a {
 footer a:hover {
 	color: #fff;
 }
+    footer nav * {
+        font-size: 100%;
+    }
 	footer .copyright {
 		margin-top: 1em;
 		font-weight: bold!important;

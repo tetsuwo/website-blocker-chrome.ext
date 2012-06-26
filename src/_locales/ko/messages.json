@@ -122,6 +122,9 @@
   "special_thanks": {
     "message": "\uc2a4\ud398\uc15c\x20\ub561\uc2a4"
   },
+  "tell_a_friend": {
+    "message": "\uce5c\uad6c\uc5d0\uac8c\x20\uc54c\ub9ac\uae30"
+  },
   "time_limit_disabled": {
     "message": "\uc2dc\uac04\x20\uc124\uc815\uc744\x20\ube44\ud65c\uc131\ud654"
   },
@@ -130,5 +133,8 @@
   },
   "websites_to_block": {
     "message": "\ucc28\ub2e8\x20\uc6f9\uc0ac\uc774\ud2b8"
+  },
+  "with_email": {
+    "message": "E\x2dMail\uacfc"
   }
 }

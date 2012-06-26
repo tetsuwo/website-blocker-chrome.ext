@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Website Blocker</title>
+	<title>Share | Website Blocker</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/blocked.css" />
@@ -24,16 +24,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="blocked-container" style="display:none;">
+<div id="blocked-container" style="display: none; width: 500px;">
 	<div class="blocked-header">
-		<h1>This page is blocked.</h1>
-    </div>
-
-	<div class="inner" style="margin-bottom: 1em;">
-		<div class="blocked-body"></div>
-		<div class="blocked-url"></div>
-    </div>
-
+		<h1>Please, tell a friend!</h1>
+	</div>
 	<div class="inner">
         <div class="clearfix" style="margin-bottom: 1em;">
             <ul class="viral-list">
@@ -55,12 +49,8 @@
             <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
         </div>
 	</div>
-	<div class="blocked-footer">
-        <small class="go-option" style="display: none;">
-            <a i18n="options" target="_blank" href="javascript:void(0);">Options</a>
-             | 
-        </small>
-		<small>via Website Blocker</small>
+	<div class="blocked-footer" style="display:none;">
+		<small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
 	</div>
 </div>
 
@@ -75,23 +65,12 @@
 	}
 
     $(window).load(function() {
-        Controller.blockedPage();
+        Controller.sharePage();
         i18n(function(){ 
             $('#blocked-container').show(); 
 	        resizer();
         });
     });
-
-    var url = getBeforeLocation();
-    $('.blocked-header h1').html(getLSi18n('blocked_title'));
-    $('.blocked-body').html(getLSi18n('blocked_message'));
-    $('.blocked-url').html('<a class="submit url" href="' + url + '">' + url + '</a>');
-
-    $('.go-option').css('display', getStorage('option_page_link_disabled') ? 'none' : 'inline-block');
-
-	$('.go-option a').click(function() {
-		goOptions(encodeURIComponent(url));
-	});
 
 	window.onresize = function() {
 		resizer();
