@@ -54,7 +54,7 @@ pre {
 
 /* HEADER -- */
 header h1 {
-	background: url(chrome-extension://__MSG_@@extension_id__/img/options.png) 10px 10px no-repeat;
+	background: url(chrome-extension://__MSG_@@extension_id__/images/options.png) 10px 10px no-repeat;
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff;
