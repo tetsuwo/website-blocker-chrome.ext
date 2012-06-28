@@ -1,83 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Website-blocker-chrome-extension by tetsuwo</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+	<meta charset="utf-8" />
+	<title>Website Blocker on GitHub</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/blocked.css" />
+    <script src="lib/jquery-1.7.2.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/controller.js"></script>
+</head>
+<body>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/tetsuwo/website-blocker-chrome-extension">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/tetsuwo/website-blocker-chrome-extension/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/tetsuwo/website-blocker-chrome-extension/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/ja_JP/all.js#xfbml=1&appId=219688404715111";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
-    <div class="wrapper">
+<div id="blocked-container" style="display: none; width: 500px;">
+	<div class="blocked-header">
+		<h1>Please, tell a friend!</h1>
+	</div>
+	<div class="inner">
+        <div class="clearfix" style="margin-bottom: 1em;">
+            <ul class="viral-list">
+                <li><a href="http://twitter.com/share"
+                       class="twitter-share-button"
+                       data-text="Website Blocker is useful when you want to concentrate on work."
+                       data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
+                       data-count="horizontal">Tweet</a></li>
 
-      <section>
-        <div id="title">
-          <h1>Website-blocker-chrome-extension</h1>
-          <p>Website Blocker for Chrome Extension</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/tetsuwo">tetsuwo</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+                <li><g:plusone size="medium"
+                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone></li>
+
+                <li><fb:share-button href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" type="button"></fb:share-button></li>
+                
+                <li><button i18n="with_email" class="with_email wb-button" style="font-size: 70%;">with E-Mail</button></li>
+            </ul>
         </div>
+        <div class="clearfix">
+            <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
+        </div>
+	</div>
+	<div class="blocked-footer" style="display:none;">
+		<small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
+	</div>
+</div>
 
-        <h3>Welcome to GitHub Pages.</h3>
+<script>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	function resizer() {
+		var $self = $('#blocked-container');
+		$self.css({
+			left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
+			top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
+		});
+	}
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    $(window).load(function() {
+        Controller.sharePage();
+        i18n(function(){ 
+            $('#blocked-container').show(); 
+	        resizer();
+        });
+    });
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+	window.onresize = function() {
+		resizer();
+	};
 
-<h3>Designer Templates</h3>
+</script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<script src="http://apis.google.com/js/plusone.js" async></script>
+<script src="http://platform.twitter.com/widgets.js" async></script>
+<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
 
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-17392775-5");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
+</body>
 </html>
