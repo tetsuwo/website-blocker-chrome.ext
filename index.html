@@ -6,10 +6,8 @@
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/blocked.css" />
-    <script src="lib/jquery-1.7.2.min.js"></script>
-	<script src="js/utils.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/functions.js"></script>
 	<script src="js/controller.js"></script>
 </head>
 <body>
@@ -65,12 +63,9 @@
 		});
 	}
 
-    $(window).load(function() {
-        Controller.sharePage();
-        i18n(function(){ 
-            $('#blocked-container').show(); 
-	        resizer();
-        });
+    $(function() {
+        $('#blocked-container').show(); 
+        resizer();
     });
 
 	window.onresize = function() {
