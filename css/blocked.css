@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    background: url('chrome-extension://__MSG_@@extension_id__/images/16.png') 0 2px no-repeat;
+    background: url(images/16.png) 0 2px no-repeat;
     font-size: 100%;
     font-weight: bold;
     color: #666;
