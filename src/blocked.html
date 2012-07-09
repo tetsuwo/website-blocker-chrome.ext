@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>Website Blocker</title>
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/blocked.css" />
+    <meta charset="utf-8" />
+    <title>Website Blocker</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blocked.css" />
     <script src="lib/jquery-1.7.2.min.js"></script>
-	<script src="js/utils.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/functions.js"></script>
+    <script src="lib/ChromeDB.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/functions.js"></script>
     <script src="js/website-blocker.js"></script>
-	<script src="js/controller.js"></script>
+    <script src="js/controller.js"></script>
 </head>
 <body>
 
@@ -25,16 +26,16 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="blocked-container" style="display:none;">
-	<div class="blocked-header">
-		<h1>This page is blocked.</h1>
+    <div class="blocked-header">
+        <h1>This page is blocked.</h1>
     </div>
 
-	<div class="inner" style="margin-bottom: 1em;">
-		<div class="blocked-body"></div>
-		<div class="blocked-url"></div>
+    <div class="inner" style="margin-bottom: 1em;">
+        <div class="blocked-body"></div>
+        <div class="blocked-url"></div>
     </div>
 
-	<div class="inner">
+    <div class="inner">
         <div class="clearfix" style="margin-bottom: 1em;">
             <ul class="viral-list">
                 <li><a href="http://twitter.com/share"
@@ -54,31 +55,31 @@
         <div class="clearfix">
             <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
         </div>
-	</div>
-	<div class="blocked-footer">
+    </div>
+    <div class="blocked-footer">
         <small class="go-option" style="display: none;">
             <a i18n="options" target="_blank" href="javascript:void(0);">Options</a>
              | 
         </small>
-		<small>via Website Blocker</small>
-	</div>
+        <small>via Website Blocker</small>
+    </div>
 </div>
 
 <script>
 
-	function resizer() {
-		var $self = $('#blocked-container');
-		$self.css({
-			left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
-			top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
-		});
-	}
+    function resizer() {
+        var $self = $('#blocked-container');
+        $self.css({
+            left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
+            top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
+        });
+    }
 
     $(window).load(function() {
         Controller.blockedPage();
         i18n(function(){ 
             $('#blocked-container').show(); 
-	        resizer();
+            resizer();
         });
     });
 
@@ -89,13 +90,13 @@
 
     $('.go-option').css('display', getStorage('option_page_link_disabled') ? 'none' : 'inline-block');
 
-	$('.go-option a').click(function() {
-		goOptions(encodeURIComponent(url));
-	});
+    $('.go-option a').click(function() {
+        goOptions(encodeURIComponent(url));
+    });
 
-	window.onresize = function() {
-		resizer();
-	};
+    window.onresize = function() {
+        resizer();
+    };
 
 </script>
 
