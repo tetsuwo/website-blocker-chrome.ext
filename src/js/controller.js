@@ -67,7 +67,8 @@ Controller = new function() {
         });
 
         $('.bug_report').click(function() {
-            check2go('http://twitter.com/?status=@website_blocker%20%23bug%20%23chrome%20');
+//            check2go('http://twitter.com/?status=@website_blocker%20%23bug%20%23chrome%20');
+            check2go('https://github.com/tetsuwo/website-blocker-chrome.ext/issues');
         });
 
         $('.facebook_page').click(function() {
