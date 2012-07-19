@@ -62,7 +62,7 @@ SUPPORTED LANGUAGES:
 CHANGE LOG:
 -----------
 
-[Here](CHANGELOG.md)
+[Here](https://github.com/tetsuwo/website-blocker-chrome.ext/CHANGELOG.md)
 
 
 
