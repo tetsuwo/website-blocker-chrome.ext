@@ -7,8 +7,8 @@ Website Blocker is useful when you want to concentrate on work.
 
 
 
-SETTING EXAMPLE:
-----------------
+SETTING EXAMPLE
+---------------
 
     (facebook|twitter|hootsuite).com 0930-1259,1300-1530
     (www|b).hatena.ne.jp 1000-1259
@@ -22,8 +22,8 @@ Above and below is the same meaning.
 
 
 
-FEATURES:
----------
+FEATURES
+--------
 
 - Block the URL including the specified character string.
 - Block only between the specified time.
@@ -44,8 +44,8 @@ Yes, you must be right click on hide the toolbar icon. There is "Hide button".
 
 
 
-SUPPORTED LANGUAGES:
---------------------
+SUPPORTED LANGUAGES
+-------------------
 
 - Chinese
 - English
@@ -58,17 +58,10 @@ SUPPORTED LANGUAGES:
 - Spanish
 
 
+ELSEWHERE
+---------
 
-CHANGE LOG:
------------
-
-[Here](https://github.com/tetsuwo/website-blocker-chrome.ext/blob/master/CHANGELOG.md)
-
-
-
-ELSEWHERE:
-----------
-
+- [Change Log](https://github.com/tetsuwo/website-blocker-chrome.ext/blob/master/CHANGELOG.md)
 - [Bugs and Issues](https://github.com/tetsuwo/website-blocker-chrome.ext/issues)
   ... Report Bugs and Issues
 - [Facebook](https://www.facebook.com/website.blocker)
@@ -80,8 +73,8 @@ ELSEWHERE:
 
 
 
-AUTHOR:
--------
+AUTHOR
+------
 
 Tetsuwo OISHI - tetsuwo.oishi@gmail.com
 [Facebook](http://fb.me/tetsuwo) / [Twitter](http://twitter.com/tetsukamp)
