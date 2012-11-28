@@ -6,16 +6,14 @@
         <link rel="stylesheet" href="lib/jasmine-1.2.0/jasmine.css" />
         <script src="lib/jasmine-1.2.0/jasmine.js"></script>
         <script src="lib/jasmine-1.2.0/jasmine-html.js"></script>
+        <script src="lib/jasmine-1.2.0/jasmine-console.js"></script>
+        <script src="spec/SpecHelper.js"></script>
+        <script src="jasmine-prepare.js"></script>
         <!-- test target code... -->
         <script type="text/javascript" src="../src/js/website-blocker.js"></script>
         <!-- below test code... -->
-        <script type="text/javascript" src="spec/SpecHelper.js"></script>
         <script type="text/javascript" src="test.js"></script>
     </head>
     <body>
-        <script>
-            jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
-            jasmine.getEnv().execute();
-        </script>
     </body>
 </html>
