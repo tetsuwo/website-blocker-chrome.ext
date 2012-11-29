@@ -3,5 +3,5 @@ script:
 notifications:
   email:
     recipients: tetsuwo.oishi+travis-ci@gmail.com
-    on_success: [always] # default: change
-    on_failure: [always] # default: always
+    on_success: always # default: change
+    on_failure: always # default: always
