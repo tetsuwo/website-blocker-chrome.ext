@@ -2,9 +2,9 @@ Website Blocker Chrome Extension
 ================================
 
 [![Build Status](https://secure.travis-ci.org/tetsuwo/website-blocker-chrome.ext.png?branch=master)](https://travis-ci.org/tetsuwo/website-blocker-chrome.ext)
-[Chrome Webstore](https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib)
 
-Website Blocker is useful when you want to concentrate on work.
+Website Blocker is useful when you want to concentrate on work.  
+< [Chrome Webstore](https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib) >
 
 
 
