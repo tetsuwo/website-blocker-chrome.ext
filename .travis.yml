@@ -2,6 +2,7 @@ script:
   - phantomjs test/lib/run-jasmine.js test/test.html
 notifications:
   email:
-    recipients: tetsuwo.oishi+travis-ci@gmail.com
-    on_success: always # default: change
-    on_failure: always # default: always
+    recipients:
+      - tetsuwo.oishi+travis-ci@gmail.com
+    on_success: always
+    on_failure: always
