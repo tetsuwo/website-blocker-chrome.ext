@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-    <title>Website Blocker on GitHub</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/style.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="js/common.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Website Blocker on GitHub</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
 
-<div id="fb-root"></div>
-<script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/ja_JP/all.js#xfbml=1&appId=219688404715111";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+        <a class="ribbon" href="https://github.com/tetsuwo/website-blocker-chrome.ext" target="_blank">
+            <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+        </a>
 
-<a class="ribbon" href="https://github.com/tetsuwo/website-blocker-chrome.ext" target="_blank">
-    <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-</a>
-
-<div id="blocked-container" style="display: none; width: 500px;">
-	<div class="blocked-header">
-		<h1>website-blocker-chrome.ext</h1>
-	</div>
-    <div class="inner">
-        <div class="clearfix" style="margin-bottom: 1em;">
-          <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=watch&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="108" height="30"></iframe>
-            
-          <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=fork&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="93" height="30"></iframe>
-          
-          <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=follow&count=true"
-            allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+        <div id="blocked-container" style="display: none; width: 500px;">
+            <div class="blocked-header">
+                <h1>website-blocker-chrome.ext</h1>
+            </div>
+            <div class="inner">
+                <div class="clearfix" style="margin-bottom: 1em;">
+                  <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=watch&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="108" height="30"></iframe>
+                    
+                  <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=fork&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="93" height="30"></iframe>
+                  
+                  <iframe src="http://ghbtns.com/github-btn.html?user=tetsuwo&repo=website-blocker-chrome.ext&type=follow&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="180" height="30"></iframe>
+                </div>
+                <div class="clearfix" style="margin-bottom: 1em;">
+                    <ul class="viral-list">
+                        <li><a href="http://twitter.com/share"
+                               class="twitter-share-button"
+                               data-text="Website Blocker is useful when you want to concentrate on work."
+                               data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
+                               data-count="horizontal">Tweet</a></li>
+        
+                        <li><g:plusone size="medium"
+                            href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone></li>
+        
+                        <li><fb:share-button href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" type="button"></fb:share-button></li>
+                        
+                        <li><button i18n="with_email" class="with_email wb-button" style="font-size: 70%;">with E-Mail</button></li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
+                </div>
+            </div>
+            <div class="blocked-footer" style="display:none;">
+                <small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
+            </div>
         </div>
-        <div class="clearfix" style="margin-bottom: 1em;">
-            <ul class="viral-list">
-                <li><a href="http://twitter.com/share"
-                       class="twitter-share-button"
-                       data-text="Website Blocker is useful when you want to concentrate on work."
-                       data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
-                       data-count="horizontal">Tweet</a></li>
-
-                <li><g:plusone size="medium"
-                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone></li>
-
-                <li><fb:share-button href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" type="button"></fb:share-button></li>
-                
-                <li><button i18n="with_email" class="with_email wb-button" style="font-size: 70%;">with E-Mail</button></li>
-            </ul>
-        </div>
-        <div class="clearfix">
-            <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
-        </div>
-	</div>
-	<div class="blocked-footer" style="display:none;">
-		<small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
-	</div>
-</div>
-
-<script>
-
-	function resizer() {
-		var $self = $('#blocked-container');
-		$self.css({
-			left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
-			top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
-		});
-	}
-
-    $(function() {
-        $('#blocked-container').show(); 
-        resizer();
-    });
-
-	window.onresize = function() {
-		resizer();
-	};
-
-</script>
-
-<script src="//apis.google.com/js/plusone.js" async></script>
-<script src="//platform.twitter.com/widgets.js" async></script>
-<script src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
-
-</body>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "http://connect.facebook.net/ja_JP/all.js#xfbml=1&appId=219688404715111";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        
+            function resizer() {
+                var $self = $('#blocked-container');
+                $self.css({
+                    left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
+                    top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
+                });
+            }
+        
+            $(function() {
+                $('#blocked-container').show(); 
+                resizer();
+            });
+        
+            window.onresize = function() {
+                resizer();
+            };
+        </script>
+        <script src="//apis.google.com/js/plusone.js" async></script>
+        <script src="//platform.twitter.com/widgets.js" async></script>
+        <script src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
+    </body>
 </html>
