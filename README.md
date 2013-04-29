@@ -1,11 +1,8 @@
 Website Blocker Chrome Extension
 ================================
 
-[![Build Status](https://secure.travis-ci.org/tetsuwo/website-blocker-chrome.ext.png?branch=master)](https://travis-ci.org/tetsuwo/website-blocker-chrome.ext)
-
 `Website Blocker` is useful when you want to concentrate on work.  
-< [Chrome Webstore](https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib) >
-
+[Chrome Webstore](https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib) | [GitHub Page](http://tetsuwo.github.io/website-blocker-chrome.ext/) | [![Build Status](https://secure.travis-ci.org/tetsuwo/website-blocker-chrome.ext.png?branch=master)](https://travis-ci.org/tetsuwo/website-blocker-chrome.ext)
 
 
 SETTING EXAMPLE
@@ -22,7 +19,6 @@ Above and below is the same meaning.
     Can't access to 'yahoo.com'
 
 
-
 FEATURES
 --------
 
@@ -31,18 +27,15 @@ FEATURES
 - You can change the warning message.
 - You can switch ON/OFF of each function.
 
-
 #### About Incognito window:
 
 1. Open an Incognito window.
 2. Open an extension manager on Incognito window.
 3. Check an 'Allow in incognito' of 'Website Blocker'
 
-
 #### Is there a way to hide the toolbar icon?:
 
 Yes, you must be right click on hide the toolbar icon. There is "Hide button".
-
 
 
 SUPPORTED LANGUAGES
@@ -59,7 +52,6 @@ SUPPORTED LANGUAGES
 - Spanish
 
 
-
 ELSEWHERE
 ---------
 
@@ -74,11 +66,9 @@ ELSEWHERE
   ... Development Status
 
 
-
 AUTHOR
 ------
 
 Tetsuwo OISHI - tetsuwo.oishi@gmail.com
 [Facebook](http://fb.me/tetsuwo) / [Twitter](http://twitter.com/tetsukamp)
-
 
