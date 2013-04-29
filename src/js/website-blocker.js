@@ -8,7 +8,6 @@
  * Date: 2010-11-21
  */
 
-
 function WebsiteBlocker() {
     this.blockedList = null;
     this.date = null;
@@ -22,8 +21,7 @@ function WebsiteBlocker() {
 }
 
 
-(function( WB, undef ) {
-
+(function(WB, undef) {
 
 /**
  * For Block the tab of target ID
@@ -45,23 +43,28 @@ WB.prototype.blocked = function(id, url) {
  * @param regexp {String}
  * @param time   {Array}
  */
-WB.prototype.isBlocked = function(url, regexp, time) {
+WB.prototype.isBlocked = function(url, regexp, targetTime, currentTime) {
+    var pos = url.search(new RegExp(regexp, 'ig'));
+    this.logger(pos);
 
-    this.logger(url.search(new RegExp(regexp, 'ig')));
-
-    if (url.search(new RegExp(regexp, 'ig')) > 5) {
+    if (5 < pos) {
         if (this.disabledTimeLimit) {
             return true;
         }
 
-        if (time.length === 0) {
+        if (targetTime.length === 0) {
             return true;
         }
 
-        for (var i in time) {
-            var c = time[i].split('-');
+        for (var i in targetTime) {
+            var current = Number(currentTime);
+            var target  = targetTime[i]
+                              .split('-')
+                              .map(function(time) {
+                                  return Number(time);
+                              });
 
-            if (Number(c[0]) <= Number(this.time) && Number(this.time) <= Number(c[1])) {
+            if (target[0] <= current && current <= target[1]) {
                 return true;
             }
         }
@@ -77,7 +80,6 @@ WB.prototype.isBlocked = function(url, regexp, time) {
  * @param list {Array}
  */
 WB.prototype.toString = function(list) {
-
     var result = [];
 
     for (var key in list) {
@@ -95,7 +97,6 @@ WB.prototype.toString = function(list) {
  * @param text {String}
  */
 WB.prototype.toFormat = function(text) {
-
     var rows, row, URLTime, line, BLOCKED = [];
     rows = text.split('\n');
 
@@ -128,7 +129,6 @@ WB.prototype.toFormat = function(text) {
  * @param none
  */
 WB.prototype.makeTime = function() {
-
     this.date = new Date();
     var hh = this.date.getHours();
     var mm = this.date.getMinutes();
@@ -153,16 +153,16 @@ WB.prototype.makeTime = function() {
  * @param testmode {Boolean}
  */
 WB.prototype.checkUrl = function(id, url, testmode) {
-
     this.blockedList = ls.get('blocked_list');
+    var currentTime = null;
 
     if (this.blockedList) {
-        this.makeTime();
+        currentTime = this.makeTime();
         this.disabledTimeLimit = ls.get('time_limit_disabled');
 
         for (var key in this.blockedList) {
             this.logger(this.blockedList[key].regexp);
-            if (this.isBlocked(url, this.blockedList[key].regexp, this.blockedList[key].time)) {
+            if (this.isBlocked(url, this.blockedList[key].regexp, this.blockedList[key].time, currentTime)) {
                 if (testmode) {
                     return true;
                 }
@@ -194,7 +194,6 @@ WB.prototype.logger = function(a) {
  * @param tab {Object}
  */
 WB.prototype.run = function(tab) {
-
     this.logger(tab);
 
     if (ls.get('blocked_disabled')) {
@@ -207,6 +206,5 @@ WB.prototype.run = function(tab) {
 
     return true;
 };
-
 
 })(WebsiteBlocker);
