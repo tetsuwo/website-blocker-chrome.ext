@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Share | Website Blocker</title>
+        <title>Welcome | Website Blocker</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/blocked.css" />
@@ -16,14 +16,6 @@
     </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "http://connect.facebook.net/ja_JP/all.js#xfbml=1&appId=219688404715111";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-        
         <div id="blocked-container" style="display: none; width: 500px;">
             <div class="blocked-header">
                 <h1>Please, tell a friend!</h1>
@@ -53,31 +45,8 @@
                 <small>via <a class="go-option" target="_blank" href="javascript:void(0);">Website Blocker</a></small>
             </div>
         </div>
-        
-        <script>
-        
-            function resizer() {
-                var $self = $('#blocked-container');
-                $self.css({
-                    left : (window.innerWidth  - $self.get(0).offsetWidth)  / 2,
-                    top  : (window.innerHeight - $self.get(0).offsetHeight) / 2
-                });
-            }
-        
-            $(window).load(function() {
-                Controller.sharePage();
-                i18n(function(){ 
-                    $('#blocked-container').show(); 
-                    resizer();
-                });
-            });
-        
-            window.onresize = function() {
-                resizer();
-            };
-        
-        </script>
-        
+        <script src="js/init-facebook.js"></script>
+        <script src="js/page-welcome.js"></script>
         <script src="https://apis.google.com/js/plusone.js" async></script>
         <script src="https://platform.twitter.com/widgets.js" async></script>
         <!--<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>-->
