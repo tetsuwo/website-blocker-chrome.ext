@@ -1,124 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>Website Blocker</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/options.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <script src="lib/jquery-1.7.2.min.js"></script>
-    <script src="lib/ChromeDB.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/website-blocker.js"></script>
-    <script src="js/controller.js"></script>
-</head>
-<body>
-<div id="container" style="display: none;">
-
-    <header class="padding">
-        <h1><b i18n="ext_name+setting">Website Blocker</b></h1>
-        <small class="description" i18n="ext_description"></small>
-    </header>
-
-    <section id="switching" class="top-shadow clearfix">
-        <h1 class="hide">PAGEBODY</h1>
-        <nav>
-            <h1 class="hide">PAGEBODY</h1>
-            <ul>
-                <li><a class="F" data-id="blocking" i18n="nav_blocking">--</a></li>
-                <li><a data-id="message" i18n="nav_message">--</a></li>
-                <li><a data-id="function" i18n="nav_function">--</a></li>
-                <li><a data-id="password" i18n="nav_password">--</a></li>
-                <li><a data-id="changelog" i18n="nav_changelog">--</a></li>
-                <li><a data-id="about" i18n="nav_about">--</a></li>
-            </ul>
-        </nav>
-        <article class="clearfix">
-
-            <section id="blocking" class="clearfix">
-                <fieldset>
-                    <legend i18n="websites_to_block">--</legend>
-                    <h4 class="mt0"><span i18n="format">--</span>:</h4>
+    <head>
+        <meta charset="utf-8" />
+        <title>Website Blocker</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/options.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <script src="lib/jquery-1.7.2.min.js"></script>
+        <script src="lib/ChromeDB.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/website-blocker.js"></script>
+        <script src="js/controller.js"></script>
+    </head>
+    <body>
+        <div id="container" style="display: none;">
+        
+            <header class="padding">
+                <h1><b i18n="ext_name+setting">Website Blocker</b></h1>
+                <small class="description" i18n="ext_description"></small>
+            </header>
+        
+            <section id="switching" class="top-shadow clearfix">
+                <h1 class="hide">PAGEBODY</h1>
+                <nav>
+                    <h1 class="hide">PAGEBODY</h1>
+                    <ul>
+                        <li><a class="F" data-id="blocking" i18n="nav_blocking">--</a></li>
+                        <li><a data-id="message" i18n="nav_message">--</a></li>
+                        <li><a data-id="function" i18n="nav_function">--</a></li>
+                        <li><a data-id="password" i18n="nav_password">--</a></li>
+                        <li><a data-id="changelog" i18n="nav_changelog">--</a></li>
+                        <li><a data-id="about" i18n="nav_about">--</a></li>
+                    </ul>
+                </nav>
+                <article class="clearfix">
+        
+                    <section id="blocking" class="clearfix">
+                        <fieldset>
+                            <legend i18n="websites_to_block">--</legend>
+                            <h4 class="mt0"><span i18n="format">--</span>:</h4>
 <pre class="mb">
 URL hhmm-hhmm,hhmm-hhmm
 </pre>
-                    <h4><span i18n="example">--</span>:</h4>
+                            <h4><span i18n="example">--</span>:</h4>
 <pre class="mb">
 facebook.com 0930-1259,1300-1530
 twitter.com 1000-1259
 (facebook|twitter).com 0000-0730,0945-1159
 </pre>
-                    <h4><span i18n="input">--</span>:</h4>
-                    <div class="clearfix">
-                        <textarea id="blocked_text" style="width: 98%; height: 10em;"></textarea>
-                    </div>
-                </fieldset>
-            </section>
-
-            <section id="message" class="hide clearfix">
-                <fieldset>
-                    <legend i18n="title_when_blocked">--</legend>
-                    <div class="clearfix">
-                        <input type="text" id="blocked_title" style="width: 98%; " value="" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend i18n="message_when_blocked">--</legend>
-                    <div class="clearfix">
-                        <textarea id="blocked_message" style="width: 98%; height: 10em;"></textarea>
-                    </div>
-                </fieldset>
-            </section>
-
-            <section id="function" class="hide clearfix">
-                <fieldset>
-                    <legend i18n="basic_settings">--</legend>
-                    <div class="clearfix">
-                        <p>
-                            <label>
-                                <input type="checkbox" id="blocked_disabled" />
-                                <span i18n="blocked_disabled">--</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="time_limit_disabled" />
-                                <span i18n="time_limit_disabled">--</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="option_page_link_disabled" />
-                                <span i18n="option_page_link_disabled">--</span>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="popup_page_control_disabled" />
-                                <span i18n="popup_page_control_disabled">--</span>
-                            </label>
-                        </p>
-                    </div>
-                </fieldset>
-            </section>
-
-            <section id="password" class="hide clearfix">
-                <fieldset>
-                    <legend>Locked with password</legend>
-                    <div class="clearfix">
-                        <p>
-                            Sorry, Under development now!
-                        </p>
-                    </div>
-                </fieldset>
-            </section>
-
-            <section id="changelog" class="hide clearfix">
-                <fieldset>
-                    <legend i18n="changelog">--</legend>
+                            <h4><span i18n="input">--</span>:</h4>
+                            <div class="clearfix">
+                                <textarea id="blocked_text" style="width: 98%; height: 10em;"></textarea>
+                            </div>
+                        </fieldset>
+                    </section>
+        
+                    <section id="message" class="hide clearfix">
+                        <fieldset>
+                            <legend i18n="title_when_blocked">--</legend>
+                            <div class="clearfix">
+                                <input type="text" id="blocked_title" style="width: 98%; " value="" />
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend i18n="message_when_blocked">--</legend>
+                            <div class="clearfix">
+                                <textarea id="blocked_message" style="width: 98%; height: 10em;"></textarea>
+                            </div>
+                        </fieldset>
+                    </section>
+        
+                    <section id="function" class="hide clearfix">
+                        <fieldset>
+                            <legend i18n="basic_settings">--</legend>
+                            <div class="clearfix">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" id="blocked_disabled" />
+                                        <span i18n="blocked_disabled">--</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" id="time_limit_disabled" />
+                                        <span i18n="time_limit_disabled">--</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" id="option_page_link_disabled" />
+                                        <span i18n="option_page_link_disabled">--</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" id="popup_page_control_disabled" />
+                                        <span i18n="popup_page_control_disabled">--</span>
+                                    </label>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </section>
+        
+                    <section id="password" class="hide clearfix">
+                        <fieldset>
+                            <legend>Locked with password</legend>
+                            <div class="clearfix">
+                                <p>
+                                    Sorry, Under development now!
+                                </p>
+                            </div>
+                        </fieldset>
+                    </section>
+        
+                    <section id="changelog" class="hide clearfix">
+                        <fieldset>
+                            <legend i18n="changelog">--</legend>
 <pre>
 - 0.1.8
   - Translated to Slovenian.
@@ -179,139 +179,127 @@ twitter.com 1000-1259
 - 0.0.1
   - started development.
 </pre>
-                </fieldset>
+                        </fieldset>
+                    </section>
+        
+                    <section id="about" class="hide clearfix">
+                        <fieldset>
+                            <legend i18n="about_this_extension">About Website Blocker</legend>
+                            <div class="clearfix">
+                                <p>
+                                    <button class="document submit">Chrome Web Store</button>
+                                    <button i18n="facebook_page" class="facebook_page submit">--</button>
+                                    <button i18n="please_support_me" class="please_support_me submit">--</button>
+                                    <button i18n="bug_report" class="bug_report submit">--</button>
+                                </p>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend i18n="special_thanks">--</legend>
+                            <div class="clearfix">
+                                <p>
+                                    <a href="https://www.facebook.com/profile.php?id=100003095811907" target="_blank">Mrein Stain</a>
+                                    translated to Slovenian. Thank you very much!
+                                </p>
+                                <p>
+                                    <a href="https://twitter.com/aleattorium" target="_blank">Lucas, Jean</a>
+                                    translated to Portuguese. Thank you very much!
+                                </p>
+                                <p>
+                                    <a href="https://www.facebook.com/profile.php?id=100001646680506" target="_blank">Lu Chenqiang</a>
+                                    translated to Chinese. Thank you very much!
+                                </p>
+                                <p>
+                                    <a href="http://www.facebook.com/matteo.pendezzini" target="_blank">Matteo Pendezzini</a>
+                                    translated to Italian. Thank you very much!
+                                </p>
+                                <p>
+                                    <a href="http://twitter.com/JBantha" target="_blank">JBantha</a>
+                                    translated to Spanish. Thank you very much!
+                                </p>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend i18n="other_extensions">Other Products</legend>
+                            <div class="clearfix">
+                                <p>
+                                    Google Chrome Extension:
+                                    <a href="https://chrome.google.com/webstore/detail/gjlmabfkhojibpdhdcdkagiplbmkcgfd" target="_blank">JAPAN - Power Usage Checker</a>
+                                </p>
+                                <p>
+                                    Google Chrome Extension: 
+                                    <a href="https://chrome.google.com/webstore/detail/eiingmhoibigiplopcmepmahoihedjnk" target="_blank">Backyard</a>
+                                </p>
+                                <p>
+                                    Web Service: 
+                                    <a href="http://everevo.com" target="_blank">everevo</a>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </section>
+        
+                </article>
             </section>
-
-            <section id="about" class="hide clearfix">
-                <fieldset>
-                    <legend i18n="about_this_extension">About Website Blocker</legend>
+        
+            <nav id="common-bar" class="button-zone clearfix">
+                <div class="fl">
+                    <button i18n="tell_a_friend" class="tell_a_friend wb-button">--</button>
+                    <button i18n="facebook_page" class="facebook_page wb-button">--</button>
+                    <button i18n="please_support_me" class="please_support_me wb-button">--</button>
+                    <button i18n="bug_report" class="bug_report wb-button">--</button>
+                </div>
+                <div class="fr">
+                    <button i18n="save" class="save submit">--</button>
+                    <button i18n="save_and_close" class="save_and_close submit">--</button>
+                    <button i18n="back" class="back submit">--</button>
+                </div>
+            </nav>
+        
+            <footer id="footer" class="clearfix">
+                <div class="inner clearfix">
                     <div class="clearfix">
-                        <p>
-                            <button class="document submit">Chrome Web Store</button>
-                            <button i18n="facebook_page" class="facebook_page submit">--</button>
-                            <button i18n="please_support_me" class="please_support_me submit">--</button>
-                            <button i18n="bug_report" class="bug_report submit">--</button>
-                        </p>
+                        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fwebsite.blocker&amp;layout=standard&amp;show_faces=true&amp;width=600&amp;action=like&amp;font=arial&amp;colorscheme=dark&amp;height=80"
+                             scrolling="no"
+                             frameborder="0"
+                             style="border:none; overflow:hidden; width:600px; height:80px;"
+                             allowTransparency="true"></iframe>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend i18n="special_thanks">--</legend>
                     <div class="clearfix">
-                        <p>
-                            <a href="https://www.facebook.com/profile.php?id=100003095811907" target="_blank">Mrein Stain</a>
-                            translated to Slovenian. Thank you very much!
-                        </p>
-                        <p>
-                            <a href="https://twitter.com/aleattorium" target="_blank">Lucas, Jean</a>
-                            translated to Portuguese. Thank you very much!
-                        </p>
-                        <p>
-                            <a href="https://www.facebook.com/profile.php?id=100001646680506" target="_blank">Lu Chenqiang</a>
-                            translated to Chinese. Thank you very much!
-                        </p>
-                        <p>
-                            <a href="http://www.facebook.com/matteo.pendezzini" target="_blank">Matteo Pendezzini</a>
-                            translated to Italian. Thank you very much!
-                        </p>
-                        <p>
-                            <a href="http://twitter.com/JBantha" target="_blank">JBantha</a>
-                            translated to Spanish. Thank you very much!
-                        </p>
+                        <g:plusone size="medium"
+                            href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
+        
+                        <a href="http://twitter.com/share"
+                           class="twitter-share-button"
+                           data-text="Website Blocker is useful when you want to concentrate on work."
+                           data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
+                           data-count="horizontal">Tweet</a>
+        
+                        <!--
+                        <a data-hatena-bookmark-layout="standard"
+                           data-hatena-bookmark-title="Website Blocker"
+                           target="_blank" class="hatena-bookmark-button"
+                           href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
+                           <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
+                        -->
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend i18n="other_extensions">Other Products</legend>
                     <div class="clearfix">
-                        <p>
-                            Google Chrome Extension:
-                            <a href="https://chrome.google.com/webstore/detail/gjlmabfkhojibpdhdcdkagiplbmkcgfd" target="_blank">JAPAN - Power Usage Checker</a>
-                        </p>
-                        <p>
-                            Google Chrome Extension: 
-                            <a href="https://chrome.google.com/webstore/detail/eiingmhoibigiplopcmepmahoihedjnk" target="_blank">Backyard</a>
-                        </p>
-                        <p>
-                            Web Service: 
-                            <a href="http://everevo.com" target="_blank">everevo</a>
-                        </p>
+                        <small class="copyright">
+                            Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.
+                        </small>
                     </div>
-                </fieldset>
-            </section>
-
-        </article>
-    </section>
-
-    <nav id="common-bar" class="button-zone clearfix">
-        <div class="fl">
-            <button i18n="tell_a_friend" class="tell_a_friend wb-button">--</button>
-            <button i18n="facebook_page" class="facebook_page wb-button">--</button>
-            <button i18n="please_support_me" class="please_support_me wb-button">--</button>
-            <button i18n="bug_report" class="bug_report wb-button">--</button>
-        </div>
-        <div class="fr">
-            <button i18n="save" class="save submit">--</button>
-            <button i18n="save_and_close" class="save_and_close submit">--</button>
-            <button i18n="back" class="back submit">--</button>
-        </div>
-    </nav>
-
-    <footer id="footer" class="clearfix">
-        <div class="inner clearfix">
-            <div class="clearfix">
-                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fwebsite.blocker&amp;layout=standard&amp;show_faces=true&amp;width=600&amp;action=like&amp;font=arial&amp;colorscheme=dark&amp;height=80"
-                     scrolling="no"
-                     frameborder="0"
-                     style="border:none; overflow:hidden; width:600px; height:80px;"
-                     allowTransparency="true"></iframe>
-            </div>
-            <div class="clearfix">
-                <g:plusone size="medium"
-                    href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone>
-
-                <a href="http://twitter.com/share"
-                   class="twitter-share-button"
-                   data-text="Website Blocker is useful when you want to concentrate on work."
-                   data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
-                   data-count="horizontal">Tweet</a>
-
-                <a data-hatena-bookmark-layout="standard"
-                   data-hatena-bookmark-title="Website Blocker"
-                   target="_blank" class="hatena-bookmark-button"
-                   href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
-                    <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
-            </div>
-            <div class="clearfix">
-                <small class="copyright">
-                    Copyright &copy; <a href="http://tetsuwo.tumblr.com/" target="_blank">Tetsuwo OISHI</a>, All Rights Reserved.
-                </small>
-            </div>
-        </div>
-    </footer>
-
-    <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="hosted_button_id" value="MVTPVJW3QACLW" />
-    </form>
-
-</div><!-- /container -->
-
-<script>
-
-    $(window).load(function() {
-        Controller.optionsPage();
-        i18n(function(){ $('#container').show(); });
-
-//        Controller.addBlockData('www.google.com', ['0000-1200']);
-    });
-
-    $(window).unload(function() {
-//        Controller.save();
-    });
-
-</script>
-<script src="http://apis.google.com/js/plusone.js" async></script>
-<script src="http://platform.twitter.com/widgets.js" async></script>
-<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
-
-</body>
+                </div>
+            </footer>
+        
+            <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="MVTPVJW3QACLW" />
+            </form>
+        
+        </div><!-- /container -->
+        
+        <script src="js/page-options.js"></script>
+        <script src="https://apis.google.com/js/plusone.js" async></script>
+        <script src="https://platform.twitter.com/widgets.js" async></script>
+        <!--<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>-->
+    </body>
 </html>
