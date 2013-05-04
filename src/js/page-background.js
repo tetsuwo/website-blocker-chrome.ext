@@ -5,14 +5,12 @@ var WB = new WebsiteBlocker();
 chrome.tabs.onCreated.addListener(function(tab) {
 //    console.log('tabs.onCreated:');
 //    console.log(tab);
-
     WB.run(tab);
 });
 
 chrome.tabs.onActivated.addListener(function(info) {
 //    console.log('tabs.onActivated:');
 //    console.log(info);
-
     chrome.tabs.get(info.tabId, function(tab) {
         WB.run(tab);
     });
@@ -31,7 +29,6 @@ chrome.tabs.onActivated.addListener(function(info) {
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 //    console.log('tabs.onUpdated:');
 //    console.log(tab);
-
     if (changeInfo.status === 'loading') {
         WB.run(tab);
         return;
@@ -44,10 +41,8 @@ function getUrl(callback) {
             afterFunction = callback;
             try {
                 chrome.tabs.executeScript(null, { file: 'js/injection.js' });
-            }
-            catch (e) {}
-        }
-        else {
+            } catch (e) {}
+        } else {
             callback(null);
         }
     });

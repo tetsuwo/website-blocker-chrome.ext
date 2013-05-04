@@ -1,3 +1,4 @@
+
 /**
  * i18n [Internationalization]
  *
@@ -47,4 +48,5 @@ window.ls = new function() {
 	this.rm = function(a) {
 		window.localStorage.removeItem(a);
 	};
-}
+};
+
