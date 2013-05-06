@@ -12,7 +12,7 @@ $(window).load(function() {
     i18n(function(){
         $('#blocked-container').show();
         if (ls.get('flag-password_function')) {
-            $('#password-target').val(chrome.extension.getBackgroundPage().WB.generateRandomString(48, false, true, true));
+            $('#password-target').val(chrome.extension.getBackgroundPage().WB.generateRandomString(36, false, true, true));
             $('#password').show();
         }
         resizer();

@@ -130,8 +130,6 @@ Controller = new function() {
         var line = domain + ' ' + times.join(',');
         var text = WB.toString(ls.get('blocked_list')) + '\n' + line;
         var save = WB.toFormat(text);
-//        save.push(line);
-//        console.log(save);
         ls.set('blocked_list', save);
     };
 
@@ -161,5 +159,17 @@ Controller = new function() {
         applyFont();
         buildPage();
         applyEvent();
+
+        $('#password-target, #password-typing').on('copy', function() {
+            return false;
+        });
+
+        $('#password-target, #password-typing').on('contextmenu', function() {
+            return false;
+        });
+
+        $('#password-target, #password-typing').on('paste', function() {
+            return false;
+        });
     };
 };

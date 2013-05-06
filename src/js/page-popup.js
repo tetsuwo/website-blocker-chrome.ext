@@ -5,10 +5,8 @@ var is_bg_executed = false;
 chrome.extension.getBackgroundPage().getUrl(function(tab) {
     is_bg_executed = true;
     $('#popup-body article').hide();
-//    console.log(tab);
 
     if (tab && tab.url) {
-//        console.log(WB.checkUrl(null, tab.url.href, true));
         if (WB.checkUrl(null, tab.url.href, true)) {
             $('#block-already').show();
         }

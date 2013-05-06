@@ -84,3 +84,16 @@ h1 {
 		}
 
 
+.passphrase {
+    width: 370px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+}
+
+#password-target {
+    -webkit-user-select: none;
+    user-select: none;
+}
