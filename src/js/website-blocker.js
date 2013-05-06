@@ -153,7 +153,7 @@ function WebsiteBlocker() {
 
         if (this.blockedList) {
             currentTime = this.makeTime();
-            this.disabledTimeLimit = ls.get('time_limit_disabled');
+            this.disabledTimeLimit = ls.get('flag-timelimit_function');
 
             for (var key in this.blockedList) {
                 this.logger(this.blockedList[key].regexp);
@@ -172,15 +172,15 @@ function WebsiteBlocker() {
 
 
     /**
-     * 乱数生成関数
+     * Generate Random Sring
      *
      * @author acty
      * @editor 2007/10/19 TETSUWO
      *         2013/05/06 Tetsuwo OISHI, migration to JavaScript
-     * @param integer 桁
-     * @param boolean 数字
-     * @param boolean 英字小文字
-     * @param boolean 英字大文字
+     * @param digit {integer} digit
+     * @param number {boolean} use number
+     * @param alphabetLower {boolean} use lowercase alphabet
+     * @param alphabetUpper {boolean} use uppercase alphabet
      */
     WB.prototype.generateRandomString = function(digit, number, alphabetLower, alphabetUpper) {
         var pool = '', code = '';
@@ -197,13 +197,13 @@ function WebsiteBlocker() {
 
 
     /**
-     * パスフレーズの整合性チェック
+     * Check Passphrase
      *
-     * @param string Source String
-     * @param string Dest String
+     * @param src {string} Source String
+     * @param desc {string} Dest String
      */
-    WB.prototype.matchPassphrase = function(source, destination) {
-        return source === destination;
+    WB.prototype.matchPassphrase = function(src, dest) {
+        return src === dest;
     };
 
 
@@ -227,7 +227,7 @@ function WebsiteBlocker() {
     WB.prototype.run = function(tab) {
         this.logger(tab);
 
-        if (ls.get('blocked_disabled')) {
+        if (ls.get('flag-block_function')) {
             return false;
         }
 
