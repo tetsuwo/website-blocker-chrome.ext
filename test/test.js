@@ -178,4 +178,27 @@ describe('WebsiteBlocker', function() {
 
         expect(data).toEqual(text);
     });
+
+    it('generateRandomString', function() {
+        var wb = new WebsiteBlocker();
+        var passphrase = '';
+
+        passphrase = wb.generateRandomString(12, true);
+        expect(passphrase.length).toEqual(12);
+
+        passphrase = wb.generateRandomString(36, true);
+        expect(passphrase.length).toEqual(36);
+
+        passphrase = wb.generateRandomString(12, true, true);
+        expect(passphrase.length).toEqual(12);
+
+        passphrase = wb.generateRandomString(36, true, true);
+        expect(passphrase.length).toEqual(36);
+
+        passphrase = wb.generateRandomString(12, true, true, true);
+        expect(passphrase.length).toEqual(12);
+
+        passphrase = wb.generateRandomString(36, true, true, true);
+        expect(passphrase.length).toEqual(36);
+    });
 });
