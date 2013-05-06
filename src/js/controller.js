@@ -8,14 +8,17 @@ Controller = new function() {
             $('.back').hide();
         }
 
-        $('#blocked_disabled').attr('checked', ls.get('blocked_disabled'));
-        $('#time_limit_disabled').attr('checked', ls.get('time_limit_disabled'));
-        $('#option_page_link_disabled').attr('checked', ls.get('option_page_link_disabled'));
-        $('#popup_page_control_disabled').attr('checked', ls.get('popup_page_control_disabled'));
-
-        $('#blocked_text').val(ls.get('blocked_list') ? WB.toString(ls.get('blocked_list')) : '');
-        $('#blocked_title').val(ls.i18n('blocked_title'));
+        // for text
+        $('#blocked_text'   ).val(ls.get('blocked_list') ? WB.toString(ls.get('blocked_list')) : '');
+        $('#blocked_title'  ).val(ls.i18n('blocked_title'));
         $('#blocked_message').val(ls.i18n('blocked_message'));
+
+        // for flag
+        $('#flag-block_function'    ).prop('checked', ls.get('flag-block_function'));
+        $('#flag-timelimit_function').prop('checked', ls.get('flag-timelimit_function'));
+        $('#flag-option_page_link'  ).prop('checked', ls.get('flag-option_page_link'));
+        $('#flag-popup_page_control').prop('checked', ls.get('flag-popup_page_control'));
+        $('#flag-password_function' ).prop('checked', ls.get('flag-password_function'));
     }
 
     function applyEvent() {
@@ -24,6 +27,7 @@ Controller = new function() {
             $('#switching nav a').removeClass('F');
             $('#' + $(this).attr('data-id')).show();
             $(this).addClass('F');
+            buildPage();
         });
 
         $('.save_and_close').click(function() {
@@ -67,7 +71,6 @@ Controller = new function() {
         });
 
         $('.bug_report').click(function() {
-//            check2go('http://twitter.com/?status=@website_blocker%20%23bug%20%23chrome%20');
             check2go('https://github.com/tetsuwo/website-blocker-chrome.ext/issues');
         });
 
@@ -85,16 +88,15 @@ Controller = new function() {
     }
 
     this.save = function() {
-        with (window.localStorage) {
-            blocked_text                = '';
-            blocked_list                = '';
-            blocked_title               = '';
-            blocked_message             = '';
-            blocked_disabled            = false;
-            time_limit_disabled         = false;
-            option_page_link_disabled   = false;
-            popup_page_control_disabled = false;
-        }
+        //// default
+        //ls.set('blocked_title',   '');
+        //ls.set('blocked_message', '');
+        //ls.set('blocked_list',    '');
+        //ls.set('flag-block_function',      false);
+        //ls.set('flag-timelimit_function',  false);
+        //ls.set('flag-option_page_link',    false);
+        //ls.set('flag-popup_page_control',  false);
+        //ls.set('flag-password_function',   false);
 
         if ($('#blocked_text').val()) {
             var BLOCKED = WB.toFormat($('#blocked_text').val());
@@ -102,12 +104,16 @@ Controller = new function() {
             $('#blocked_text').val(WB.toString(BLOCKED));
         }
 
-        ls.set('blocked_title', $('#blocked_title').val());
+        // for text
+        ls.set('blocked_title',   $('#blocked_title').val());
         ls.set('blocked_message', $('#blocked_message').val());
-        ls.set('blocked_disabled', $('#blocked_disabled:checked').val() === 'on');
-        ls.set('time_limit_disabled', $('#time_limit_disabled:checked').val() === 'on');
-        ls.set('option_page_link_disabled', $('#option_page_link_disabled:checked').val() === 'on');
-        ls.set('popup_page_control_disabled', $('#popup_page_control_disabled:checked').val() === 'on');
+
+        // for flag
+        ls.set('flag-block_function',      $('#flag-block_function:checked').val()     === 'on');
+        ls.set('flag-timelimit_function',  $('#flag-timelimit_function:checked').val() === 'on');
+        ls.set('flag-option_page_link',    $('#flag-option_page_link:checked').val()   === 'on');
+        ls.set('flag-popup_page_control',  $('#flag-popup_page_control:checked').val() === 'on');
+        ls.set('flag-password_function',   $('#flag-password_function:checked').val()  === 'on');
 
         return true;
     };
@@ -125,7 +131,6 @@ Controller = new function() {
         var text = WB.toString(ls.get('blocked_list')) + '\n' + line;
         var save = WB.toFormat(text);
 //        save.push(line);
-//        console.log(save);
 //        console.log(save);
         ls.set('blocked_list', save);
     };
