@@ -7,7 +7,7 @@
 // Set Environment Vars
 MIGRATION_VERSION = 1;
 STORAGE_NAMESPACE = '__wb_' + MIGRATION_VERSION;
-db.change(STORAGE_NAMESPACE);
+//db.change(STORAGE_NAMESPACE);
 
 // Google Analytics
 var _gaq = _gaq || [];
@@ -29,7 +29,7 @@ function _trace(category, action, label) {
     } catch (e) {;}
 }
 
-_trace('SETTING', 'MIGRATION_VERSION', MIGRATION_VERSION);
+//_trace('SETTING', 'MIGRATION_VERSION', MIGRATION_VERSION);
 
 //if (!CommonDB.get('migration_version')) {
 //    console.log('low migration');
