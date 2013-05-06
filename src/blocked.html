@@ -5,6 +5,7 @@
         <title>Website Blocker</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/form.css" />
         <link rel="stylesheet" href="css/blocked.css" />
         <script src="lib/jquery-1.7.2.min.js"></script>
         <script src="lib/ChromeDB.js"></script>
@@ -24,6 +25,20 @@
             <div class="inner" style="margin-bottom: 1em;">
                 <div class="blocked-body"></div>
                 <div class="blocked-url"></div>
+            </div>
+        
+            <div id="password" class="inner" style="margin-bottom: 1em; display: none;">
+                <div>
+                    <input type="button" class="deko" value="Password" style="width: 100px; display: inline-block;" onCopy="return false" />
+                    <input type="text" id="password-target" value="" readonly="true" style="width: 350px; display: inline-block; font-size: 13px;" />
+                </div>
+                <div>
+                    <input type="button" class="deko" value="Typing" style="width: 100px; display: inline-block;" />
+                    <input type="text" id="password-typing" value="" style="width: 350px; display: inline-block; font-size: 13px;" />
+                </div>
+                <div>
+                    <input type="button" class="submit" id="password-check" value="Watch this website" style="margin-left: 105px; width: 363px;"/>
+                </div>
             </div>
         
             <div class="inner">

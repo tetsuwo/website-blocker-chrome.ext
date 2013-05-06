@@ -11,10 +11,11 @@ $(window).load(function() {
     Controller.blockedPage();
     i18n(function(){
         $('#blocked-container').show();
-        resizer();
         if (ls.get('flag-password_function')) {
-            console.log('password lock');
+            $('#password-target').val(chrome.extension.getBackgroundPage().WB.generateRandomString(48, false, true, true));
+            $('#password').show();
         }
+        resizer();
     });
 });
 
@@ -27,6 +28,11 @@ $('.go-option').css('display', ls.get('flag-option_page_link') ? 'none' : 'inlin
 
 $('.go-option a').click(function() {
     goOptions(encodeURIComponent(url));
+});
+
+$('#password-check').click(function() {
+    var clear = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
+    console.log(clear);
 });
 
 window.onresize = function() {
