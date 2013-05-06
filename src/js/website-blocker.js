@@ -13,7 +13,7 @@ function WebsiteBlocker() {
     this.date = null;
     this.time = null;
     this.debug = false; // debug mode
-    this.disabledTimeLimit = false; // on/off for time limit function
+    this.use_timelimit = true; // on/off for time limit function
 }
 
 (function(WB, undef) {
@@ -43,7 +43,7 @@ function WebsiteBlocker() {
         this.logger(pos);
 
         if (5 < pos) {
-            if (this.disabledTimeLimit) {
+            if (!this.use_timelimit) {
                 return true;
             }
 
@@ -153,7 +153,7 @@ function WebsiteBlocker() {
 
         if (this.blockedList) {
             currentTime = this.makeTime();
-            this.disabledTimeLimit = ls.get('flag-timelimit_function');
+            this.use_timelimit = ls.get('flag-timelimit_function');
 
             for (var key in this.blockedList) {
                 this.logger(this.blockedList[key].regexp);
@@ -227,7 +227,7 @@ function WebsiteBlocker() {
     WB.prototype.run = function(tab) {
         this.logger(tab);
 
-        if (ls.get('flag-block_function')) {
+        if (!ls.get('flag-block_function')) {
             return false;
         }
 

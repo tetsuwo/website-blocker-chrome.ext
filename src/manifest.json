@@ -25,5 +25,5 @@
   "version": "0.2.0",
   "manifest_version": 2,
   "content_security_policy": 
-    "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com; frame-src https://plusone.google.com https://www.facebook.com https://platform.twitter.com; object-src 'self'"
+    "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com https://connect.facebook.net; frame-src https://plusone.google.com https://www.facebook.com https://platform.twitter.com https://connect.facebook.net; object-src 'self'"
 }
