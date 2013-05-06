@@ -24,9 +24,9 @@ window.i18n = function(callback) {
             data.innerHTML = msg;
         }
     }
-	if (typeof callback === 'function') {
-		callback();
-	}
+    if (typeof callback === 'function') {
+        callback();
+    }
 };
 
 /**
@@ -35,18 +35,18 @@ window.i18n = function(callback) {
  * @author Tetsuwo OISHI
  */
 window.ls = new function() {
-	this.set = function(a, b) {
-		window.localStorage.setItem(a, JSON.stringify(b));
-	};
-	this.get = function(a) {
-//		console.log(a + ' >> ' + window.localStorage[a]);
-		return window.localStorage[a] ? JSON.parse(window.localStorage[a]) : false;
-	};
-	this.i18n = function(a) {
+    this.set = function(a, b) {
+        window.localStorage.setItem(a, JSON.stringify(b));
+    };
+    this.get = function(a) {
+//        console.log(a + ' >> ' + window.localStorage[a]);
+        return window.localStorage[a] ? JSON.parse(window.localStorage[a]) : false;
+    };
+    this.i18n = function(a) {
        return ls.get(a) || chrome.i18n.getMessage(a);
-	};
-	this.rm = function(a) {
-		window.localStorage.removeItem(a);
-	};
+    };
+    this.rm = function(a) {
+        window.localStorage.removeItem(a);
+    };
 };
 
