@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/form.css" />
         <link rel="stylesheet" href="css/blocked.css" />
-        <script src="lib/jquery-1.7.2.min.js"></script>
-        <script src="lib/ChromeDB.js"></script>
+        <script src="lib/jquery-2.0.0.min.js"></script>
         <script src="js/utils.js"></script>
         <script src="js/common.js"></script>
         <script src="js/functions.js"></script>
@@ -21,26 +20,23 @@
             <div class="blocked-header">
                 <h1>This page is blocked.</h1>
             </div>
-        
             <div class="inner" style="margin-bottom: 1em;">
                 <div class="blocked-body"></div>
                 <div class="blocked-url"></div>
             </div>
-        
             <div id="password" class="inner" style="margin-bottom: 1em; display: none;">
                 <div>
-                    <input type="button" class="deko" value="Password" style="width: 80px; display: inline-block;" />
+                    <input type="button" class="label" value="Password" style="width: 80px; display: inline-block;" />
                     <input type="text" id="password-target" class="passphrase" value="" readonly="true" />
                 </div>
                 <div>
-                    <input type="button" class="deko" value="Typing" style="width: 80px; display: inline-block;" />
+                    <input type="button" class="label" value="Typing" style="width: 80px; display: inline-block;" />
                     <input type="text" id="password-typing" class="passphrase" value="" />
                 </div>
                 <div>
-                    <input type="button" class="submit" id="password-check" value="Watch this website" style="margin-left: 85px; width: 383px;"/>
+                    <input type="button" class="validate" id="password-check" value="Watch this website" style="margin-left: 85px; width: 385px;"/>
                 </div>
             </div>
-        
             <div class="inner">
                 <div class="clearfix" style="margin-bottom: 1em;">
                     <ul class="viral-list">
@@ -49,12 +45,9 @@
                                data-text="Website Blocker is useful when you want to concentrate on work."
                                data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
                                data-count="horizontal">Tweet</a></li>
-        
                         <li><g:plusone size="medium"
                             href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone></li>
-        
                         <!--<li><fb:share-button href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" type="button"></fb:share-button></li>-->
-                        
                         <li><button i18n="with_email" class="with_email wb-button" style="font-size: 70%;">with E-Mail</button></li>
                     </ul>
                 </div>
