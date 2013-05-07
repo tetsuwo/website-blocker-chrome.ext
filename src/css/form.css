@@ -90,9 +90,24 @@ fieldset p:last-child {
     margin-bottom: 0;
 }
 
-input.deko {
+input.label {
     background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#000));
     box-shadow: 0 0 .75em rgba(0, 0, 0, .6);
 }
+input.validate {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0a0), to(#080));
+    box-shadow: 0 0 .75em rgba(0, 0, 0, .6);
+    text-shadow: 0 1px 1px #300;
+    font-size: 100%;
+}
+    input.validate:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#0b0), to(#090));
+    }
+    input.validate:active {
+        background: -webkit-gradient(linear, left top, left bottom, from(#070), to(#080));
+        /*background: -webkit-gradient(linear, left top, left bottom, from(#070), to(#080));*/
+        text-shadow: 0 -1px -1px #300;
+        top: 1px;
+    }
 
 
