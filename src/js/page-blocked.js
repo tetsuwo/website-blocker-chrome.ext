@@ -24,7 +24,7 @@ $('.blocked-header h1').html(getLSi18n('blocked_title'));
 $('.blocked-body').html(getLSi18n('blocked_message'));
 $('.blocked-url').html('<a class="submit url" href="' + url + '">' + url + '</a>');
 
-$('.go-option').css('display', ls.get('flag-option_page_link') ? 'none' : 'inline-block');
+$('.go-option').css('display', ls.get('flag-option_page_link') ? 'inline-block' : 'none');
 
 $('.go-option a').click(function() {
     goOptions(encodeURIComponent(url));
@@ -32,7 +32,9 @@ $('.go-option a').click(function() {
 
 $('#password-check').click(function() {
     var clear = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
-    console.log(clear);
+    chrome.extension.getBackgroundPage().WB.setTimeLimit(600); // 15 min.
+    window.location.href = url;
+    //console.log(clear);
 });
 
 window.onresize = function() {

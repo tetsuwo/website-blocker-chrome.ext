@@ -13,7 +13,8 @@ function WebsiteBlocker() {
     this.date = null;
     this.time = null;
     this.debug = false; // debug mode
-    this.use_timelimit = true; // on/off for time limit function
+    this.useTimeGroup = true; // on/off for time limit function
+    this.useTimeLimit = false;
 }
 
 (function(WB, undef) {
@@ -43,7 +44,11 @@ function WebsiteBlocker() {
         this.logger(pos);
 
         if (5 < pos) {
-            if (!this.use_timelimit) {
+            if (this.useTimeLimit) {
+                return false;
+            }
+
+            if (!this.useTimeGroup) {
                 return true;
             }
 
@@ -153,7 +158,7 @@ function WebsiteBlocker() {
 
         if (this.blockedList) {
             currentTime = this.makeTime();
-            this.use_timelimit = ls.get('flag-timelimit_function');
+            this.useTimeGroup = ls.get('flag-timegroup_function');
 
             for (var key in this.blockedList) {
                 this.logger(this.blockedList[key].regexp);
@@ -204,6 +209,20 @@ function WebsiteBlocker() {
      */
     WB.prototype.matchPassphrase = function(src, dest) {
         return src === dest;
+    };
+
+
+    /**
+     * Set Time Limit
+     *
+     * @param sec {integer} seconds
+     */
+    WB.prototype.setTimeLimit = function(sec) {
+        var that = this;
+        that.useTimeLimit = true;
+        window.setTimeout(function() {
+            that.useTimeLimit = false;
+        }, sec * 1000);
     };
 
 

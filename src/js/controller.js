@@ -15,7 +15,7 @@ Controller = new function() {
 
         // for flag
         $('#flag-block_function'    ).prop('checked', ls.get('flag-block_function'));
-        $('#flag-timelimit_function').prop('checked', ls.get('flag-timelimit_function'));
+        $('#flag-timegroup_function').prop('checked', ls.get('flag-timegroup_function'));
         $('#flag-option_page_link'  ).prop('checked', ls.get('flag-option_page_link'));
         $('#flag-popup_page_control').prop('checked', ls.get('flag-popup_page_control'));
         $('#flag-password_function' ).prop('checked', ls.get('flag-password_function'));
@@ -110,7 +110,7 @@ Controller = new function() {
 
         // for flag
         ls.set('flag-block_function',      $('#flag-block_function:checked').val()     === 'on');
-        ls.set('flag-timelimit_function',  $('#flag-timelimit_function:checked').val() === 'on');
+        ls.set('flag-timegroup_function',  $('#flag-timegroup_function:checked').val() === 'on');
         ls.set('flag-option_page_link',    $('#flag-option_page_link:checked').val()   === 'on');
         ls.set('flag-popup_page_control',  $('#flag-popup_page_control:checked').val() === 'on');
         ls.set('flag-password_function',   $('#flag-password_function:checked').val()  === 'on');
@@ -160,7 +160,7 @@ Controller = new function() {
         buildPage();
         applyEvent();
 
-        $('#password-target, #password-typing').on('copy', function() {
+        $('#password-target, #password-typing').on('copy', function(e) {
             return false;
         });
 
