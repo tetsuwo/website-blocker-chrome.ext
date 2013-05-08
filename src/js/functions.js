@@ -3,12 +3,12 @@ function DOMId(selector) {
     return document.querySelector(selector);
 }
 
-// オプションへ
+// go option
 function goOptions(url, blank) {
     check2go(chrome.extension.getURL('options.html?url='+url), blank || true);
 }
 
-// タブをチェック
+// check tab
 function check2go(href, blank) {
     chrome.tabs.getAllInWindow(null, function(tabs) {
         for (var i = 0; i < tabs.length; i++) {
@@ -39,37 +39,36 @@ function isNotUndefined(a) {
     return (a !== 'undefined' && typeof a !== 'undefined');
 }
 
-// ローカルストレージにない場合はシステムメッセージを使用するためのエイリアス関数
-function getLSi18n(a)
-{
-    return haveValue(localStorage[a]) ? JSON.parse(localStorage[a]) : chrome.i18n.getMessage(a) ;
+// localStorage > i18n message
+function getLSi18n(a) {
+    return haveValue(localStorage[a]) ? JSON.parse(localStorage[a]) : chrome.i18n.getMessage(a);
 }
 
-// システムメッセージのエイリアス関数
-function getMessage(a)
-{
+// i18n message
+function getMessage(a) {
     return chrome.i18n.getMessage(a) ? chrome.i18n.getMessage(a) : false ;
 }
 
-// ローカルストレージのエイリアス関数
-function getStorage(a)
-{
+// localStorage
+function getStorage(a) {
       console.log('a => ' + a);
       console.log('localStorage[a] => ' + localStorage[a]);
       console.log('isNotUndefined(localStorage[a]) ? JSON.parse(localStorage[a]) : false : '+ (isNotUndefined(localStorage[a]) ? JSON.parse(localStorage[a]) : false));
     return haveValue(localStorage[a]) ? JSON.parse(localStorage[a]) : false ;
 }
 
-// ローカルストレージのエイリアス関数
-function getStorageAsBoolean(a)
-{
+/**
+ * localStorage
+ */
+function getStorageAsBoolean(a) {
     var tmp = localStorage[a];
     return tmp && (tmp !== 'false' || tmp !== 'undefined');
 }
 
-// 戻り先URL
-function getBeforeLocation()
-{
+/**
+ * Back to URL
+ */
+function getBeforeLocation() {
     return location.search != '' ? decodeURIComponent(location.search.replace('?url=', '')) : false;
 }
 
@@ -78,8 +77,7 @@ function getBeforeLocation()
  * @param A
  * @param B
  */
-function importStorageKeyName(A, B)
-{
+function importStorageKeyName(A, B) {
     if (localStorage[A] === undefined) {
         return;
     }
@@ -88,6 +86,6 @@ function importStorageKeyName(A, B)
 }
 
 function postUrl(url) {
-	$('#current-url').text(url);
+    $('#current-url').text(url);
 }
 
