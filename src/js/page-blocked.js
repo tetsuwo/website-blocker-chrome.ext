@@ -31,10 +31,14 @@ $('.go-option a').click(function() {
 });
 
 $('#password-check').click(function() {
-    var clear = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
-    chrome.extension.getBackgroundPage().WB.setTimeLimit(600); // 15 min.
-    window.location.href = url;
-    //console.log(clear);
+    var valid = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
+    console.log($('#password-target').val(), $('#password-typing').val());
+    console.log(valid);
+    return false;
+    if (valid) {
+        chrome.extension.getBackgroundPage().WB.setTimeLimit(600); // 15 min.
+        window.location.href = url;
+    }
 });
 
 window.onresize = function() {
