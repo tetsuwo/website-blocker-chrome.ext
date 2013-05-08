@@ -10,7 +10,7 @@ body {
 }
 
 #blocked-container {
-  width: 500px;
+  width: 640px;
   border-radius: 5px;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .7);
   padding: 1em;
@@ -85,17 +85,24 @@ h1 {
 
 #password {
 }
-
-.passphrase {
-  width: 370px;
-  display: inline-block;
-  font-size: 13px;
-  font-weight: normal;
-  font-family: 'Times New Roman';
-  letter-spacing: 1px;
-}
-#password-target {
-  -webkit-user-select: none;
-  user-select: none;
-}
+  .password-label {
+    width: 90px;
+    display: inline-block;
+  }
+  .password-input {
+    width: 500px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Times New Roman';
+    letter-spacing: 1px;
+  }
+  .password-submit {
+    margin-left: 95px;
+    width: 515px;
+  }
+  #password-target {
+    -webkit-user-select: none;
+    user-select: none;
+  }
 

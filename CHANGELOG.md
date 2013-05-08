@@ -3,12 +3,13 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.2.0
   - Add a new function "Password Protection".
 - 0.1.9 - 0.1.9.1
   - Modified User Interface.
   - Modified Block Rules.
-  - Added a new page "Tell a friend"
-  - Bug-Fixed of "Tell a friend" page
+  - Added a new page "Tell a friend".
+  - Bug-Fixed of "Tell a friend" page.
 - 0.1.8 - 0.1.8.1
   - Translated to Slovenian.
     Special Thanks: [Mrein Stain](https://www.facebook.com/profile.php?id=100003095811907)

@@ -12,7 +12,7 @@ $(window).load(function() {
     i18n(function(){
         $('#blocked-container').show();
         if (ls.get('flag-password_function')) {
-            $('#password-target').val(chrome.extension.getBackgroundPage().WB.generateRandomString(36, false, true, true));
+            $('#password-target').val(chrome.extension.getBackgroundPage().WB.generateRandomString(48, false, true, true));
             $('#password').show();
         }
         resizer();
@@ -32,11 +32,8 @@ $('.go-option a').click(function() {
 
 $('#password-check').click(function() {
     var valid = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
-    console.log($('#password-target').val(), $('#password-typing').val());
-    console.log(valid);
-    return false;
-    if (valid) {
-        chrome.extension.getBackgroundPage().WB.setTimeLimit(600); // 15 min.
+    if (valid === true) {
+        chrome.extension.getBackgroundPage().WB.setTimeLimit(600); // 5 min.
         window.location.href = url;
     }
 });
