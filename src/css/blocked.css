@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 html, body {
   overflow-y: hidden;
@@ -50,7 +51,6 @@ h1 {
 .blocked-url a {
   display: block;
   text-align: left;
-  padding: 4px 8px;
   font-size: 90%;
 }
 
@@ -69,19 +69,18 @@ h1 {
   color: #fff;
 }
 
-
-  .viral-list {
+.viral-list {
+  display: inline;
+}
+  .viral-list li {
     display: inline;
+    float: left;
+    padding: 0 1em 0 0;
+          vertical-align: middle;
   }
-    .viral-list li {
-      display: inline;
-      float: left;
-      padding: 0 1em 0 0;
-            vertical-align: middle;
-    }
-    .viral-list li:last-child {
-      padding-right: 0;
-    }
+  .viral-list li:last-child {
+    padding-right: 0;
+  }
 
 #password {
 }
