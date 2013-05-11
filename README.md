@@ -65,8 +65,8 @@ ELSEWHERE
   ... Update Information
 - [Twitter](https://twitter.com/website_blocker)
   ... Update Information
-- [Trello](https://trello.com/board/website-blocker/4f35d7b77869c74e2b001733)
-  ... Development Status
+- [FAQ](https://github.com/tetsuwo/website-blocker-chrome.ext/wiki/Website-Blocker-FAQ)
+  ... Questions and Answers List
 
 
 AUTHOR
