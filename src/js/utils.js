@@ -1,6 +1,6 @@
 
 /**
- * i18n [Internationalization]
+ * I18N [InternationalizatioN]
  *
  * @author Tetsuwo OISHI
  */
