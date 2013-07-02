@@ -1,0 +1,140 @@
+{
+  "ID": {
+    "message": "fr"
+  },
+  "add_block_time": {
+    "message": "Heure du blocage"
+  },
+  "add_blockthis": {
+    "message": "Bloquer!"
+  },
+  "add_time_1": {
+    "message": "entre"
+  },
+  "add_time_2": {
+    "message": "et"
+  },
+  "add_time_3": {
+    "message": ""
+  },
+  "applied": {
+    "message": "Appliqué\x21"
+  },
+  "apply": {
+    "message": "Appliquer"
+  },
+  "back": {
+    "message": "Retour"
+  },
+  "basic_settings": {
+    "message": "Réglages de base"
+  },
+  "block_already": {
+    "message": "Cette page est déjà bloquée\x2e Les paramètres de blocage peuvent être modifiés dans les options."
+  },
+  "block_ng": {
+    "message": "Cette page ne peut pas être bloquée."
+  },
+  "blocked_disabled": {
+    "message": "Désactiver la fonction de blocage."
+  },
+  "blocked_message": {
+    "message": "Impossible d'accéder à cette page."
+  },
+  "blocked_title": {
+    "message": "Cette page est bloquée."
+  },
+  "bug_report": {
+    "message": "Rapporter un bug"
+  },
+  "changelog": {
+    "message": "Historique des révisions"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "document": {
+    "message": "Document"
+  },
+  "example": {
+    "message": "Exemple"
+  },
+  "ext_description": {
+    "message": "Website Blocker est utile lorsque vous voulez vous concentrer sur un travail."
+  },
+  "ext_name": {
+    "message": "Website\x20Blocker\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "Page Facebook"
+  },
+  "font_family": {
+    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "Format"
+  },
+  "input": {
+    "message": "Input"
+  },
+  "message_when_blocked": {
+    "message": "Message"
+  },
+  "nav_about": {
+    "message": "A propos de cette extension"
+  },
+  "nav_blocking": {
+    "message": "Blocage de site Web"
+  },
+  "nav_changelog": {
+    "message": "Historique des révisions"
+  },
+  "nav_function": {
+    "message": "Gérer les fonctions"
+  },
+  "nav_message": {
+    "message": "Messages à afficher"
+  },
+  "nav_password": {
+    "message": "Mot de passe"
+  },
+  "option_page_link_disabled": {
+    "message": "Désactiver le lien de raccourci vers la page des options."
+  },
+  "options": {
+    "message": "Options"
+  },
+  "please_support_me": {
+    "message": "Soutenez moi (PayPal)"
+  },
+  "popup_page_control_disabled": {
+    "message": "Désactivé chaque contrôle de fonction de la popup."
+  },
+  "save": {
+    "message": "Sauver"
+  },
+  "save_and_close": {
+    "message": "Sauver et fermer"
+  },
+  "setting": {
+    "message": "Option"
+  },
+  "special_thanks": {
+    "message": "Remerciement"
+  },
+  "tell_a_friend": {
+    "message": "Envoyer à un ami"
+  },
+  "time_limit_disabled": {
+    "message": "Désactivation de la fonction de limite de temps."
+  },
+  "title_when_blocked": {
+    "message": "Titre"
+  },
+  "websites_to_block": {
+    "message": "Sites internet à bloquer"
+  },
+  "with_email": {
+    "message": "par email"
+  }
+}
