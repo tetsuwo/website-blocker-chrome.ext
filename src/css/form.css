@@ -2,7 +2,7 @@
 
 input, textarea, select {
   border: 1px solid #000;
-  padding: .5em;
+  padding: 1.25em 1em;
   font-weight:bold;
   line-height: 1.2em;
   width: 80%;
