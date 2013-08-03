@@ -3,6 +3,15 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.2.3
+    - Translated to Korean.  
+      Special Thanks: [Jihyun Won](https://twitter.com/WonZeeeeee)
+- 0.2.2
+    - Translated to Turkish.  
+      Special Thanks: [Muhammed Ali Efe](https://twitter.com/MAliEFE44)
+- 0.2.1
+    - Translated to French.  
+      Special Thanks: [Jérémy Gasche](https://github.com/jeremygasche)
 - 0.2.0
   - Add a new function "Password Protection".
 - 0.1.9 - 0.1.9.1
@@ -11,14 +20,14 @@ CHANGE LOG:
   - Added a new page "Tell a friend".
   - Bug-Fixed of "Tell a friend" page.
 - 0.1.8 - 0.1.8.1
-  - Translated to Slovenian.
+  - Translated to Slovenian.  
     Special Thanks: [Mrein Stain](https://www.facebook.com/profile.php?id=100003095811907)
 - 0.1.7
-  - Translated to Portuguese.
+  - Translated to Portuguese.  
     Special Thanks: [Lucas, Jean](https://twitter.com/aleattorium)
 - 0.1.5 - 0.1.6.1
   - Converted unicode for I18N Messages
-  - Translated to Chinese.
+  - Translated to Chinese.  
     Special Thanks: [Lu Chenqiang](https://www.facebook.com/profile.php?id=100001646680506)
 - 0.1.4
   - modified for performance.
@@ -31,12 +40,12 @@ CHANGE LOG:
   - modified for performance.
   - added new function.
 - 0.0.18
-  - translated to Italian.
+  - translated to Italian.  
     Special Thanks: [Matteo Pendezzini](http://www.facebook.com/matteo.pendezzini)
 - 0.0.17
   - modified for performance.
 - 0.0.16
-  - translated to Spanish.
+  - translated to Spanish.  
     Special Thanks: [JBantha](http://twitter.com/JBantha)
 - 0.0.13 - 0.0.15
   - modified for performance.
