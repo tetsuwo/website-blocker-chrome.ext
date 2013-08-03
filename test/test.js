@@ -11,12 +11,13 @@ describe('WebsiteBlocker', function() {
         expect(wb.date).toBeNull();
         expect(wb.time).toBeNull();
         expect(wb.debug).toBeFalsy();
+        //expect(wb.debug).toBeTruthy();
         expect(wb.disabledTimeLimit).toBeFalsy();
     });
 
     it('isBlocked(disabled-time)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = true;
 
         expect(wb.isBlocked('http://www.yahoo.co.jp', 'yahoo\.co\.jp', [])).toBeTruthy();
@@ -28,7 +29,7 @@ describe('WebsiteBlocker', function() {
 
     it('isBlocked(enabled-time)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = false;
 
         expect(wb.isBlocked(
@@ -55,7 +56,7 @@ describe('WebsiteBlocker', function() {
 
     it('isBlocked(enabled-time difficult)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = false;
 
         expect(wb.isBlocked(
@@ -110,14 +111,14 @@ describe('WebsiteBlocker', function() {
 
     it('toFormat(simple)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = true;
 
         var text = '';
         text += '(facebook|twitter).com 0000-0730,0945-1159\n';
         text += 'yahoo.co.jp';
         var data = wb.toFormat(text);
-        console.log(data);
+        //console.log(data);
 
         expect(data.length).toEqual(2);
 
@@ -132,7 +133,7 @@ describe('WebsiteBlocker', function() {
 
     it('toFormat(difficult)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = true;
 
         var text = '';
@@ -140,7 +141,7 @@ describe('WebsiteBlocker', function() {
         text += 'twitter.com 1000-1259\n';
         text += '(facebook|twitter).com 0000-0730,0945-1159';
         var data = blockedArray = wb.toFormat(text);
-        console.log(data);
+        //console.log(data);
 
         expect(data.length).toEqual(3);
 
@@ -153,7 +154,7 @@ describe('WebsiteBlocker', function() {
 
     it('toString(simple)', function() {
         var wb = new WebsiteBlocker();
-        wb.debug = true;
+        //wb.debug = true;
         wb.disabledTimeLimit = true;
 
         var blockedArray = [
@@ -174,7 +175,7 @@ describe('WebsiteBlocker', function() {
         text += 'yahoo.co.jp ';
 
         var data = wb.toString(blockedArray);
-        console.log(data);
+        //console.log(data);
 
         expect(data).toEqual(text);
     });
