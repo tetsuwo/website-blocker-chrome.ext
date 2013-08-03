@@ -1,0 +1,140 @@
+{
+  "ID": {
+    "message": "tr"
+  },
+  "add_block_time": {
+    "message": "Engelleme\x20Süresi"
+  },
+  "add_blockthis": {
+    "message": "Engelle\x21"
+  },
+  "add_time_1": {
+    "message": "arasında"
+  },
+  "add_time_2": {
+    "message": "ile"
+  },
+  "add_time_3": {
+    "message": ""
+  },
+  "applied": {
+    "message": "Onaylandı\x21"
+  },
+  "apply": {
+    "message": "Onayla"
+  },
+  "back": {
+    "message": "Geri"
+  },
+  "basic_settings": {
+    "message": "Temel\x20ayarlar"
+  },
+  "block_already": {
+    "message": "Bu\x20sayfa\x20zaten\x20engellenmiş\x2e\x20This\x20block\x20data\x20edit\x20do\x20from\x20\x5bAyarlar\x5d\x20sayfası\x2e"
+  },
+  "block_ng": {
+    "message": "Sayfa\x20engellenemedi\x2e"
+  },
+  "blocked_disabled": {
+    "message": "Engelleme\x20fonksiyonu\x20devre\x20dışı\x2e"
+  },
+  "blocked_message": {
+    "message": "Sayfaya\x20erişilemedi\x2e"
+  },
+  "blocked_": {
+    "message": "Bu\x20sayfa\x20engellenmiş\x2e"
+  },
+  "bug_report": {
+    "message": "Hata\x20raporu"
+  },
+  "changelog": {
+    "message": "Revizyon\x20Geçmişi"
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "document": {
+    "message": "Belge"
+  },
+  "example": {
+    "message": "Örnek"
+  },
+  "ext_description": {
+    "message": "Website\x20Blocker\x20is\x20useful\x20when\x20you\x20want\x20to\x20concentrate\x20on\x20work\x2e"
+  },
+  "ext_name": {
+    "message": "Website\x20Engelleyici\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "Facebook\x20sayfası"
+  },
+  "font_family": {
+    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "Format"
+  },
+  "input": {
+    "message": "Giriş"
+  },
+  "message_when_blocked": {
+    "message": "Engelleme\x20mesajı"
+  },
+  "nav_about": {
+    "message": "Bu\x20Uzantı\x20Hakkında"
+  },
+  "nav_blocking": {
+    "message": "Websitesi\x20Engelleme"
+  },
+  "nav_changelog": {
+    "message": "Revizyon\x20Geçmişi"
+  },
+  "nav_function": {
+    "message": "Diğer\x20fonksiyonları\x20AÇ\x2fKAPAT"
+  },
+  "nav_message": {
+    "message": "Engelleme\x20mesajları"
+  },
+  "nav_password": {
+    "message": "Şifre"
+  },
+  "option_page_link_disabled": {
+    "message": "Ayar\x20sayfasında\x20link\x20kısaltma\x20devre\x20dışı\x2e"
+  },
+  "options": {
+    "message": "Ayarlar"
+  },
+  "please_support_me": {
+    "message": "Lütfen\x20bana\x20destek\x20ver\x21\x20\x28PayPal\x29"
+  },
+  "popup_page_control_disabled": {
+    "message": "popup\x20sayfasından\x20başka\x20fonksiyon\x20kontrolü\x20devre\x20dışı\x2e"
+  },
+  "save": {
+    "message": "Kaydet"
+  },
+  "save_and_close": {
+    "message": "Kaydet\x20ve\x20Kapat"
+  },
+  "setting": {
+    "message": "Ayar"
+  },
+  "special_thanks": {
+    "message": "Özel\x20Teşekkürler"
+  },
+  "tell_a_friend": {
+    "message": "Arkadaşına\x20öner"
+  },
+  "time_limit_disabled": {
+    "message": "Süre\x20limiti\x20fonksiyonunu\x20devre\x20dışı\x20bırak\x2e"
+  },
+  "_when_blocked": {
+    "message": "Engellleme\x20başlığı"
+  },
+  "websites_to_block": {
+    "message": "Engllenecek\x20Web\x20siteleri"
+  },
+  "with_email": {
+    "message": "E\x2dPosta\x20ile"
+  }
+}
