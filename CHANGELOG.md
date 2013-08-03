@@ -4,14 +4,14 @@ CHANGE LOG:
 - 1.0.0 (planning)
   - Change Production from Beta
 - 0.2.3
-    - Translated to Korean.  
-      Special Thanks: [Jihyun Won](https://twitter.com/WonZeeeeee)
+  - Translated to Korean.  
+    Special Thanks: [Jihyun Won](https://twitter.com/WonZeeeeee)
 - 0.2.2
-    - Translated to Turkish.  
-      Special Thanks: [Muhammed Ali Efe](https://twitter.com/MAliEFE44)
+  - Translated to Turkish.  
+    Special Thanks: [Muhammed Ali Efe](https://twitter.com/MAliEFE44)
 - 0.2.1
-    - Translated to French.  
-      Special Thanks: [Jérémy Gasche](https://github.com/jeremygasche)
+  - Translated to French.  
+    Special Thanks: [Jérémy Gasche](https://github.com/jeremygasche)
 - 0.2.0
   - Add a new function "Password Protection".
 - 0.1.9 - 0.1.9.1
