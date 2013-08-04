@@ -67,6 +67,14 @@ twitter.com 1000-1259
                                 <textarea id="blocked_message" style="width: 98%; height: 10em;"></textarea>
                             </div>
                         </fieldset>
+                        <fieldset>
+                            <!--<legend i18n="redirect_when_blocked">--</legend>-->
+                            <legend>URL to redirect when blocked</legend>
+                            <div class="clearfix">
+                                <input type="text" id="blocked_redirect" style="width: 98%; " value="" />
+                            </div>
+                            <span>ex) http://mydomain.com</span>
+                        </fieldset>
                     </section>
                     <section id="function" class="hide clearfix">
                         <fieldset>
@@ -126,9 +134,12 @@ twitter.com 1000-1259
                         <fieldset>
                             <legend i18n="changelog">--</legend>
 <pre>
-- 0.2.3
+- 0.2.4
+  - Added a nrew function "Redirecting Function of when blocked"
+- 0.2.3 - 0.2.3.2
   - Translated to Korean.  
     Special Thanks: [Jihyun Won](https://twitter.com/WonZeeeeee)
+  - Clear Twitter CSP
 - 0.2.2
   - Translated to Turkish.  
     Special Thanks: [Muhammed Ali Efe](https://twitter.com/MAliEFE44)
@@ -306,13 +317,6 @@ twitter.com 1000-1259
                            data-text="Website Blocker is useful when you want to concentrate on work."
                            data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
                            data-count="horizontal">Tweet</a>
-                        <!--
-                        <a data-hatena-bookmark-layout="standard"
-                           data-hatena-bookmark-title="Website Blocker"
-                           target="_blank" class="hatena-bookmark-button"
-                           href="http://b.hatena.ne.jp/entry/https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib">
-                           <img src="http://b.st-hatena.com/images/entry-button/button-only.gif" /></a>
-                        -->
                     </div>
                     <div class="clearfix">
                         <small class="copyright">
@@ -326,10 +330,8 @@ twitter.com 1000-1259
                 <input type="hidden" name="hosted_button_id" value="MVTPVJW3QACLW" />
             </form>
         </div>
-        <!-- /container -->
         <script src="js/page-options.js"></script>
         <script src="https://apis.google.com/js/plusone.js" async></script>
         <script src="https://platform.twitter.com/widgets.js" async></script>
-        <!--<script src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>-->
     </body>
 </html>

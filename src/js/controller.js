@@ -9,9 +9,10 @@ Controller = new function() {
         }
 
         // for text
-        $('#blocked_text'   ).val(ls.get('blocked_list') ? WB.toString(ls.get('blocked_list')) : '');
-        $('#blocked_title'  ).val(ls.i18n('blocked_title'));
-        $('#blocked_message').val(ls.i18n('blocked_message'));
+        $('#blocked_text'    ).val(ls.get('blocked_list') ? WB.toString(ls.get('blocked_list')) : '');
+        $('#blocked_title'   ).val(ls.i18n('blocked_title'));
+        $('#blocked_message' ).val(ls.i18n('blocked_message'));
+        $('#blocked_redirect').val(ls.i18n('blocked_redirect'));
 
         // for flag
         $('#flag-block_function'    ).prop('checked', ls.get('flag-block_function'));
@@ -105,8 +106,9 @@ Controller = new function() {
         }
 
         // for text
-        ls.set('blocked_title',   $('#blocked_title').val());
-        ls.set('blocked_message', $('#blocked_message').val());
+        ls.set('blocked_title',    $('#blocked_title').val());
+        ls.set('blocked_message',  $('#blocked_message').val());
+        ls.set('blocked_redirect', $('#blocked_redirect').val());
 
         // for flag
         ls.set('flag-block_function',      $('#flag-block_function:checked').val()     === 'on');

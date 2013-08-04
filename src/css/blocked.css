@@ -11,7 +11,7 @@ body {
 }
 
 #blocked-container {
-  width: 640px;
+  width: 650px;
   border-radius: 5px;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .7);
   padding: 1em;
@@ -85,7 +85,8 @@ h1 {
 #password {
 }
   .password-label {
-    width: 90px;
+    width: 95px;
+    height: 41px;
     display: inline-block;
   }
   .password-input {

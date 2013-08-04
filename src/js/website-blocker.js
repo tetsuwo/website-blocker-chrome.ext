@@ -15,6 +15,7 @@ function WebsiteBlocker() {
     this.debug = false; // debug mode
     this.useTimeGroup = true; // on/off for time limit function
     this.useTimeLimit = false;
+    this.redirectHistory = {};
 }
 
 (function(WB, undef) {
@@ -26,11 +27,38 @@ function WebsiteBlocker() {
      * @param url {String} URL of target tab
      */
     WB.prototype.blocked = function(id, url) {
-        chrome.tabs.update(id, {
-            url: chrome.extension.getURL('blocked.html') + '?url=' + encodeURIComponent(url)
-        });
-    };
+        var redirect = chrome.extension.getURL('blocked.html') + '?url=' + encodeURIComponent(url);
 
+        if (ls.get('blocked_redirect')) {
+            var currentTime = new Date().getTime();
+            var key = ls.get('blocked_redirect');
+            var beforeTime = false;
+
+            if (this.redirectHistory[key]) {
+                beforeTime = this.redirectHistory[key].time;
+                this.redirectHistory[key].count++;
+                this.redirectHistory[key].time = currentTime;
+            } else {
+                redirect = ls.get('blocked_redirect');
+                this.redirectHistory[key] = {
+                    count: 1,
+                    time: currentTime
+                };
+            }
+
+            if (beforeTime) {
+                // PREVENT REDIRECT LOOP
+                // less than 1000 ms access time to same url && more than 3 times
+                if (currentTime - beforeTime < 1000 && 3 < this.redirectHistory[key].count) {
+                    this.redirectHistory[key].count = 0;
+                } else {
+                    redirect = ls.get('blocked_redirect');
+                }
+                //console.debug('compare', currentTime - beforeTime, this.redirectHistory[key]);
+            }
+        }
+        chrome.tabs.update(id, { url: redirect });
+    };
 
     /**
      * Is blocked the URL?
@@ -73,7 +101,6 @@ function WebsiteBlocker() {
         return false;
     };
 
-
     /**
      * To string
      *
@@ -89,7 +116,6 @@ function WebsiteBlocker() {
 
         return result.join('\n');
     };
-
 
     /**
      * To format
@@ -122,7 +148,6 @@ function WebsiteBlocker() {
         return BLOCKED;
     };
 
-
     /**
      * Make time
      *
@@ -143,7 +168,6 @@ function WebsiteBlocker() {
 
         return this.time = hh.toString() + mm.toString();
     };
-
 
     /**
      * Check URL
@@ -175,7 +199,6 @@ function WebsiteBlocker() {
         return false;
     };
 
-
     /**
      * Generate Random Sring
      *
@@ -200,7 +223,6 @@ function WebsiteBlocker() {
         return code;
     };
 
-
     /**
      * Check Passphrase
      *
@@ -210,7 +232,6 @@ function WebsiteBlocker() {
     WB.prototype.matchPassphrase = function(src, dest) {
         return src === dest;
     };
-
 
     /**
      * Set Time Limit
@@ -225,7 +246,6 @@ function WebsiteBlocker() {
         }, sec * 1000);
     };
 
-
     /**
      * Logger
      *
@@ -236,7 +256,6 @@ function WebsiteBlocker() {
             console.log(a);
         }
     };
-
 
     /**
      * Run Website Blocker!

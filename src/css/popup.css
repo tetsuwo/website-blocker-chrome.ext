@@ -6,7 +6,10 @@
 body {
 	color: #fff;
 	margin: 0;
-	font-size: 12px;
+}
+
+body, input {
+	font-size: 13px;
 }
 
 pre {

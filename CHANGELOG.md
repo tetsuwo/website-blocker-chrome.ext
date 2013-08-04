@@ -3,6 +3,8 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.2.4
+  - Added a nrew function "Redirecting Function of when blocked"
 - 0.2.3 - 0.2.3.2
   - Translated to Korean.  
     Special Thanks: [Jihyun Won](https://twitter.com/WonZeeeeee)
