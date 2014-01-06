@@ -1,3 +1,8 @@
+/*!
+ * JavaScript for Background Page
+ *
+ * @author Tetsuwo OISHI
+ */
 
 // ---- For User ---- //
 

@@ -1,3 +1,9 @@
+/*!
+ * JavaScript for Page Controller
+ *
+ * @author Tetsuwo OISHI
+ */
+
 Controller = new function() {
     var beforepage;
     var that = this;

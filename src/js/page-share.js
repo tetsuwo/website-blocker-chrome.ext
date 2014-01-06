@@ -1,3 +1,8 @@
+/*!
+ * JavaScript for Share Page
+ *
+ * @author Tetsuwo OISHI
+ */
 
 function resizer() {
     var $self = $('#blocked-container');

@@ -1,3 +1,8 @@
+/*!
+ * JavaScript for Blocked Page
+ *
+ * @author Tetsuwo OISHI
+ */
 
 function resizer() {
     var $self = $('#blocked-container');

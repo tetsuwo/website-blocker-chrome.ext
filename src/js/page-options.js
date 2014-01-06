@@ -1,3 +1,8 @@
+/*!
+ * JavaScript for Options Page
+ *
+ * @author Tetsuwo OISHI
+ */
 
 var fragment = window.location.hash.substr(1);
 

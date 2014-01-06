@@ -1,3 +1,8 @@
+/*!
+ * JavaScript Original Functions
+ *
+ * @author Tetsuwo OISHI
+ */
 
 function DOMId(selector) {
     return document.querySelector(selector);

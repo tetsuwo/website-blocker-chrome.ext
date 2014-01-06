@@ -1,3 +1,8 @@
+/*!
+ * JavaScript for Pop-up Page
+ *
+ * @author Tetsuwo OISHI
+ */
 
 var WB = new WebsiteBlocker();
 var is_bg_executed = false;
@@ -20,7 +25,7 @@ chrome.extension.getBackgroundPage().getUrl(function(tab) {
     }
 });
 
-setTimeout(function() {
+window.setTimeout(function() {
     if (!is_bg_executed) {
         $('#block-ng').show();
     }
@@ -31,15 +36,15 @@ $(window).load(function() {
     i18n(function(){ $('#container').show(); });
 });
 
-$('.options').click(function() {
+$('.options').on('click', function() {
     check2go(chrome.extension.getURL('options.html'), false);
 });
 
-$('.popup-close').click(function() {
+$('.popup-close').on('click', function() {
     window.close();
 });
 
-$('#blockthis').click(function() {
+$('#blockthis').on('click', function() {
     var domain, time1, time2, times = [];
     domain = $('#tmp-hostname').val();
     time1  = $('#tmp-time-start').val().replace(':', '');
