@@ -3,7 +3,7 @@
   "description": "__MSG_ext_description__",
   "default_locale": "en",
   "background": {
-      "page": "background.html"
+    "page": "background.html"
   },
   "options_page": "options.html",
   "browser_action": {
@@ -19,11 +19,18 @@
     "128": "images/128.png"
   },
   "permissions": [
-      "tabs",
-      "*://*/*"
+    "tabs",
+    "*://*/*"
   ],
-  "version": "0.2.4",
+  /*"sandbox": {
+    "pages": [
+      "blocked.html",
+      "share.html",
+      "welcome.html"
+    ]
+  },*/
+  "version": "0.2.5",
   "manifest_version": 2,
   "content_security_policy": 
-    "script-src 'self' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com https://www.facebook.com https://connect.facebook.net; frame-src https://apis.google.com https://platform.twitter.com https://www.facebook.com https://connect.facebook.net; object-src 'self'"
+    "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com https://platform.twitter.com https://apis.google.com https://www.facebook.com https://connect.facebook.net; frame-src https://accounts.google.com https://apis.google.com https://platform.twitter.com https://www.facebook.com https://connect.facebook.net; object-src 'self'"
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="twitter:widgets:csp" content="on">
         <title>Website Blocker</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/form.css" />
-        <link rel="stylesheet" href="css/blocked.css" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/blocked.css">
         <script src="lib/jquery-2.0.0.min.js"></script>
         <script src="js/utils.js"></script>
         <script src="js/common.js"></script>
@@ -16,9 +16,7 @@
         <script src="js/controller.js"></script>
     </head>
     <body>
-        <div id="fb-root"></div>
-        <script src="js/init-facebook.js"></script>
-        <div id="blocked-container" style="display:none;">
+        <div id="blocked-container" style="display: none;">
             <div class="blocked-header">
                 <h1>This page is blocked.</h1>
             </div>
@@ -28,44 +26,27 @@
             </div>
             <div id="password" class="inner" style="margin-bottom: 1em; display: none;">
                 <div>
-                    <input type="button" class="label password-label" value="Password" />
-                    <input type="text" id="password-target" class="password-input" value="" readonly="true" />
+                    <input type="button" class="label password-label" value="Password">
+                    <input type="text" id="password-target" class="password-input" value="" readonly="true">
                 </div>
                 <div>
-                    <input type="button" class="label password-label" value="Typing" />
-                    <input type="text" id="password-typing" class="password-input" value="" />
+                    <input type="button" class="label password-label" value="Typing">
+                    <input type="text" id="password-typing" class="password-input" value="">
                 </div>
                 <div>
-                    <input type="button" class="apply-button password-submit" id="password-check" value="Watch this website (Only 5 min.)" />
-                </div>
-            </div>
-            <div class="inner">
-                <div class="clearfix" style="margin-bottom: 1em;">
-                    <ul class="viral-list">
-                        <li><a href="http://twitter.com/share"
-                               class="twitter-share-button"
-                               data-text="Website Blocker is useful when you want to concentrate on work."
-                               data-url="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"
-                               data-count="horizontal">Tweet</a></li>
-                        <li><g:plusone size="medium"
-                            href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib"></g:plusone></li>
-                        <li><button i18n="with_email" class="with_email wb-button" style="font-size: 70%;">with E-Mail</button></li>
-                    </ul>
-                </div>
-                <div class="clearfix">
-                    <fb:like href="https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib" send="false" width="450" show_faces="false" colorscheme="dark"></fb:like>
+                    <input type="button" class="apply-button password-submit" id="password-check" value="Watch this website (Only 5 min.)">
                 </div>
             </div>
             <div class="blocked-footer">
+                <small>
+                    <a i18n="tell_a_friend" href="share.html" target="_blank">Tell a friend</a> | 
+                </small>
                 <small class="go-option" style="display: none;">
-                    <a i18n="options" target="_blank" href="javascript:void(0);">Options</a>
-                     | 
+                    <a i18n="options" target="_blank">Options</a> | 
                 </small>
                 <small>via Website Blocker</small>
             </div>
         </div>
         <script src="js/page-blocked.js"></script>
-        <script src="https://apis.google.com/js/plusone.js" async></script>
-        <script src="https://platform.twitter.com/widgets.js" async></script>
     </body>
 </html>
