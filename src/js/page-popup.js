@@ -35,6 +35,10 @@ $('.options').click(function() {
     check2go(chrome.extension.getURL('options.html'), false);
 });
 
+$('.popup-close').click(function() {
+    window.close();
+});
+
 $('#blockthis').click(function() {
     var domain, time1, time2, times = [];
     domain = $('#tmp-hostname').val();
