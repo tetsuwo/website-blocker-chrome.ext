@@ -22,13 +22,6 @@
     "tabs",
     "*://*/*"
   ],
-  /*"sandbox": {
-    "pages": [
-      "blocked.html",
-      "share.html",
-      "welcome.html"
-    ]
-  },*/
   "version": "0.2.5",
   "manifest_version": 2,
   "content_security_policy": 
