@@ -136,5 +136,29 @@
   },
   "with_email": {
     "message": "con\x20correo\x20electr\xf3nico"
+  },
+  "days_of_week": {
+    "message": "Días\x20de\x20la\x20semana"
+  },
+  "days_of_week_sunday": {
+    "message": "Domingo"
+  },
+  "days_of_week_monday": {
+    "message": "Lunes"
+  },
+  "days_of_week_tuesday": {
+    "message": "Martes"
+  },
+  "days_of_week_wednesday": {
+    "message": "Miércoles"
+  },
+  "days_of_week_thursday": {
+    "message": "Jueves"
+  },
+  "days_of_week_friday": {
+    "message": "Viernes"
+  },
+  "days_of_week_saturday": {
+    "message": "Sábado"
   }
 }

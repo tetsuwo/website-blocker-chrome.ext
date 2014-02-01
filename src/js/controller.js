@@ -14,6 +14,12 @@ Controller = new function() {
             $('.back').hide();
         }
 
+        // day's of week
+        var daysOfWeek = WB.toFormatDaysOfWeekToArray(ls.get('days_of_week'));
+        for(d in daysOfWeek) {
+            $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+        }
+
         // for text
         $('#blocked_text'    ).val(ls.get('blocked_list') ? WB.toString(ls.get('blocked_list')) : '');
         $('#blocked_title'   ).val(ls.i18n('blocked_title'));
@@ -110,6 +116,9 @@ Controller = new function() {
             ls.set('blocked_list', BLOCKED);
             $('#blocked_text').val(WB.toString(BLOCKED));
         }
+
+        // days of week
+        ls.set('days_of_week', WB.toFormatDaysOfWeekToString($('input.days_of_week:checked')));
 
         // for text
         ls.set('blocked_title',    $('#blocked_title').val());
