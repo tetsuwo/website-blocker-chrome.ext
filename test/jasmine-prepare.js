@@ -2,7 +2,8 @@
     var jasmineEnv = jasmine.getEnv();
     jasmineEnv.updateInterval = 250;
 
-    jasmineEnv.addReporter(new jasmine.ConsoleReporter());
+    var consoleReporter = new jasmine.ConsoleReporter();
+    jasmineEnv.addReporter(consoleReporter);
 
     var htmlReporter = new jasmine.HtmlReporter();
     jasmineEnv.addReporter(htmlReporter);

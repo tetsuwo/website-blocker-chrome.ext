@@ -95,13 +95,28 @@ function WebsiteBlocker() {
                                   });
 
                 if (target[0] <= current && current <= target[1]) {
-                    for(d in this.daysOfWeek) {
-                        if(this.daysOfWeek[d] == this.dayOfWeek) {
-                            return true;
-                        }
+                    if (this.matchDaysOfWeek(this.daysOfWeek, this.dayOfWeek)) {
+                        return true;
                     }
                 }
             }
+        }
+
+        return false;
+    };
+
+    /**
+     * To string
+     *
+     * @param list {Array}
+     */
+    WB.prototype.matchDaysOfWeek = function(targetDaysOfWeek, currentDayOfWeek) {
+        if (typeof targetDaysOfWeek === 'object') {
+             for (var weekNum in targetDaysOfWeek) {
+                 if (targetDaysOfWeek[weekNum] == currentDayOfWeek) {
+                     return true;
+                 }
+             }
         }
 
         return false;
@@ -305,7 +320,7 @@ function WebsiteBlocker() {
      * @param days {String}
      */
     WB.prototype.toFormatDaysOfWeekToArray = function(days) {
-        return days.split(',');
+        return days ? days.split(',') : [];
     };
 
 })(WebsiteBlocker);

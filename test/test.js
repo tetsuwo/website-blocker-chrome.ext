@@ -1,7 +1,5 @@
 describe('WebsiteBlocker', function() {
-
-    var testdata = {
-    };
+    var testdata = {};
     var blockedArray = [];
 
     it('default', function() {
@@ -19,11 +17,11 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = true;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         expect(wb.isBlocked('http://www.yahoo.co.jp', 'yahoo\.co\.jp', [])).toBeTruthy();
-
         expect(wb.isBlocked('https://www.yahoo.co.jp', '^http:\/\/yahoo\.co\.jp', [])).toBeFalsy();
-
         expect(wb.isBlocked('file:///www.yahoo.co.jp', '^http:\/\/yahoo\.co\.jp', [])).toBeFalsy();
     });
 
@@ -31,6 +29,8 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = false;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         expect(wb.isBlocked(
                 'http://twitter.com',
@@ -58,6 +58,8 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = false;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         expect(wb.isBlocked(
                 'http://twitter.com',
@@ -113,6 +115,8 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = true;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         var text = '';
         text += '(facebook|twitter).com 0000-0730,0945-1159\n';
@@ -135,6 +139,8 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = true;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         var text = '';
         text += 'facebook.com 0930-1259,1300-1530\n';
@@ -156,6 +162,8 @@ describe('WebsiteBlocker', function() {
         var wb = new WebsiteBlocker();
         //wb.debug = true;
         wb.disabledTimeLimit = true;
+        wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
+        wb.dayOfWeek = 0;
 
         var blockedArray = [
             {

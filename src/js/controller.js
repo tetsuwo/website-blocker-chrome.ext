@@ -15,9 +15,11 @@ Controller = new function() {
         }
 
         // day's of week
-        var daysOfWeek = WB.toFormatDaysOfWeekToArray(ls.get('days_of_week'));
-        for(d in daysOfWeek) {
-            $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+        var daysOfWeek = ls.get('days_of_week');
+        if (daysOfWeek) {
+            for(var d in daysOfWeek) {
+                $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+            }
         }
 
         // for text
@@ -118,7 +120,12 @@ Controller = new function() {
         }
 
         // days of week
-        ls.set('days_of_week', WB.toFormatDaysOfWeekToString($('input.days_of_week:checked')));
+        if (0 < $('input.days_of_week:checked').size()) {
+            var daysOfWeekString = WB.toFormatDaysOfWeekToString($('input.days_of_week:checked'));
+            ls.set('days_of_week', WB.toFormatDaysOfWeekToArray(daysOfWeekString));
+        } else {
+            ls.set('days_of_week', null);
+        }
 
         // for text
         ls.set('blocked_title',    $('#blocked_title').val());
