@@ -136,5 +136,29 @@
   },
   "with_email": {
     "message": "com\x20E\x2dMail"
+  },
+  "days_of_week": {
+    "message": "Dias\x20da\x20semana"
+  },
+  "days_of_week_sunday": {
+    "message": "Domingo"
+  },
+  "days_of_week_monday": {
+    "message": "Segunda-feira"
+  },
+  "days_of_week_tuesday": {
+    "message": "Terça-feira"
+  },
+  "days_of_week_wednesday": {
+    "message": "Quarta-feira"
+  },
+  "days_of_week_thursday": {
+    "message": "Quinta-feira"
+  },
+  "days_of_week_friday": {
+    "message": "Sexta-feira"
+  },
+  "days_of_week_saturday": {
+    "message": "Sábado"
   }
 }

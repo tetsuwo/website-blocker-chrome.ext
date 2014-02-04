@@ -12,6 +12,8 @@ function WebsiteBlocker() {
     this.blockedList = null;
     this.date = null;
     this.time = null;
+    this.dayOfWeek = null;
+    this.daysOfWeek = [];
     this.debug = false; // debug mode
     this.useTimeGroup = true; // on/off for time limit function
     this.useTimeLimit = false;
@@ -93,7 +95,11 @@ function WebsiteBlocker() {
                                   });
 
                 if (target[0] <= current && current <= target[1]) {
-                    return true;
+                    for(d in this.daysOfWeek) {
+                        if(this.daysOfWeek[d] == this.dayOfWeek) {
+                            return true;
+                        }
+                    }
                 }
             }
         }
@@ -158,6 +164,8 @@ function WebsiteBlocker() {
         var hh = this.date.getHours();
         var mm = this.date.getMinutes();
 
+        this.dayOfWeek = this.date.getDay();
+
         if (hh < 10) {
             hh = '0' + hh;
         }
@@ -183,6 +191,7 @@ function WebsiteBlocker() {
         if (this.blockedList) {
             currentTime = this.makeTime();
             this.useTimeGroup = ls.get('flag-timegroup_function');
+            this.daysOfWeek = ls.get('days_of_week');
 
             for (var key in this.blockedList) {
                 this.logger(this.blockedList[key].regexp);
@@ -274,6 +283,29 @@ function WebsiteBlocker() {
         }
 
         return true;
+    };
+
+    /**
+     * Transform array of checkbox of Day's of week, to string
+     *
+     * @param days {Array} jQuery selector
+     */
+    WB.prototype.toFormatDaysOfWeekToString = function(days) {
+        var daysOfWeek = [];
+        days.each(function(i, el){
+            daysOfWeek.push($(el).val());
+        });
+
+        return daysOfWeek.toString();
+    };
+
+    /**
+     * Transform string to array
+     *
+     * @param days {String}
+     */
+    WB.prototype.toFormatDaysOfWeekToArray = function(days) {
+        return days.split(',');
     };
 
 })(WebsiteBlocker);
