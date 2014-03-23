@@ -14,7 +14,7 @@ function WebsiteBlocker() {
     this.time = null;
     this.dayOfWeek = null;
     this.daysOfWeek = [];
-    this.debug = false; // debug mode
+    this.debug = true; // debug mode
     this.useTimeGroup = true; // on/off for time limit function
     this.useTimeLimit = false;
     this.redirectHistory = {};
@@ -29,6 +29,7 @@ function WebsiteBlocker() {
      * @param url {String} URL of target tab
      */
     WB.prototype.blocked = function(id, url) {
+        this.logger('blocked - start');
         var redirect = chrome.extension.getURL('blocked.html') + '?url=' + encodeURIComponent(url);
 
         if (ls.get('blocked_redirect')) {
@@ -60,6 +61,7 @@ function WebsiteBlocker() {
             }
         }
         chrome.tabs.update(id, { url: redirect });
+        this.logger('blocked - end');
     };
 
     /**
@@ -70,6 +72,7 @@ function WebsiteBlocker() {
      * @param time   {Array}
      */
     WB.prototype.isBlocked = function(url, regexp, targetTime, currentTime) {
+        this.logger('isBlocked - start');
         var pos = url.search(new RegExp(regexp, 'ig'));
         this.logger(pos);
 
@@ -95,13 +98,16 @@ function WebsiteBlocker() {
                                   });
 
                 if (target[0] <= current && current <= target[1]) {
+                    this.logger('current in');
                     if (this.matchDaysOfWeek(this.daysOfWeek, this.dayOfWeek)) {
+                        this.logger('match days of week in');
                         return true;
                     }
                 }
             }
         }
 
+        this.logger('isBlocked - end');
         return false;
     };
 
