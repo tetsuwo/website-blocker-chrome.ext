@@ -18,7 +18,9 @@ Controller = new function() {
         var daysOfWeek = ls.get('days_of_week');
         if (daysOfWeek) {
             for(var d in daysOfWeek) {
-                $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+                if(daysOfWeek[d] !== ',') {
+                    $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+                }
             }
         }
 
@@ -113,7 +115,9 @@ Controller = new function() {
         //ls.set('flag-popup_page_control',  false);
         //ls.set('flag-password_function',   false);
 
-        if ($('#blocked_text').val()) {
+        var blockTextExistsInDb = ls.get('blocked_list').length ? true : false;
+
+        if($('#blocked_text').val() || blockTextExistsInDb === true) {
             var BLOCKED = WB.toFormat($('#blocked_text').val());
             ls.set('blocked_list', BLOCKED);
             $('#blocked_text').val(WB.toString(BLOCKED));
