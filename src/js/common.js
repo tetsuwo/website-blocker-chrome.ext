@@ -29,6 +29,9 @@ function _trace(category, action, label) {
     } catch (e) {;}
 }
 
+//if (ls.get('read_news') < 1) {
+//    location.href = 'news.html';
+//}
 //_trace('SETTING', 'MIGRATION_VERSION', MIGRATION_VERSION);
 
 //if (!CommonDB.get('migration_version')) {

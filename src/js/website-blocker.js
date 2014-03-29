@@ -71,39 +71,46 @@ function WebsiteBlocker() {
      * @param regexp {String}
      * @param time   {Array}
      */
-    WB.prototype.isBlocked = function(url, regexp, targetTime, currentTime) {
+    WB.prototype.isBlocked = function(url, regexp, targetTime, currentTime, dayOfWeek) {
         this.logger('isBlocked - start');
         var pos = url.search(new RegExp(regexp, 'ig'));
         this.logger(pos);
 
         if (5 < pos) {
             if (this.useTimeLimit) {
+                this.logger('Time Limit!');
                 return false;
             }
 
             if (!this.useTimeGroup) {
+                this.logger('Time Group!');
                 return true;
             }
 
-            if (targetTime.length === 0) {
-                return true;
-            }
+            this.logger(dayOfWeek);
+            this.logger(this.daysOfWeek);
+            if (typeof this.daysOfWeek === 'object'
+                && this.matchDaysOfWeek(this.daysOfWeek, dayOfWeek)) {
+                this.logger('Match days of week in');
 
-            for (var i in targetTime) {
-                var current = Number(currentTime);
-                var target  = targetTime[i]
-                                  .split('-')
-                                  .map(function(time) {
-                                      return Number(time);
-                                  });
+                if (targetTime.length === 0) {
+                    this.logger('Target Time!');
+                    return true;
+                }
 
-                if (target[0] <= current && current <= target[1]) {
-                    this.logger('current in');
-                    if (this.matchDaysOfWeek(this.daysOfWeek, this.dayOfWeek)) {
-                        this.logger('match days of week in');
+                for (var i in targetTime) {
+                    var current = Number(currentTime);
+                    var target  = targetTime[i]
+                                      .split('-')
+                                      .map(function(time) {
+                                          return Number(time);
+                                      });
+
+                    if (target[0] <= current && current <= target[1]) {
                         return true;
                     }
                 }
+                //return true;
             }
         }
 
@@ -117,7 +124,10 @@ function WebsiteBlocker() {
      * @param list {Array}
      */
     WB.prototype.matchDaysOfWeek = function(targetDaysOfWeek, currentDayOfWeek) {
+        this.logger('matchDaysOfWeek - in');
+
         if (typeof targetDaysOfWeek === 'object') {
+            //this.logger('typeof targetDaysOfWeek === object');
              for (var weekNum in targetDaysOfWeek) {
                  if (targetDaysOfWeek[weekNum] == currentDayOfWeek) {
                      return true;
@@ -216,7 +226,7 @@ function WebsiteBlocker() {
 
             for (var key in this.blockedList) {
                 this.logger(this.blockedList[key].regexp);
-                if (this.isBlocked(url, this.blockedList[key].regexp, this.blockedList[key].time, currentTime)) {
+                if (this.isBlocked(url, this.blockedList[key].regexp, this.blockedList[key].time, currentTime, this.dayOfWeek)) {
                     if (testmode) {
                         return true;
                     }

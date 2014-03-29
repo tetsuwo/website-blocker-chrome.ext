@@ -2,116 +2,173 @@ describe('WebsiteBlocker', function() {
     var testdata = {};
     var blockedArray = [];
 
-    it('default', function() {
+    describe('default setting', function() {
         var wb = new WebsiteBlocker();
 
-        expect(wb.blockedList).toBeNull();
-        expect(wb.date).toBeNull();
-        expect(wb.time).toBeNull();
-        expect(wb.debug).toBeFalsy();
-        //expect(wb.debug).toBeTruthy();
-        expect(wb.disabledTimeLimit).toBeFalsy();
+        it('WebsiteBlocker.blockedList is NULL', function() {
+            expect(wb.blockedList).toBeNull();
+        });
+
+        it('WebsiteBlocker.date is NULL', function() {
+            expect(wb.date).toBeNull();
+        });
+
+        it('WebsiteBlocker.time is NULL', function() {
+            expect(wb.time).toBeNull();
+        });
+
+        it('WebsiteBlocker.debug is false', function() {
+            expect(wb.debug).toBeFalsy();
+        });
+
+        it('WebsiteBlocker.disabledTimeLimit is false', function() {
+            expect(wb.disabledTimeLimit).toBeFalsy();
+        });
     });
 
-    it('isBlocked(disabled-time)', function() {
+    describe('isBlocked(disabled-time)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = true;
         wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
-        wb.dayOfWeek = 0;
 
-        expect(wb.isBlocked('http://www.yahoo.co.jp', 'yahoo\.co\.jp', [])).toBeTruthy();
-        expect(wb.isBlocked('https://www.yahoo.co.jp', '^http:\/\/yahoo\.co\.jp', [])).toBeFalsy();
-        expect(wb.isBlocked('file:///www.yahoo.co.jp', '^http:\/\/yahoo\.co\.jp', [])).toBeFalsy();
+        it('Pattern-1 is True', function() {
+            expect(wb.isBlocked(
+                    'http://www.yahoo.co.jp',
+                    'yahoo\.co\.jp',
+                    [], '1200', 0)).toBeTruthy();
+        });
+
+        it('Pattern-2 is False', function() {
+            expect(wb.isBlocked(
+                    'https://www.yahoo.co.jp',
+                    '^http:\/\/yahoo\.co\.jp',
+                    [], '1200', 0)).toBeFalsy();
+        });
+
+        it('Pattern-3 is False', function() {
+            expect(wb.isBlocked(
+                    'file:///www.yahoo.co.jp',
+                    '^http:\/\/yahoo\.co\.jp',
+                    [], '1200', 0)).toBeFalsy();
+        });
     });
 
-    it('isBlocked(enabled-time)', function() {
+    describe('isBlocked(enabled-time)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = false;
         wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
-        wb.dayOfWeek = 0;
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300'],
-                '1245'
-                )).toBeTruthy();
+        it('Pattern-1 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300'],
+                    '1245',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300'],
-                '1300'
-                )).toBeTruthy();
+        it('Pattern-2 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300'],
+                    '1300',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300'],
-                '1301'
-                )).toBeFalsy();
+        it('Pattern-3 is False', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300'],
+                    '1301',
+                    0
+                    )).toBeFalsy();
+        });
     });
 
-    it('isBlocked(enabled-time difficult)', function() {
+    describe('isBlocked(enabled-time difficult)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = false;
         wb.daysOfWeek = [0, 1, 2, 3, 4, 5, 6];
-        wb.dayOfWeek = 0;
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1200'
-                )).toBeTruthy();
+        it('Pattern-1 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1200',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1300'
-                )).toBeTruthy();
+        it('Pattern-2 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1300',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1301'
-                )).toBeFalsy();
+        it('Pattern-3 is False', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1301',
+                    0
+                    )).toBeFalsy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1314'
-                )).toBeFalsy();
+        it('Pattern-4 is False', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1314',
+                    0
+                    )).toBeFalsy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1315'
-                )).toBeTruthy();
+        it('Pattern-5 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1315',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1445'
-                )).toBeTruthy();
+        it('Pattern-6 is True', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1445',
+                    0
+                    )).toBeTruthy();
+        });
 
-        expect(wb.isBlocked(
-                'http://twitter.com',
-                'twitter\.com',
-                ['1200-1300', '1315-1445'],
-                '1446'
-                )).toBeFalsy();
+        it('Pattern-7 is False', function() {
+            expect(wb.isBlocked(
+                    'http://twitter.com',
+                    'twitter\.com',
+                    ['1200-1300', '1315-1445'],
+                    '1446',
+                    0
+                    )).toBeFalsy();
+        });
     });
 
-    it('toFormat(simple)', function() {
+    describe('toFormat(simple)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = true;
@@ -124,18 +181,24 @@ describe('WebsiteBlocker', function() {
         var data = wb.toFormat(text);
         //console.log(data);
 
-        expect(data.length).toEqual(2);
+        it('data length is 2', function() {
+            expect(data.length).toEqual(2);
+        });
 
-        expect(data[0].url).toEqual('(facebook|twitter).com');
-        expect(data[0].regexp).toEqual('(facebook|twitter)\\.com');
-        expect(data[0].time.length).toEqual(2);
+        it('data line-1 is all clean', function() {
+            expect(data[0].url).toEqual('(facebook|twitter).com');
+            expect(data[0].regexp).toEqual('(facebook|twitter)\\.com');
+            expect(data[0].time.length).toEqual(2);
+        });
 
-        expect(data[1].url).toEqual('yahoo.co.jp');
-        expect(data[1].regexp).toEqual('yahoo\\.co\\.jp');
-        expect(data[1].time.length).toEqual(0);
+        it('data line-2 is all clean', function() {
+            expect(data[1].url).toEqual('yahoo.co.jp');
+            expect(data[1].regexp).toEqual('yahoo\\.co\\.jp');
+            expect(data[1].time.length).toEqual(0);
+        });
     });
 
-    it('toFormat(difficult)', function() {
+    describe('toFormat(difficult)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = true;
@@ -149,16 +212,20 @@ describe('WebsiteBlocker', function() {
         var data = blockedArray = wb.toFormat(text);
         //console.log(data);
 
-        expect(data.length).toEqual(3);
+        it('data length is 3', function() {
+            expect(data.length).toEqual(3);
+        });
 
-        expect(data[0].url).toEqual('facebook.com');
-        expect(data[0].regexp).toEqual('facebook\\.com');
-        expect(data[0].time.length).toEqual(2);
-        expect(data[0].time[0]).toEqual('0930-1259');
-        expect(data[0].time[1]).toEqual('1300-1530');
+        it('data line-1 is all clean', function() {
+            expect(data[0].url).toEqual('facebook.com');
+            expect(data[0].regexp).toEqual('facebook\\.com');
+            expect(data[0].time.length).toEqual(2);
+            expect(data[0].time[0]).toEqual('0930-1259');
+            expect(data[0].time[1]).toEqual('1300-1530');
+        });
     });
 
-    it('toString(simple)', function() {
+    describe('toString(simple)', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         wb.disabledTimeLimit = true;
@@ -185,30 +252,44 @@ describe('WebsiteBlocker', function() {
         var data = wb.toString(blockedArray);
         //console.log(data);
 
-        expect(data).toEqual(text);
+        it('array to string data is expected string', function() {
+            expect(data).toEqual(text);
+        });
     });
 
-    it('generateRandomString', function() {
+    describe('generateRandomString', function() {
         var wb = new WebsiteBlocker();
         wb.debug = true;
         var passphrase = '';
 
-        passphrase = wb.generateRandomString(12, true);
-        expect(passphrase.length).toEqual(12);
+        it('12 chars and number only', function() {
+            passphrase = wb.generateRandomString(12, true);
+            expect(passphrase.length).toEqual(12);
+        });
 
-        passphrase = wb.generateRandomString(36, true);
-        expect(passphrase.length).toEqual(36);
+        it('36 chars and number only', function() {
+            passphrase = wb.generateRandomString(36, true);
+            expect(passphrase.length).toEqual(36);
+        });
 
-        passphrase = wb.generateRandomString(12, true, true);
-        expect(passphrase.length).toEqual(12);
+        it('12 chars and number, lower alphabet', function() {
+            passphrase = wb.generateRandomString(12, true, true);
+            expect(passphrase.length).toEqual(12);
+        });
 
-        passphrase = wb.generateRandomString(36, true, true);
-        expect(passphrase.length).toEqual(36);
+        it('36 chars and number, lower alphabet', function() {
+            passphrase = wb.generateRandomString(36, true, true);
+            expect(passphrase.length).toEqual(36);
+        });
 
-        passphrase = wb.generateRandomString(12, true, true, true);
-        expect(passphrase.length).toEqual(12);
+        it('12 chars and number, alphabet', function() {
+            passphrase = wb.generateRandomString(12, true, true, true);
+            expect(passphrase.length).toEqual(12);
+        });
 
-        passphrase = wb.generateRandomString(36, true, true, true);
-        expect(passphrase.length).toEqual(36);
+        it('36 chars and number, alphabet', function() {
+            passphrase = wb.generateRandomString(36, true, true, true);
+            expect(passphrase.length).toEqual(36);
+        });
     });
 });
