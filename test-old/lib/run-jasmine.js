@@ -55,20 +55,20 @@ page.open(system.args[1], function(status){
     } else {
         waitFor(function(){
             return page.evaluate(function(){
-                return document.body.querySelector('.symbol-summary .pending') === null
+                return document.body.querySelector('.symbolSummary .pending') === null
             });
         }, function(){
             var exitCode = page.evaluate(function(){
                 console.log('');
-                //console.log(document.body.querySelector('.description').innerText);
-                var list = document.body.querySelectorAll('.results > #details > .spec-detail.failed');
+                console.log(document.body.querySelector('.description').innerText);
+                var list = document.body.querySelectorAll('.results > #details > .specDetail.failed');
                 if (list && list.length > 0) {
                   console.log('');
                   console.log(list.length + ' test(s) FAILED:');
                   for (i = 0; i < list.length; ++i) {
                       var el = list[i],
                           desc = el.querySelector('.description'),
-                          msg = el.querySelector('.result-message');
+                          msg = el.querySelector('.resultMessage.fail');
                       console.log('');
                       console.log(desc.innerText);
                       console.log(msg.innerText);
@@ -76,7 +76,7 @@ page.open(system.args[1], function(status){
                   }
                   return 1;
                 } else {
-                  console.log(document.body.querySelector('.alert .bar').innerText);
+                  console.log(document.body.querySelector('.alert > .passingAlert.bar').innerText);
                   return 0;
                 }
             });

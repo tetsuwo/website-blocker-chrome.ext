@@ -14,7 +14,7 @@ function WebsiteBlocker() {
     this.time = null;
     this.dayOfWeek = null;
     this.daysOfWeek = [];
-    this.debug = true; // debug mode
+    this.debug = false; // debug mode
     this.useTimeGroup = true; // on/off for time limit function
     this.useTimeLimit = false;
     this.redirectHistory = {};
@@ -283,7 +283,7 @@ function WebsiteBlocker() {
      */
     WB.prototype.logger = function(a) {
         if (this.debug) {
-            console.log(a);
+            console.debug('{WebsiteBlocker Log}', a);
         }
     };
 

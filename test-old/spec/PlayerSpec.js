@@ -52,7 +52,7 @@ describe("Player", function() {
 
       expect(function() {
         player.resume();
-      }).toThrowError("song is already playing");
+      }).toThrow("song is already playing");
     });
   });
 });
