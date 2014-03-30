@@ -3,6 +3,9 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.2.6
+  - Added a new function "Days of the week"  
+    Special Thanks: [Silas Ribas Martins](https://github.com/silasrm)
 - 0.2.5
   - Removed some share-button on block page
 - 0.2.4
@@ -16,7 +19,7 @@ CHANGE LOG:
     Special Thanks: [Muhammed Ali Efe](https://twitter.com/MAliEFE44)
 - 0.2.1
   - Translated to French.  
-    Special Thanks: [Jérémy Gasche](https://github.com/jeremygasche)
+    Special Thanks: [Jeremy Gasche](https://github.com/jeremygasche)
 - 0.2.0
   - Add a new function "Password Protection".
 - 0.1.9 - 0.1.9.1

@@ -6,6 +6,7 @@
 
 // Set Environment Vars
 MIGRATION_VERSION = 1;
+NEWS_VERSION = 1;
 STORAGE_NAMESPACE = '__wb_' + MIGRATION_VERSION;
 //db.change(STORAGE_NAMESPACE);
 
@@ -29,9 +30,6 @@ function _trace(category, action, label) {
     } catch (e) {;}
 }
 
-//if (ls.get('read_news') < 1) {
-//    location.href = 'news.html';
-//}
 //_trace('SETTING', 'MIGRATION_VERSION', MIGRATION_VERSION);
 
 //if (!CommonDB.get('migration_version')) {

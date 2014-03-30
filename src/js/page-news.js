@@ -13,7 +13,7 @@ function resizer() {
 }
 
 $(window).load(function() {
-    ls.set('read_news', 1);
+    ls.set('_read_news', NEWS_VERSION);
     Controller.sharePage();
     i18n(function(){
         $('#blocked-container').show();

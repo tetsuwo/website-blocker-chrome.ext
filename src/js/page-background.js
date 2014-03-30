@@ -23,9 +23,10 @@ if (window.localStorage.getItem('flag-password_function') === null) {
     ls.rm('__wb_1__password_func_01');
 }
 
-if (!ls.get('_install')) {
+if (!ls.get('_installed')) {
     //chrome.tabs.create({ url: 'welcome.html', selected: true })
-    //ls.set('_install', true);
+    ls.set('days_of_week', [0,1,2,3,4,5,6]);
+    ls.set('_installed', true);
 }
 
 if (ls.get('_explain') !== 1) {
@@ -33,6 +34,10 @@ if (ls.get('_explain') !== 1) {
     ls.set('_explain', 1);
 }
 
+if (!ls.get('_read_news') || ls.get('_read_news') < NEWS_VERSION) {
+    chrome.tabs.create({ url: 'news.html#news-version-' + NEWS_VERSION, selected: true })
+    ls.set('_read_news', NEWS_VERSION);
+}
 
 // ---- Background ---- //
 
