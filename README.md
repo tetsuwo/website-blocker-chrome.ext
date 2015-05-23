@@ -7,6 +7,7 @@ Website Blocker Chrome Extension
 [GitHub Page](http://tetsuwo.github.io/website-blocker-chrome.ext/)
 
 [![Build Status](https://secure.travis-ci.org/tetsuwo/website-blocker-chrome.ext.png?branch=master)](https://travis-ci.org/tetsuwo/website-blocker-chrome.ext)
+[![Coverage Status](https://coveralls.io/repos/tetsuwo/website-blocker-chrome.ext/badge.svg?branch=master)](https://coveralls.io/r/tetsuwo/website-blocker-chrome.ext?branch=master)
 
 
 SETTING EXAMPLE
