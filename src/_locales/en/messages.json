@@ -39,7 +39,7 @@
     "message": "Disable\x20of\x20the\x20block\x20function\x2e"
   },
   "blocked_message": {
-    "message": "Can\x27t\x20access\x20to\x20this\x20page\x2e"
+    "message": "Can\x27t\x20access\x20this\x20page\x2e"
   },
   "blocked_title": {
     "message": "This\x20page\x20is\x20blocked\x2e"
