@@ -19,9 +19,9 @@ SETTING EXAMPLE
 
 Above and below is the same meaning.
 
-    Can't access to 'facebook.com' and 'twitter.com' and 'hootsuite.com' until 12:59 from 9:30 and until 15:30 from 13:00.
-    Can't access to 'www.hatena.ne.jp' and 'b.hatena.ne.jp' until 10:00 from 12:59.
-    Can't access to 'yahoo.com'
+    Can't access 'facebook.com' and 'twitter.com' and 'hootsuite.com' until 12:59 from 9:30 and until 15:30 from 13:00.
+    Can't access 'www.hatena.ne.jp' and 'b.hatena.ne.jp' until 10:00 from 12:59.
+    Can't access 'yahoo.com'
 
 
 FEATURES
