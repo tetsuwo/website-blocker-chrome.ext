@@ -1,5 +1,5 @@
 script: 
-  - phantomjs test/lib/run-jasmine.js tests/test.html
+  - phantomjs tests/lib/run-jasmine.js tests/test.html
 notifications:
   email:
     recipients: tetsuwo.oishi+travis-ci@gmail.com
