@@ -1,0 +1,164 @@
+{
+  "ID": {
+    "message": "si"
+  },
+  "add_block_time": {
+    "message": "වාරණ\x20කාලය"
+  },
+  "add_blockthis": {
+    "message": "මෙය\x20අවහිර\x20කරන්න\x21"
+  },
+  "add_time_1": {
+    "message": "අතර"
+  },
+  "add_time_2": {
+    "message": "සහ"
+  },
+  "add_time_3": {
+    "message": ""
+  },
+  "applied": {
+    "message": "යොමු\x20කරන\x20ලදී\x21"
+  },
+  "apply": {
+    "message": "යොමු\x20කරන්න"
+  },
+  "back": {
+    "message": "ආපසු"
+  },
+  "basic_settings": {
+    "message": "මුලික\x20සැකසුම්"
+  },
+  "block_already": {
+    "message": "මෙම\x20පිටුව\x20දැනටම\x20අක්‍රිය\x20කර\x20ඇත\x2e\x20විකල්ප\x20පිටුවට\x20යන්න\x2e"
+  },
+  "block_ng": {
+    "message": "මෙම\x20පිටුව\x20අවහිර\x20කල\x20නොහැක\x2e"
+  },
+  "blocked_disabled": {
+    "message": "අවහිර\x20කරන\x20ක්‍රියාවලිය\x20අක්‍රිය\x20කර\x20ඇත\x2e"
+  },
+  "blocked_message": {
+    "message": "මෙම\x27t\x20පිටුව\x20භාවිතා\x20කල\x20හැක\x2e"
+  },
+  "blocked_title": {
+    "message": "මෙම\x20පිටුව\x20අවහිර\x20කර\x20ඇත\x2e"
+  },
+  "bug_report": {
+    "message": "දෝෂ\x20වාර්තාව"
+  },
+  "changelog": {
+    "message": "සංශෝධන\x20ඉතිහාසය"
+  },
+  "close": {
+    "message": "වසන්න"
+  },
+  "document": {
+    "message": "ලියවිල්ල"
+  },
+  "example": {
+    "message": "උදාහරණ"
+  },
+  "ext_description": {
+    "message": "Website\x20Blocker\x20ඔබට\x20ප්‍රයෝජනවත්\x20වන්නේ\x20ඔබ\x20යම්කිසි\x20කාර්යක\x20නිරිත\x20වන\x20විටදීය\x2e"
+  },
+  "ext_name": {
+    "message": "Website\x20Blocker\x20\x28Beta\x29"
+  },
+  "facebook_page": {
+    "message": "Facebook\x20පිටුව"
+  },
+  "font_family": {
+    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+  },
+  "format": {
+    "message": "ආකෘතිය"
+  },
+  "input": {
+    "message": "ආදාන"
+  },
+  "message_when_blocked": {
+    "message": "අවහිර\x20කරන\x20පණිවිඩය"
+  },
+  "nav_about": {
+    "message": "About\x20දිගුව\x20ගැන"
+  },
+  "nav_blocking": {
+    "message": "අවහිර\x20කරමින්"
+  },
+  "nav_changelog": {
+    "message": "සංශෝදන\x20අතීතය"
+  },
+  "nav_function": {
+    "message": "අක්‍රිය\x2fසක්‍රිය\x20කරන්න"
+  },
+  "nav_message": {
+    "message": "අවහිර\x20කර\x20ඇති\x20විට\x20පණිවිඩ"
+  },
+  "nav_password": {
+    "message": "මුරපදය"
+  },
+  "option_page_link_disabled": {
+    "message": "කෙටි\x20යෙදුම\x20අක්‍රිය\x20කර\x20ඇත\x2e"
+  },
+  "options": {
+    "message": "විකල්ප"
+  },
+  "please_support_me": {
+    "message": "මට\x20උදව්\x20කරන්න\x21\x20\x28PayPal\x29"
+  },
+  "popup_page_control_disabled": {
+    "message": "මතුවන\x20පිටුවේ\x20ක්‍රියාවලි\x20අවහිර\x20කර\x20ඇත\x2e"
+  },
+  "save": {
+    "message": "සුරකින්න"
+  },
+  "save_and_close": {
+    "message": "සුරැකීමෙන්\x20පසු\x20වසන්න"
+  },
+  "setting": {
+    "message": "සැකසුම්"
+  },
+  "special_thanks": {
+    "message": "විශේෂ\x20ස්තුතිය"
+  },
+  "tell_a_friend": {
+    "message": "මිතුරෙකුට\x20කියන්න"
+  },
+  "time_limit_disabled": {
+    "message": "කාල\x20සීමා\x20ක්‍රියාවලිය\x20අවහිර\x20කර\x20ඇත\x2e"
+  },
+  "title_when_blocked": {
+    "message": "අවහිර\x20කර\x20ඇති\x20විට\x20මාතෘකාව"
+  },
+  "websites_to_block": {
+    "message": "අවහිර\x20කිරීමට\x20ඇති\x20පිටු"
+  },
+  "with_email": {
+    "message": "ඊ\x20තැපෑල\x2dසමගින්"
+  },
+  "days_of_week": {
+    "message": "සතියෙහි\x20දින"
+  },
+  "days_of_week_sunday": {
+    "message": "ඉරිදා"
+  },
+  "days_of_week_monday": {
+    "message": "සඳුදා"
+  },
+  "days_of_week_tuesday": {
+    "message": "අඟහරුවාදා"
+  },
+  "days_of_week_wednesday": {
+    "message": "බදාදා"
+  },
+  "days_of_week_thursday": {
+    "message": "බ්‍රහස්පතින්දා"
+  },
+  "days_of_week_friday": {
+    "message": "සිකුරාදා"
+  },
+  "days_of_week_saturday": {
+    "message": "සෙනසුරාදා"
+  }
+}
