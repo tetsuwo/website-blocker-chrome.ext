@@ -3,6 +3,9 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.2.7
+  - Translated to Sinhala.  
+    Special Thanks: [Rumesh Eranga](https://github.com/rehrumesh)
 - 0.2.6
   - Added a new function "Days of the week"  
     Special Thanks: [Silas Ribas Martins](https://github.com/silasrm)
