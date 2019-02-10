@@ -3,138 +3,180 @@
     "message": "zh_CN"
   },
   "add_block_time": {
-    "message": "\u5c4f\u853d\u65f6\u95f4"
+    "message": "屏蔽时间"
   },
   "add_blockthis": {
-    "message": "\u5c4f\u853d\u8fd9\u4e2a\u7f51\u7ad9\uff01"
+    "message": "屏蔽这个网站！"
   },
   "add_time_1": {
-    "message": "\u4ece"
+    "message": "从"
   },
   "add_time_2": {
-    "message": "\u5230"
+    "message": "到"
   },
   "add_time_3": {
     "message": ""
   },
   "applied": {
-    "message": "\u5df2\u5e94\u7528"
+    "message": "已应用"
   },
   "apply": {
-    "message": "\u5e94\u7528"
+    "message": "应用"
   },
   "back": {
-    "message": "\u540e\u9000"
+    "message": "后退"
   },
   "basic_settings": {
-    "message": "\u57fa\u672c\u8bbe\u7f6e"
+    "message": "基本设置"
   },
   "block_already": {
-    "message": "\u8fd9\u9875\u662f\u4e0d\u662f\u5df2\u7ecf\u5305\u542b\u5728\u5757\u5217\u8868\u3002\u8bf7\u4ece\u201c\u9009\u9879\u201d\u4fee\u590d\u5b8c\u6210\u3002"
+    "message": "这页是不是已经包含在块列表。请从“选项”修复完成。"
   },
   "block_ng": {
-    "message": "\u65e0\u6cd5\u5c4f\u853d\u8fd9\u4e2a\u7f51\u9875\u3002"
+    "message": "无法屏蔽这个网页。"
   },
   "blocked_disabled": {
-    "message": "\u7981\u7528\u5c4f\u853d\u529f\u80fd"
+    "message": "禁用屏蔽功能"
   },
   "blocked_message": {
-    "message": "\u65e0\u6cd5\u8fdb\u5165\u8fd9\u4e2a\u7f51\u9875\u3002"
+    "message": "无法进入这个网页。"
   },
   "blocked_title": {
-    "message": "\u8fd9\u4e2a\u7f51\u9875\u88ab\u5c4f\u853d\u4e86\u3002"
+    "message": "这个网页被屏蔽了。"
   },
   "bug_report": {
-    "message": "\u9519\u8bef\u62a5\u544a"
+    "message": "错误报告"
   },
   "changelog": {
-    "message": "\u66f4\u65b0\u65e5\u5fd7"
+    "message": "更新日志"
   },
   "close": {
-    "message": "\u5173\u95ed"
+    "message": "关闭"
   },
   "document": {
-    "message": "\u6587\u6863"
+    "message": "文档"
   },
   "example": {
-    "message": "\u4f8b\u5b50"
+    "message": "例子"
   },
   "ext_description": {
-    "message": "\u8b66\u544a\u8bf4\uff0c\u5982\u679c\u4f60\u6ce8\u518c\u4f60\u7684\u7f51\u7ad9\u201c\u6211\u4e0d\u5e0c\u671b\u770b\u5230\u7684\u4e00\u5b9a\u65f6\u95f4\u201d\u65f6\u4e13\u6ce8\u4e8e\u5de5\u4f5c\u7684\u4e1c\u897f\u3002"
+    "message": "警告说，如果你注册你的网站“我不希望看到的一定时间”时专注于工作的东西。"
   },
   "ext_name": {
-    "message": "\u963b\u6ede\u5242\u7f51\u7ad9"
+    "message": "阻滞剂网站"
   },
   "facebook_page": {
-    "message": "\u7b2c\u9875\u5230Facebook"
+    "message": "第页到Facebook"
   },
   "font_family": {
-    "message": "Microsoft\x20YaHei\x2c\x20Arial\x2c\x20sans\x2dserif"
+    "message": "Microsoft YaHei, Arial, sans-serif"
   },
   "format": {
-    "message": "\u683c\u5f0f"
+    "message": "格式"
   },
   "input": {
-    "message": "\u8f93\u5165"
+    "message": "输入"
   },
   "message_when_blocked": {
-    "message": "\u663e\u793a\u7684\u5c4f\u853d\u4fe1\u606f"
+    "message": "显示的屏蔽信息"
   },
   "nav_about": {
-    "message": "\u5173\u4e8e\u8fd9\u4e2a\u6269\u5c55"
+    "message": "关于这个扩展"
   },
   "nav_blocking": {
-    "message": "\u88ab\u5c4f\u853d\u7684\u7f51\u7ad9"
+    "message": "被屏蔽的网站"
   },
   "nav_changelog": {
-    "message": "\u66f4\u65b0\u65e5\u5fd7"
+    "message": "更新日志"
   },
   "nav_function": {
-    "message": "\u8bbe\u7f6e\u6bcf\u9879\u529f\u80fd"
+    "message": "设置每项功能"
   },
   "nav_message": {
-    "message": "\u5c4f\u853d\u65f6\u663e\u793a\u7684\u4fe1\u606f"
+    "message": "屏蔽时显示的信息"
   },
   "nav_password": {
-    "message": "\u5bc6\u7801"
+    "message": "密码"
   },
   "option_page_link_disabled": {
-    "message": "\u5c4f\u853d\u9009\u9879\u9875\u9762\u4e2d\u7684\u77ed\u94fe\u63a5"
+    "message": "屏蔽选项页面中的短链接"
   },
   "options": {
-    "message": "\u9009\u9879"
+    "message": "选项"
   },
   "please_support_me": {
-    "message": "\u5566\u5566\u961f\uff08\u8d1d\u5b9d\uff09"
+    "message": "啦啦队（贝宝）"
   },
   "popup_page_control_disabled": {
-    "message": "\u5c4f\u853d\u5f39\u51fa\u9875\u9762\u7684\u6bcf\u9879\u529f\u80fd\u63a7\u5236"
+    "message": "屏蔽弹出页面的每项功能控制"
   },
   "save": {
-    "message": "\u4fdd\u5b58"
+    "message": "保存"
   },
   "save_and_close": {
-    "message": "\u4fdd\u5b58\u5e76\u5173\u95ed"
+    "message": "保存并关闭"
   },
   "setting": {
-    "message": "\u8bbe\u7f6e"
+    "message": "设置"
   },
   "special_thanks": {
-    "message": "\u7279\u522b\u611f\u8c22"
+    "message": "特别感谢"
   },
   "tell_a_friend": {
-    "message": "\u544a\u8bc9\u670b\u53cb"
+    "message": "告诉朋友"
   },
   "time_limit_disabled": {
-    "message": "\u7981\u7528\u65f6\u95f4\u9650\u5236\u529f\u80fd"
+    "message": "禁用时间限制功能"
   },
   "title_when_blocked": {
-    "message": "\u5c4f\u853d\u6807\u9898"
+    "message": "屏蔽标题"
   },
   "websites_to_block": {
-    "message": "\u8981\u5c4f\u853d\u7684\u7f51\u7ad9"
+    "message": "要屏蔽的网站"
   },
   "with_email": {
-    "message": "\u4e0eE\x2dMAIL"
+    "message": "与E-MAIL"
+  },
+  "days_of_week": {
+    "message": "Day's of the week"
+  },
+  "days_of_week_sunday": {
+    "message": "Sunday"
+  },
+  "days_of_week_monday": {
+    "message": "Monday"
+  },
+  "days_of_week_tuesday": {
+    "message": "Tuesday"
+  },
+  "days_of_week_wednesday": {
+    "message": "Wednesday"
+  },
+  "days_of_week_thursday": {
+    "message": "Thursday"
+  },
+  "days_of_week_friday": {
+    "message": "Friday"
+  },
+  "days_of_week_saturday": {
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

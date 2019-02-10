@@ -13,15 +13,19 @@ Website Blocker Chrome Extension
 SETTING EXAMPLE
 ---------------
 
-    (facebook|twitter|reddit).com 0930-1259,1300-1530
-    (www|b).hatena.ne.jp 1000-1259
-    yahoo.com
+```
+(facebook|twitter|reddit).com 0930-1259,1300-1530
+(www|b).hatena.ne.jp 1000-1259
+yahoo.com
+```
 
 Above and below is the same meaning.
 
-    Can't access 'facebook.com' and 'twitter.com' and 'reddit.com' until 12:59 from 9:30 and until 15:30 from 13:00.
-    Can't access 'www.hatena.ne.jp' and 'b.hatena.ne.jp' until 10:00 from 12:59.
-    Can't access 'yahoo.com'
+```
+Can't access 'facebook.com' and 'twitter.com' and 'reddit.com' until 12:59 from 9:30 and until 15:30 from 13:00.
+Can't access 'www.hatena.ne.jp' and 'b.hatena.ne.jp' until 10:00 from 12:59.
+Can't access 'yahoo.com'
+```
 
 
 FEATURES
@@ -46,15 +50,18 @@ Yes, you must be right click on hide the toolbar icon. There is "Hide button".
 SUPPORTED LANGUAGES
 -------------------
 
-- Chinese
 - English
 - German
-- Italy
-- Korean
-- Japanese
-- Portuguese
-- Slovenian
 - Spanish
+- French
+- Italy
+- Japanese
+- Korean
+- Portuguese
+- Sinhala
+- Slovenian
+- Turkish
+- Chinese
 
 
 ELSEWHERE

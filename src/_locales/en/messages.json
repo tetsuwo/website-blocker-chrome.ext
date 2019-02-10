@@ -3,10 +3,10 @@
     "message": "en"
   },
   "add_block_time": {
-    "message": "Block\x20Time"
+    "message": "Block Time"
   },
   "add_blockthis": {
-    "message": "Block\x20This\x21"
+    "message": "Block This!"
   },
   "add_time_1": {
     "message": "between"
@@ -18,7 +18,7 @@
     "message": ""
   },
   "applied": {
-    "message": "Applied\x21"
+    "message": "Applied!"
   },
   "apply": {
     "message": "Apply"
@@ -27,28 +27,28 @@
     "message": "Back"
   },
   "basic_settings": {
-    "message": "Basic\x20settings"
+    "message": "Basic settings"
   },
   "block_already": {
-    "message": "This\x20page\x20is\x20already\x20blocked\x2e\x20This\x20block\x20data\x20edit\x20do\x20from\x20\x5bOptions\x5d\x20page\x2e"
+    "message": "This page is already blocked. This block data edit do from [Options] page."
   },
   "block_ng": {
-    "message": "This\x20page\x20can\x20not\x20block\x2e"
+    "message": "This page can not block."
   },
   "blocked_disabled": {
-    "message": "Disable\x20of\x20the\x20block\x20function\x2e"
+    "message": "Disable of the block function."
   },
   "blocked_message": {
-    "message": "Can\x27t\x20access\x20this\x20page\x2e"
+    "message": "Can't access to this page."
   },
   "blocked_title": {
-    "message": "This\x20page\x20is\x20blocked\x2e"
+    "message": "This page is blocked."
   },
   "bug_report": {
-    "message": "Bug\x20report"
+    "message": "Bug report"
   },
   "changelog": {
-    "message": "Revision\x20History"
+    "message": "Revision History"
   },
   "close": {
     "message": "Close"
@@ -60,16 +60,16 @@
     "message": "Example"
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20is\x20useful\x20when\x20you\x20want\x20to\x20concentrate\x20on\x20work\x2e"
+    "message": "Website Blocker is useful when you want to concentrate on work."
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "Facebook\x20page"
+    "message": "Facebook page"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Format"
@@ -78,67 +78,67 @@
     "message": "Input"
   },
   "message_when_blocked": {
-    "message": "Message\x20when\x20blocked"
+    "message": "Message when blocked"
   },
   "nav_about": {
-    "message": "About\x20this\x20Extension"
+    "message": "About this Extension"
   },
   "nav_blocking": {
-    "message": "Blocking\x20Website"
+    "message": "Blocking Website"
   },
   "nav_changelog": {
-    "message": "Revision\x20History"
+    "message": "Revision History"
   },
   "nav_function": {
-    "message": "ON\x2fOFF\x20of\x20each\x20functions"
+    "message": "ON/OFF of each functions"
   },
   "nav_message": {
-    "message": "Messages\x20of\x20when\x20blocked"
+    "message": "Messages of when blocked"
   },
   "nav_password": {
     "message": "Password"
   },
   "option_page_link_disabled": {
-    "message": "Disabled\x20of\x20shortcut\x20link\x20to\x20the\x20options\x20page\x2e"
+    "message": "Disabled of shortcut link to the options page."
   },
   "options": {
     "message": "Options"
   },
   "please_support_me": {
-    "message": "Please\x20support\x20me\x21\x20\x28PayPal\x29"
+    "message": "Please support me! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "Disabled\x20of\x20each\x20function\x20control\x20from\x20popup\x20page\x2e"
+    "message": "Disabled of each function control from popup page."
   },
   "save": {
     "message": "Save"
   },
   "save_and_close": {
-    "message": "Save\x20and\x20Close"
+    "message": "Save and Close"
   },
   "setting": {
     "message": "Setting"
   },
   "special_thanks": {
-    "message": "Special\x20Thanks"
+    "message": "Special Thanks"
   },
   "tell_a_friend": {
-    "message": "Tell\x20a\x20friend"
+    "message": "Tell a friend"
   },
   "time_limit_disabled": {
-    "message": "Disable\x20of\x20the\x20time\x20limit\x20function\x2e"
+    "message": "Disable of the time limit function."
   },
   "title_when_blocked": {
-    "message": "Title\x20when\x20blocked"
+    "message": "Title when blocked"
   },
   "websites_to_block": {
-    "message": "Websites\x20to\x20block"
+    "message": "Websites to block"
   },
   "with_email": {
-    "message": "with\x20E\x2dMail"
+    "message": "with E-Mail"
   },
   "days_of_week": {
-    "message": "Day's\x20of\x20the\x20week"
+    "message": "Day's of the week"
   },
   "days_of_week_sunday": {
     "message": "Sunday"
@@ -160,5 +160,23 @@
   },
   "days_of_week_saturday": {
     "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

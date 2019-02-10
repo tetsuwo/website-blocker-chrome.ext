@@ -62,5 +62,4 @@ $('#blockthis').on('click', function() {
 });
 
 $('[i18n="options"]').css('display', ls.get('flag-option_page_link') ? 'inline-block' : 'none');
-$('#each_function_controler').css('display', ls.get('flag-popup_page_control') ? 'inline-block' : 'none');
 

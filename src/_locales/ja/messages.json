@@ -3,138 +3,180 @@
     "message": "ja"
   },
   "add_block_time": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u3059\u308b\u6642\u9593"
+    "message": "ブロックする時間"
   },
   "add_blockthis": {
-    "message": "\u3053\u308c\u3067\u30d6\u30ed\u30c3\u30af\u3059\u308b\uff01"
+    "message": "これでブロックする！"
   },
   "add_time_1": {
     "message": ""
   },
   "add_time_2": {
-    "message": "\u304b\u3089"
+    "message": "から"
   },
   "add_time_3": {
-    "message": "\u307e\u3067"
+    "message": "まで"
   },
   "applied": {
-    "message": "\u9069\u7528\u3057\u307e\u3057\u305f\u3002"
+    "message": "適用しました。"
   },
   "apply": {
-    "message": "\u9069\u7528"
+    "message": "適用"
   },
   "back": {
-    "message": "\u623b\u308b"
+    "message": "戻る"
   },
   "basic_settings": {
-    "message": "\u57fa\u672c\u8a2d\u5b9a"
+    "message": "基本設定"
   },
   "block_already": {
-    "message": "\u3053\u306e\u30da\u30fc\u30b8\u306f\u65e2\u306b\u30d6\u30ed\u30c3\u30af\u30ea\u30b9\u30c8\u306b\u5165\u3063\u3066\u3044\u307e\u3059\u3002\u4fee\u6b63\u306f\u300c\u30aa\u30d7\u30b7\u30e7\u30f3\u300d\u304b\u3089\u304a\u3053\u306a\u3063\u3066\u304f\u3060\u3055\u3044\u3002"
+    "message": "このページは既にブロックリストに入っています。修正は「オプション」からおこなってください。"
   },
   "block_ng": {
-    "message": "\u3053\u306e\u30da\u30fc\u30b8\u306f\u30d6\u30ed\u30c3\u30af\u3067\u304d\u307e\u305b\u3093\u3002"
+    "message": "このページはブロックできません。"
   },
   "blocked_disabled": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u6a5f\u80fd\u3092\u7121\u52b9"
+    "message": "ブロック機能を無効"
   },
   "blocked_message": {
-    "message": "\u3053\u306e\u30da\u30fc\u30b8\u306f\u30d6\u30ed\u30c3\u30af\u30ea\u30b9\u30c8\u306b\u5165\u3063\u3066\u3044\u308b\u305f\u3081\u30a2\u30af\u30bb\u30b9\u3067\u304d\u307e\u305b\u3093\u3002"
+    "message": "このページはブロックリストに入っているためアクセスできません。"
   },
   "blocked_title": {
-    "message": "\u3053\u306e\u30da\u30fc\u30b8\u306f\u30d6\u30ed\u30c3\u30af\u3055\u308c\u3066\u3044\u307e\u3059"
+    "message": "このページはブロックされています"
   },
   "bug_report": {
-    "message": "\u30d0\u30b0\u5831\u544a"
+    "message": "バグ報告"
   },
   "changelog": {
-    "message": "\u6539\u8a02\u5c65\u6b74"
+    "message": "改訂履歴"
   },
   "close": {
-    "message": "\u9589\u3058\u308b"
+    "message": "閉じる"
   },
   "document": {
-    "message": "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
+    "message": "ドキュメント"
   },
   "example": {
-    "message": "\u5165\u529b\u4f8b"
+    "message": "入力例"
   },
   "ext_description": {
-    "message": "\u4f55\u304b\u306e\u4f5c\u696d\u306b\u96c6\u4e2d\u3059\u308b\u3068\u304d\u300c\u3042\u308b\u6642\u9593\u3060\u3051\u898b\u305f\u304f\u306a\u3044\u30b5\u30a4\u30c8\u300d\u3092\u767b\u9332\u3057\u3066\u304a\u3051\u3070\u8b66\u544a\u3092\u51fa\u305b\u307e\u3059\u3002"
+    "message": "何かの作業に集中するとき「ある時間だけ見たくないサイト」を登録しておけば警告を出せます。"
   },
   "ext_name": {
-    "message": "\u30a6\u30a7\u30d6\u30b5\u30a4\u30c8\u30d6\u30ed\u30c3\u30ab\u30fc\x20\x28Beta\x29"
+    "message": "ウェブサイトブロッカー (Beta)"
   },
   "facebook_page": {
-    "message": "Facebook\u30da\u30fc\u30b8\u3078"
+    "message": "Facebookページへ"
   },
   "font_family": {
-    "message": "\u30d2\u30e9\u30ae\u30ce\u89d2\u30b4\x20Pro\x20W3\x27\x2c\x20\x27Hiragino\x20Kaku\x20Gothic\x20Pro\x27\x2c\x20Meiryo\x2c\x20Arial\x2c\x20sans\x2dserif"
+    "message": "ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Meiryo, Arial, sans-serif"
   },
   "format": {
-    "message": "\u30d5\u30a9\u30fc\u30de\u30c3\u30c8"
+    "message": "フォーマット"
   },
   "input": {
-    "message": "\u5165\u529b\u6b04"
+    "message": "入力欄"
   },
   "message_when_blocked": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u6642\u306e\u30e1\u30c3\u30bb\u30fc\u30b8"
+    "message": "ブロック時のメッセージ"
   },
   "nav_about": {
-    "message": "\u3053\u306e\u62e1\u5f35\u6a5f\u80fd\u306b\u3064\u3044\u3066"
+    "message": "この拡張機能について"
   },
   "nav_blocking": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u3057\u3066\u3044\u308b\u30b5\u30a4\u30c8"
+    "message": "ブロックしているサイト"
   },
   "nav_changelog": {
-    "message": "\u6539\u8a02\u5c65\u6b74"
+    "message": "改訂履歴"
   },
   "nav_function": {
-    "message": "\u5404\u6a5f\u80fd\u306eON\x2fOFF"
+    "message": "各機能のON/OFF"
   },
   "nav_message": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u6642\u306e\u30e1\u30c3\u30bb\u30fc\u30b8"
+    "message": "ブロック時のメッセージ"
   },
   "nav_password": {
-    "message": "\u30d1\u30b9\u30ef\u30fc\u30c9"
+    "message": "パスワード"
   },
   "option_page_link_disabled": {
-    "message": "\u8a2d\u5b9a\u30da\u30fc\u30b8\u3078\u306e\u30ea\u30f3\u30af\u3092\u7121\u52b9"
+    "message": "設定ページへのリンクを無効"
   },
   "options": {
-    "message": "\u30aa\u30d7\u30b7\u30e7\u30f3"
+    "message": "オプション"
   },
   "please_support_me": {
-    "message": "\u5fdc\u63f4\u3059\u308b\uff08PayPal\uff09"
+    "message": "応援する（PayPal）"
   },
   "popup_page_control_disabled": {
-    "message": "\u30dd\u30c3\u30d7\u30a2\u30c3\u30d7\u304b\u3089\u306e\u5404\u6a5f\u80fd\u5236\u5fa1\u3092\u7121\u52b9"
+    "message": "ポップアップからの各機能制御を無効"
   },
   "save": {
-    "message": "\u4fdd\u5b58"
+    "message": "保存"
   },
   "save_and_close": {
-    "message": "\u4fdd\u5b58\u3057\u3066\u9589\u3058\u308b"
+    "message": "保存して閉じる"
   },
   "setting": {
-    "message": "\u8a2d\u5b9a"
+    "message": "設定"
   },
   "special_thanks": {
-    "message": "\u30b9\u30da\u30b7\u30e3\u30eb\u30b5\u30f3\u30af\u30b9"
+    "message": "スペシャルサンクス"
   },
   "tell_a_friend": {
-    "message": "\u53cb\u3060\u3061\u306b\u6559\u3048\u308b"
+    "message": "友だちに教える"
   },
   "time_limit_disabled": {
-    "message": "\u6642\u9593\u8a2d\u5b9a\u3092\u7121\u52b9"
+    "message": "時間設定を無効"
   },
   "title_when_blocked": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u6642\u306e\u30bf\u30a4\u30c8\u30eb"
+    "message": "ブロック時のタイトル"
   },
   "websites_to_block": {
-    "message": "\u30d6\u30ed\u30c3\u30af\u3059\u308bWeb\u30b5\u30a4\u30c8"
+    "message": "ブロックするWebサイト"
   },
   "with_email": {
-    "message": "E\x2dMail\x20\u3067\u5171\u6709\u3059\u308b"
+    "message": "E-Mail で共有する"
+  },
+  "days_of_week": {
+    "message": "曜日設定"
+  },
+  "days_of_week_sunday": {
+    "message": "日曜日"
+  },
+  "days_of_week_monday": {
+    "message": "月曜日"
+  },
+  "days_of_week_tuesday": {
+    "message": "火曜日"
+  },
+  "days_of_week_wednesday": {
+    "message": "水曜日"
+  },
+  "days_of_week_thursday": {
+    "message": "木曜日"
+  },
+  "days_of_week_friday": {
+    "message": "金曜日"
+  },
+  "days_of_week_saturday": {
+    "message": "土曜日"
+  },
+  "redirect_when_blocked": {
+    "message": "ブロック時のリダイレクト先 URL"
+  },
+  "enabled_block_function": {
+    "message": "ブロック機能を有効化"
+  },
+  "enabled_time_group_function": {
+    "message": "時間指定機能を有効化"
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "オプションページへのショートカットリンクを有効化"
+  },
+  "temporary_unlock_function": {
+    "message": "パスワード入力で一時的にロック解除"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "パスワード入力で一時的にロック解除を有効化"
   }
 }

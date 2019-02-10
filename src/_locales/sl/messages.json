@@ -3,10 +3,10 @@
     "message": "sl"
   },
   "add_block_time": {
-    "message": "\u010cas\x20blokade"
+    "message": "Čas blokade"
   },
   "add_blockthis": {
-    "message": "Blokiraj\x21"
+    "message": "Blokiraj!"
   },
   "add_time_1": {
     "message": "med"
@@ -18,7 +18,7 @@
     "message": ""
   },
   "applied": {
-    "message": "Posodobljeno\x21"
+    "message": "Posodobljeno!"
   },
   "apply": {
     "message": "Posodobi"
@@ -27,28 +27,28 @@
     "message": "Nazaj"
   },
   "basic_settings": {
-    "message": "Splo\u0161ne\x20nastavitve"
+    "message": "Splošne nastavitve"
   },
   "block_already": {
-    "message": "Ta\x20spletna\x20stran\x20je\x20\u017ee\x20blokirana\x2e\x20Da\x20uredite\x20datoteko\x2c\x20pojdite\x20na\x20\x5bmo\u017enosti\x5d\x2e"
+    "message": "Ta spletna stran je že blokirana. Da uredite datoteko, pojdite na [možnosti]."
   },
   "block_ng": {
-    "message": "Te\x20strani\x20ni\x20mogo\u010de\x20blokirati\x2e"
+    "message": "Te strani ni mogoče blokirati."
   },
   "blocked_disabled": {
-    "message": "Izklopi\x20blokado"
+    "message": "Izklopi blokado"
   },
   "blocked_message": {
-    "message": "Dostop\x20do\x20te\x20spletne\x20strani\x20ni\x20mogo\u010d\x2e"
+    "message": "Dostop do te spletne strani ni mogoč."
   },
   "blocked_title": {
-    "message": "Ta\x20stran\x20je\x20blokirana"
+    "message": "Ta stran je blokirana"
   },
   "bug_report": {
-    "message": "Poro\u010dila\x20o\x20hro\u0161\u010dih"
+    "message": "Poročila o hroščih"
   },
   "changelog": {
-    "message": "Zgodovina\x20sprememb"
+    "message": "Zgodovina sprememb"
   },
   "close": {
     "message": "Zapri"
@@ -60,16 +60,16 @@
     "message": "Primer"
   },
   "ext_description": {
-    "message": "Blokator\x20spletnih\x20strani\x20je\x20uporaben\x2c\x20\u010de\x20se\x20\u017eelite\x20zbrati\x20na\x20delo\x2e"
+    "message": "Blokator spletnih strani je uporaben, če se želite zbrati na delo."
   },
   "ext_name": {
-    "message": "Blokator\x20spletnih\x20strani\x20\x28Beta\x29"
+    "message": "Blokator spletnih strani (Beta)"
   },
   "facebook_page": {
-    "message": "Facebook\x20stran\x20\x28angle\u0161\u010dina\x29"
+    "message": "Facebook stran (angleščina)"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Format"
@@ -78,63 +78,105 @@
     "message": "Vnos"
   },
   "message_when_blocked": {
-    "message": "Sporo\u010dilo\x20ob\x20blokadi"
+    "message": "Sporočilo ob blokadi"
   },
   "nav_about": {
-    "message": "O\x20tem\x20dodatku"
+    "message": "O tem dodatku"
   },
   "nav_blocking": {
-    "message": "Blokiranje\x20spletne\x20strani"
+    "message": "Blokiranje spletne strani"
   },
   "nav_changelog": {
-    "message": "Zgodovina\x20sprememb"
+    "message": "Zgodovina sprememb"
   },
   "nav_function": {
-    "message": "Vklop\x2fIzklop\x20mo\u017enosti"
+    "message": "Vklop/Izklop možnosti"
   },
   "nav_message": {
-    "message": "Sporo\u010dilo\x20ob\x20blokadi"
+    "message": "Sporočilo ob blokadi"
   },
   "nav_password": {
     "message": "Geslo"
   },
   "option_page_link_disabled": {
-    "message": "Izklopi\x20bli\u017enjico\x20do\x20strani\x20z\x20mo\u017enostmi"
+    "message": "Izklopi bližnjico do strani z možnostmi"
   },
   "options": {
-    "message": "Mo\u017enosti"
+    "message": "Možnosti"
   },
   "please_support_me": {
-    "message": "Prosimo\x2c\x20da\x20me\x20podpira\x21\x20\x28PayPal\x29"
+    "message": "Prosimo, da me podpira! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "Izklopi\x20nadzor\x20mo\u017enosti\x20iz\x20pojavne\x20strani"
+    "message": "Izklopi nadzor možnosti iz pojavne strani"
   },
   "save": {
     "message": "Shrani"
   },
   "save_and_close": {
-    "message": "Shrani\x20in\x20zapri"
+    "message": "Shrani in zapri"
   },
   "setting": {
     "message": "Nastavitve"
   },
   "special_thanks": {
-    "message": "Posebne\x20zahvale"
+    "message": "Posebne zahvale"
   },
   "tell_a_friend": {
-    "message": "Povej\x20prijatelju"
+    "message": "Povej prijatelju"
   },
   "time_limit_disabled": {
-    "message": "Izklopi\x20\u010dasovno\x20blokado"
+    "message": "Izklopi časovno blokado"
   },
   "title_when_blocked": {
-    "message": "Naslov\x20ko\x20blokiran"
+    "message": "Naslov ko blokiran"
   },
   "websites_to_block": {
-    "message": "Blokirane\x20spletne\x20strani"
+    "message": "Blokirane spletne strani"
   },
   "with_email": {
-    "message": "z\x20e\x2dpo\u0161to"
+    "message": "z e-pošto"
+  },
+  "days_of_week": {
+    "message": "Day's of the week"
+  },
+  "days_of_week_sunday": {
+    "message": "Sunday"
+  },
+  "days_of_week_monday": {
+    "message": "Monday"
+  },
+  "days_of_week_tuesday": {
+    "message": "Tuesday"
+  },
+  "days_of_week_wednesday": {
+    "message": "Wednesday"
+  },
+  "days_of_week_thursday": {
+    "message": "Thursday"
+  },
+  "days_of_week_friday": {
+    "message": "Friday"
+  },
+  "days_of_week_saturday": {
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

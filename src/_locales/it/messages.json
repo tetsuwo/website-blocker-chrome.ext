@@ -3,10 +3,10 @@
     "message": "it"
   },
   "add_block_time": {
-    "message": "Block\x20Tempo"
+    "message": "Block Tempo"
   },
   "add_blockthis": {
-    "message": "Blocca\x20questo\x21"
+    "message": "Blocca questo!"
   },
   "add_time_1": {
     "message": "tra"
@@ -27,28 +27,28 @@
     "message": "Indietro"
   },
   "basic_settings": {
-    "message": "Impostazioni\x20Base"
+    "message": "Impostazioni Base"
   },
   "block_already": {
-    "message": "Questa\x20pagina\x20\xe8\x20gi\xe0\x20bloccato\x2e\x20Questa\x20modifica\x20di\x20blocchi\x20di\x20dati\x20da\x20fare\x20\x5bOpzioni\x5d\x20pagina\x2e"
+    "message": "Questa pagina è già bloccato. Questa modifica di blocchi di dati da fare [Opzioni] pagina."
   },
   "block_ng": {
-    "message": "Questa\x20pagina\x20non\x20pu\xf2\x20bloccare\x2e"
+    "message": "Questa pagina non può bloccare."
   },
   "blocked_disabled": {
-    "message": "Disabilita\x20le\x20funzioni\x20di\x20blocco"
+    "message": "Disabilita le funzioni di blocco"
   },
   "blocked_message": {
-    "message": "Non\x20puoi\x20accedere\x20a\x20questa\x20pagina"
+    "message": "Non puoi accedere a questa pagina"
   },
   "blocked_title": {
-    "message": "Questa\x20pagina\x20\xe8\x20bloccata\x2e"
+    "message": "Questa pagina è bloccata."
   },
   "bug_report": {
-    "message": "Bug\x20report"
+    "message": "Bug report"
   },
   "changelog": {
-    "message": "Storia\x20delle\x20revisioni"
+    "message": "Storia delle revisioni"
   },
   "close": {
     "message": "Chiudi"
@@ -60,16 +60,16 @@
     "message": "Esempio"
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20\xe8\x20utile\x20quando\x20sei\x20concentrato\x20sul\x20lavoro"
+    "message": "Website Blocker è utile quando sei concentrato sul lavoro"
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "Pagina\x20Facebook"
+    "message": "Pagina Facebook"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Formato"
@@ -78,63 +78,105 @@
     "message": "Input"
   },
   "message_when_blocked": {
-    "message": "Messaggio\x20quando\x20blocchi"
+    "message": "Messaggio quando blocchi"
   },
   "nav_about": {
-    "message": "A\x20proposito\x20di\x20questa\x20estensione"
+    "message": "A proposito di questa estensione"
   },
   "nav_blocking": {
-    "message": "Blocco\x20Sito"
+    "message": "Blocco Sito"
   },
   "nav_changelog": {
-    "message": "Storia\x20delle\x20revisioni"
+    "message": "Storia delle revisioni"
   },
   "nav_function": {
-    "message": "ON\x20\x2f\x20OFF\x20di\x20ogni\x20funzione"
+    "message": "ON / OFF di ogni funzione"
   },
   "nav_message": {
-    "message": "Messaggi\x20di\x20quando\x20bloccato"
+    "message": "Messaggi di quando bloccato"
   },
   "nav_password": {
     "message": "Password"
   },
   "option_page_link_disabled": {
-    "message": "Disabilit\xe0\x20il\x20link\x20di\x20collegamente\x20alla\x20pagina\x20opzioni"
+    "message": "Disabilità il link di collegamente alla pagina opzioni"
   },
   "options": {
     "message": "Opzioni"
   },
   "please_support_me": {
-    "message": "Si\x20prega\x20di\x20sostenere\x20me\x21\x20\x28PayPal\x29"
+    "message": "Si prega di sostenere me! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "Disabilit\xe0\x20ogni\x20funzione\x20di\x20controllo\x20da\x20pagina\x20popup"
+    "message": "Disabilità ogni funzione di controllo da pagina popup"
   },
   "save": {
     "message": "Salvare"
   },
   "save_and_close": {
-    "message": "Salva\x20e\x20chiudi"
+    "message": "Salva e chiudi"
   },
   "setting": {
     "message": "Impostazioni"
   },
   "special_thanks": {
-    "message": "Ringraziamenti\x20speciali"
+    "message": "Ringraziamenti speciali"
   },
   "tell_a_friend": {
-    "message": "Dillo\x20a\x20un\x20amico"
+    "message": "Dillo a un amico"
   },
   "time_limit_disabled": {
-    "message": "Disabilita\x20le\x20funzioni\x20di\x20limite\x20di\x20tempo"
+    "message": "Disabilita le funzioni di limite di tempo"
   },
   "title_when_blocked": {
-    "message": "Titolo\x20quando\x20bloccato"
+    "message": "Titolo quando bloccato"
   },
   "websites_to_block": {
-    "message": "Sito\x20web\x20da\x20bloccare"
+    "message": "Sito web da bloccare"
   },
   "with_email": {
-    "message": "con\x20E\x2dMail"
+    "message": "con E-Mail"
+  },
+  "days_of_week": {
+    "message": "Day's of the week"
+  },
+  "days_of_week_sunday": {
+    "message": "Sunday"
+  },
+  "days_of_week_monday": {
+    "message": "Monday"
+  },
+  "days_of_week_tuesday": {
+    "message": "Tuesday"
+  },
+  "days_of_week_wednesday": {
+    "message": "Wednesday"
+  },
+  "days_of_week_thursday": {
+    "message": "Thursday"
+  },
+  "days_of_week_friday": {
+    "message": "Friday"
+  },
+  "days_of_week_saturday": {
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

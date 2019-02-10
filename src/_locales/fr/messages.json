@@ -6,7 +6,7 @@
     "message": "Heure du blocage"
   },
   "add_blockthis": {
-    "message": "Bloquer!"
+    "message": "Bloquer"
   },
   "add_time_1": {
     "message": "entre"
@@ -18,7 +18,7 @@
     "message": ""
   },
   "applied": {
-    "message": "Appliqué\x21"
+    "message": "Appliqué!"
   },
   "apply": {
     "message": "Appliquer"
@@ -30,7 +30,7 @@
     "message": "Réglages de base"
   },
   "block_already": {
-    "message": "Cette page est déjà bloquée\x2e Les paramètres de blocage peuvent être modifiés dans les options."
+    "message": "Cette page est déjà bloquée. Les paramètres de blocage peuvent être modifiés dans les options."
   },
   "block_ng": {
     "message": "Cette page ne peut pas être bloquée."
@@ -63,13 +63,13 @@
     "message": "Website Blocker est utile lorsque vous voulez vous concentrer sur un travail."
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
     "message": "Page Facebook"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Format"
@@ -136,5 +136,47 @@
   },
   "with_email": {
     "message": "par email"
+  },
+  "days_of_week": {
+    "message": "Day's of the week"
+  },
+  "days_of_week_sunday": {
+    "message": "Sunday"
+  },
+  "days_of_week_monday": {
+    "message": "Monday"
+  },
+  "days_of_week_tuesday": {
+    "message": "Tuesday"
+  },
+  "days_of_week_wednesday": {
+    "message": "Wednesday"
+  },
+  "days_of_week_thursday": {
+    "message": "Thursday"
+  },
+  "days_of_week_friday": {
+    "message": "Friday"
+  },
+  "days_of_week_saturday": {
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }
