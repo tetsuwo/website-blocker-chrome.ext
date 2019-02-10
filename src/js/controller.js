@@ -17,9 +17,9 @@ var Controller = new function() {
         // day's of week
         var daysOfWeek = ls.get('days_of_week');
         if (daysOfWeek) {
-            for(var d in daysOfWeek) {
-                if(daysOfWeek[d] !== ',') {
-                    $('#days_of_week_'+daysOfWeek[d]).prop('checked', true);
+            for (var d in daysOfWeek) {
+                if (daysOfWeek[d] !== ',') {
+                    $('#days_of_week_' + daysOfWeek[d]).prop('checked', true);
                 }
             }
         }
@@ -34,7 +34,6 @@ var Controller = new function() {
         $('#flag-block_function'    ).prop('checked', ls.get('flag-block_function'));
         $('#flag-timegroup_function').prop('checked', ls.get('flag-timegroup_function'));
         $('#flag-option_page_link'  ).prop('checked', ls.get('flag-option_page_link'));
-        $('#flag-popup_page_control').prop('checked', ls.get('flag-popup_page_control'));
         $('#flag-password_function' ).prop('checked', ls.get('flag-password_function'));
     }
 
@@ -105,16 +104,6 @@ var Controller = new function() {
     }
 
     this.save = function() {
-        //// default
-        //ls.set('blocked_title',   '');
-        //ls.set('blocked_message', '');
-        //ls.set('blocked_list',    '');
-        //ls.set('flag-block_function',      false);
-        //ls.set('flag-timelimit_function',  false);
-        //ls.set('flag-option_page_link',    false);
-        //ls.set('flag-popup_page_control',  false);
-        //ls.set('flag-password_function',   false);
-
         var blockTextExistsInDb = ls.get('blocked_list').length ? true : false;
 
         if($('#blocked_text').val() || blockTextExistsInDb === true) {
@@ -140,7 +129,6 @@ var Controller = new function() {
         ls.set('flag-block_function',      $('#flag-block_function:checked').val()     === 'on');
         ls.set('flag-timegroup_function',  $('#flag-timegroup_function:checked').val() === 'on');
         ls.set('flag-option_page_link',    $('#flag-option_page_link:checked').val()   === 'on');
-        ls.set('flag-popup_page_control',  $('#flag-popup_page_control:checked').val() === 'on');
         ls.set('flag-password_function',   $('#flag-password_function:checked').val()  === 'on');
 
         return true;

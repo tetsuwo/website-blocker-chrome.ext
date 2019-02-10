@@ -40,10 +40,6 @@ function haveValue(a) {
     return a && (a !== 'false' || a !== 'undefined');
 }
 
-function isNotUndefined(a) {
-    return (a !== 'undefined' && typeof a !== 'undefined');
-}
-
 // localStorage > i18n message
 function getLSi18n(a) {
     return haveValue(localStorage[a]) ? JSON.parse(localStorage[a]) : chrome.i18n.getMessage(a);
@@ -54,43 +50,9 @@ function getMessage(a) {
     return chrome.i18n.getMessage(a) ? chrome.i18n.getMessage(a) : false ;
 }
 
-// localStorage
-function getStorage(a) {
-      console.log('a => ' + a);
-      console.log('localStorage[a] => ' + localStorage[a]);
-      console.log('isNotUndefined(localStorage[a]) ? JSON.parse(localStorage[a]) : false : '+ (isNotUndefined(localStorage[a]) ? JSON.parse(localStorage[a]) : false));
-    return haveValue(localStorage[a]) ? JSON.parse(localStorage[a]) : false ;
-}
-
-/**
- * localStorage
- */
-function getStorageAsBoolean(a) {
-    var tmp = localStorage[a];
-    return tmp && (tmp !== 'false' || tmp !== 'undefined');
-}
-
 /**
  * Back to URL
  */
 function getBeforeLocation() {
     return location.search != '' ? decodeURIComponent(location.search.replace('?url=', '')) : false;
 }
-
-/**
- * Import storage to new format from old format
- * @param A
- * @param B
- */
-function importStorageKeyName(A, B) {
-    if (localStorage[A] === undefined) {
-        return;
-    }
-    localStorage[B] = localStorage[A];
-    localStorage.removeItem(A);
-}
-
-function postUrl(url) {
-    $('#current-url').text(url);
-}
-

@@ -3,10 +3,10 @@
     "message": "es"
   },
   "add_block_time": {
-    "message": "Tiempo\x20de\x20vuelo"
+    "message": "Tiempo de vuelo"
   },
   "add_blockthis": {
-    "message": "Bloquear\x20esta\x21"
+    "message": "Bloquear esta!"
   },
   "add_time_1": {
     "message": "entre"
@@ -18,58 +18,58 @@
     "message": ""
   },
   "applied": {
-    "message": "\xa1Listo\x21"
+    "message": "¡Listo!"
   },
   "apply": {
     "message": "Aplicar"
   },
   "back": {
-    "message": "Atr\xe1s"
+    "message": "Atrás"
   },
   "basic_settings": {
-    "message": "Configuraci\xf3n\x20b\xe1sica"
+    "message": "Configuración básica"
   },
   "block_already": {
-    "message": "Esta\x20p\xe1gina\x20ya\x20est\xe1\x20bloqueado\x2e\x20Esta\x20edici\xf3n\x20bloques\x20de\x20datos\x20a\x20hacer\x20a\x20partir\x20de\x20\x5bOpciones\x5d\x20p\xe1gina\x2e"
+    "message": "Esta página ya está bloqueado. Esta edición bloques de datos a hacer a partir de [Opciones] página."
   },
   "block_ng": {
-    "message": "Esta\x20p\xe1gina\x20no\x20puede\x20bloquear\x2e"
+    "message": "Esta página no puede bloquear."
   },
   "blocked_disabled": {
-    "message": "Inhabilitar\x20la\x20funci\xf3n\x20de\x20bloqueo"
+    "message": "Inhabilitar la función de bloqueo"
   },
   "blocked_message": {
-    "message": "No\x20se\x20puede\x20acceder\x20a\x20esta\x20pagina"
+    "message": "No se puede acceder a esta pagina"
   },
   "blocked_title": {
-    "message": "Esta\x20p\xe1gina\x20est\xe1\x20bloqueada\x2e"
+    "message": "Esta página está bloqueada."
   },
   "bug_report": {
-    "message": "Reporte\x20de\x20aver\xedas"
+    "message": "Reporte de averías"
   },
   "changelog": {
-    "message": "Historial\x20de\x20revisiones"
+    "message": "Historial de revisiones"
   },
   "close": {
     "message": "Cerrar"
   },
   "document": {
-    "message": "Documentaci\xf3n"
+    "message": "Documentación"
   },
   "example": {
     "message": "Ejemplo"
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20es\x20muy\x20\xfatil\x20cuando\x20intentas\x20concentrarte\x20en\x20tu\x20trabajo"
+    "message": "Website Blocker es muy útil cuando intentas concentrarte en tu trabajo"
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "P\xe1gina\x20de\x20Facebook"
+    "message": "Página de Facebook"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Formato"
@@ -78,87 +78,105 @@
     "message": "Input"
   },
   "message_when_blocked": {
-    "message": "Mensaje\x20cuando\x20bloqueado"
+    "message": "Mensaje cuando bloqueado"
   },
   "nav_about": {
-    "message": "Acerca\x20de\x20esta\x20extensi\xf3n"
+    "message": "Acerca de esta extensión"
   },
   "nav_blocking": {
-    "message": "Bloqueo\x20de\x20sitios\x20Web"
+    "message": "Bloqueo de sitios Web"
   },
   "nav_changelog": {
-    "message": "Historial\x20de\x20revisiones"
+    "message": "Historial de revisiones"
   },
   "nav_function": {
-    "message": "ON\x20\x2f\x20OFF\x20de\x20cada\x20una\x20de\x20las\x20funciones"
+    "message": "ON / OFF de cada una de las funciones"
   },
   "nav_message": {
-    "message": "Los\x20mensajes\x20de\x20cuando\x20se\x20bloquea"
+    "message": "Los mensajes de cuando se bloquea"
   },
   "nav_password": {
-    "message": "Contrase\xf1a"
+    "message": "Contraseña"
   },
   "option_page_link_disabled": {
-    "message": "\x20Inhabilitar\x20el\x20atajo\x20a\x20la\x20p\xe1gina\x20de\x20opciones"
+    "message": " Inhabilitar el atajo a la página de opciones"
   },
   "options": {
     "message": "Opciones"
   },
   "please_support_me": {
-    "message": "Por\x20favor\x2c\x20me\x20apoyen\x21\x20\x28PayPal\x29"
+    "message": "Por favor, me apoyen! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "Inhabilitar\x20las\x20funciones\x20de\x20control\x20en\x20la\x20ventana\x20emergente"
+    "message": "Inhabilitar las funciones de control en la ventana emergente"
   },
   "save": {
     "message": "Guardar"
   },
   "save_and_close": {
-    "message": "Guardar\x20y\x20Cerrar"
+    "message": "Guardar y Cerrar"
   },
   "setting": {
-    "message": "Configuraci\xf3n"
+    "message": "Configuración"
   },
   "special_thanks": {
-    "message": "Gracias\x20especiales"
+    "message": "Gracias especiales"
   },
   "tell_a_friend": {
-    "message": "Enviar\x20a\x20un\x20amigo"
+    "message": "Enviar a un amigo"
   },
   "time_limit_disabled": {
-    "message": "Inhabilitar\x20el\x20l\xedmite\x20de\x20tiempo"
+    "message": "Inhabilitar el límite de tiempo"
   },
   "title_when_blocked": {
-    "message": "T\xedtulo\x20cuando\x20bloqueado"
+    "message": "Título cuando bloqueado"
   },
   "websites_to_block": {
-    "message": "P\xe1ginas\x20web\x20a\x20bloquear"
+    "message": "Páginas web a bloquear"
   },
   "with_email": {
-    "message": "con\x20correo\x20electr\xf3nico"
+    "message": "con correo electrónico"
   },
   "days_of_week": {
-    "message": "Días\x20de\x20la\x20semana"
+    "message": "Day's of the week"
   },
   "days_of_week_sunday": {
-    "message": "Domingo"
+    "message": "Sunday"
   },
   "days_of_week_monday": {
-    "message": "Lunes"
+    "message": "Monday"
   },
   "days_of_week_tuesday": {
-    "message": "Martes"
+    "message": "Tuesday"
   },
   "days_of_week_wednesday": {
-    "message": "Miércoles"
+    "message": "Wednesday"
   },
   "days_of_week_thursday": {
-    "message": "Jueves"
+    "message": "Thursday"
   },
   "days_of_week_friday": {
-    "message": "Viernes"
+    "message": "Friday"
   },
   "days_of_week_saturday": {
-    "message": "Sábado"
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

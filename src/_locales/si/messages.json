@@ -3,10 +3,10 @@
     "message": "si"
   },
   "add_block_time": {
-    "message": "වාරණ\x20කාලය"
+    "message": "වාරණ කාලය"
   },
   "add_blockthis": {
-    "message": "මෙය\x20අවහිර\x20කරන්න\x21"
+    "message": "මෙය අවහිර කරන්න!"
   },
   "add_time_1": {
     "message": "අතර"
@@ -18,37 +18,37 @@
     "message": ""
   },
   "applied": {
-    "message": "යොමු\x20කරන\x20ලදී\x21"
+    "message": "යොමු කරන ලදී!"
   },
   "apply": {
-    "message": "යොමු\x20කරන්න"
+    "message": "යොමු කරන්න"
   },
   "back": {
     "message": "ආපසු"
   },
   "basic_settings": {
-    "message": "මුලික\x20සැකසුම්"
+    "message": "මුලික සැකසුම්"
   },
   "block_already": {
-    "message": "මෙම\x20පිටුව\x20දැනටම\x20අක්‍රිය\x20කර\x20ඇත\x2e\x20විකල්ප\x20පිටුවට\x20යන්න\x2e"
+    "message": "මෙම පිටුව දැනටම අක්‍රිය කර ඇත. විකල්ප පිටුවට යන්න."
   },
   "block_ng": {
-    "message": "මෙම\x20පිටුව\x20අවහිර\x20කල\x20නොහැක\x2e"
+    "message": "මෙම පිටුව අවහිර කල නොහැක."
   },
   "blocked_disabled": {
-    "message": "අවහිර\x20කරන\x20ක්‍රියාවලිය\x20අක්‍රිය\x20කර\x20ඇත\x2e"
+    "message": "අවහිර කරන ක්‍රියාවලිය අක්‍රිය කර ඇත."
   },
   "blocked_message": {
-    "message": "මෙම\x27t\x20පිටුව\x20භාවිතා\x20කල\x20හැක\x2e"
+    "message": "මෙම't පිටුව භාවිතා කල හැක."
   },
   "blocked_title": {
-    "message": "මෙම\x20පිටුව\x20අවහිර\x20කර\x20ඇත\x2e"
+    "message": "මෙම පිටුව අවහිර කර ඇත."
   },
   "bug_report": {
-    "message": "දෝෂ\x20වාර්තාව"
+    "message": "දෝෂ වාර්තාව"
   },
   "changelog": {
-    "message": "සංශෝධන\x20ඉතිහාසය"
+    "message": "සංශෝධන ඉතිහාසය"
   },
   "close": {
     "message": "වසන්න"
@@ -60,16 +60,16 @@
     "message": "උදාහරණ"
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20ඔබට\x20ප්‍රයෝජනවත්\x20වන්නේ\x20ඔබ\x20යම්කිසි\x20කාර්යක\x20නිරිත\x20වන\x20විටදීය\x2e"
+    "message": "Website Blocker ඔබට ප්‍රයෝජනවත් වන්නේ ඔබ යම්කිසි කාර්යක නිරිත වන විටදීය."
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "Facebook\x20පිටුව"
+    "message": "Facebook පිටුව"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "ආකෘතිය"
@@ -78,67 +78,67 @@
     "message": "ආදාන"
   },
   "message_when_blocked": {
-    "message": "අවහිර\x20කරන\x20පණිවිඩය"
+    "message": "අවහිර කරන පණිවිඩය"
   },
   "nav_about": {
-    "message": "About\x20දිගුව\x20ගැන"
+    "message": "About දිගුව ගැන"
   },
   "nav_blocking": {
-    "message": "අවහිර\x20කරමින්"
+    "message": "අවහිර කරමින්"
   },
   "nav_changelog": {
-    "message": "සංශෝදන\x20අතීතය"
+    "message": "සංශෝදන අතීතය"
   },
   "nav_function": {
-    "message": "අක්‍රිය\x2fසක්‍රිය\x20කරන්න"
+    "message": "අක්‍රිය/සක්‍රිය කරන්න"
   },
   "nav_message": {
-    "message": "අවහිර\x20කර\x20ඇති\x20විට\x20පණිවිඩ"
+    "message": "අවහිර කර ඇති විට පණිවිඩ"
   },
   "nav_password": {
     "message": "මුරපදය"
   },
   "option_page_link_disabled": {
-    "message": "කෙටි\x20යෙදුම\x20අක්‍රිය\x20කර\x20ඇත\x2e"
+    "message": "කෙටි යෙදුම අක්‍රිය කර ඇත."
   },
   "options": {
     "message": "විකල්ප"
   },
   "please_support_me": {
-    "message": "මට\x20උදව්\x20කරන්න\x21\x20\x28PayPal\x29"
+    "message": "මට උදව් කරන්න! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "මතුවන\x20පිටුවේ\x20ක්‍රියාවලි\x20අවහිර\x20කර\x20ඇත\x2e"
+    "message": "මතුවන පිටුවේ ක්‍රියාවලි අවහිර කර ඇත."
   },
   "save": {
     "message": "සුරකින්න"
   },
   "save_and_close": {
-    "message": "සුරැකීමෙන්\x20පසු\x20වසන්න"
+    "message": "සුරැකීමෙන් පසු වසන්න"
   },
   "setting": {
     "message": "සැකසුම්"
   },
   "special_thanks": {
-    "message": "විශේෂ\x20ස්තුතිය"
+    "message": "විශේෂ ස්තුතිය"
   },
   "tell_a_friend": {
-    "message": "මිතුරෙකුට\x20කියන්න"
+    "message": "මිතුරෙකුට කියන්න"
   },
   "time_limit_disabled": {
-    "message": "කාල\x20සීමා\x20ක්‍රියාවලිය\x20අවහිර\x20කර\x20ඇත\x2e"
+    "message": "කාල සීමා ක්‍රියාවලිය අවහිර කර ඇත."
   },
   "title_when_blocked": {
-    "message": "අවහිර\x20කර\x20ඇති\x20විට\x20මාතෘකාව"
+    "message": "අවහිර කර ඇති විට මාතෘකාව"
   },
   "websites_to_block": {
-    "message": "අවහිර\x20කිරීමට\x20ඇති\x20පිටු"
+    "message": "අවහිර කිරීමට ඇති පිටු"
   },
   "with_email": {
-    "message": "ඊ\x20තැපෑල\x2dසමගින්"
+    "message": "ඊ තැපෑල-සමගින්"
   },
   "days_of_week": {
-    "message": "සතියෙහි\x20දින"
+    "message": "සතියෙහි දින"
   },
   "days_of_week_sunday": {
     "message": "ඉරිදා"
@@ -160,5 +160,23 @@
   },
   "days_of_week_saturday": {
     "message": "සෙනසුරාදා"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

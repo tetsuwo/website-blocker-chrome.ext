@@ -11,13 +11,11 @@ if (window.localStorage.getItem('flag-password_function') === null) {
     ls.set('flag-block_function',     !ls.get('blocked_disabled'));
     ls.set('flag-timegroup_function', !ls.get('time_limit_disabled'));
     ls.set('flag-option_page_link',   !ls.get('option_page_link_disabled'));
-    ls.set('flag-popup_page_control', !ls.get('popup_page_control_disabled'));
     ls.set('flag-password_function',  false);
     //ls.set('flag-timelimit_function', false);
     ls.rm('blocked_disabled');
     ls.rm('time_limit_disabled');
     ls.rm('option_page_link_disabled');
-    ls.rm('popup_page_control_disabled');
     ls.rm('__password_func_01');
     ls.rm('__wb_1_regular_visitor');
     ls.rm('__wb_1__password_func_01');

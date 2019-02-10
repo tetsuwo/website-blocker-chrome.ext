@@ -1,12 +1,12 @@
 {
   "ID": {
-    "message": "pt_BR"
+    "message": "pt"
   },
   "add_block_time": {
-    "message": "Tempo\x20de\x20bloqueio\x2e\x20"
+    "message": "Tempo de bloqueio. "
   },
   "add_blockthis": {
-    "message": "Bloqueie\x20isso\x21"
+    "message": "Bloqueie isso!"
   },
   "add_time_1": {
     "message": "entre"
@@ -18,7 +18,7 @@
     "message": ""
   },
   "applied": {
-    "message": "Aplicado\x21"
+    "message": "Aplicado!"
   },
   "apply": {
     "message": "Aplicar"
@@ -27,28 +27,28 @@
     "message": "Voltar"
   },
   "basic_settings": {
-    "message": "Configura\xe7\xf5es\x20b\xe1sicas"
+    "message": "Configurações básicas"
   },
   "block_already": {
-    "message": "Esta\x20p\xe1gina\x20j\xe1\x20est\xe1\x20bloqueada\x2e\x20Este\x20bloqueio\x20veio\x20da\x20p\xe1gina\x20\x5bOptions\x5d\x2e"
+    "message": "Esta página já está bloqueada. Este bloqueio veio da página [Options]."
   },
   "block_ng": {
-    "message": "Esta\x20p\xe1gina\x20n\xe3o\x20pode\x20ser\x20bloqueada\x2e\x20"
+    "message": "Esta página não pode ser bloqueada. "
   },
   "blocked_disabled": {
-    "message": "Desabilite\x20a\x20fun\xe7\xe3o\x20de\x20bloqueio\x2e"
+    "message": "Desabilite a função de bloqueio."
   },
   "blocked_message": {
-    "message": "N\xe3o\x20pode\x20acessar\x20esta\x20p\xe1gina\x2e\x20"
+    "message": "Não pode acessar esta página. "
   },
   "blocked_title": {
-    "message": "A\x20p\xe1gina\x20est\xe1\x20bloqueada\x2e\x20"
+    "message": "A página está bloqueada. "
   },
   "bug_report": {
-    "message": "Bug\x20relat\xf3rio"
+    "message": "Bug relatório"
   },
   "changelog": {
-    "message": "Hist\xf3rico\x20de\x20revis\xf5es"
+    "message": "Histórico de revisões"
   },
   "close": {
     "message": "Fechar"
@@ -60,16 +60,16 @@
     "message": "Exemplo"
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20\xe9\x20\xfatil\x20quando\x20voc\xea\x20deseja\x20se\x20concentrar\x20no\x20trabalho\x2e\x20"
+    "message": "Website Blocker é útil quando você deseja se concentrar no trabalho. "
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "P\xe1gina\x20no\x20Facebook"
+    "message": "Página no Facebook"
   },
   "font_family": {
-    "message": "Arial\x2c\x20Helvetica\x2c\x20Verdana\x2c\x20sans\x2dserif"
+    "message": "Arial, Helvetica, Verdana, sans-serif"
   },
   "format": {
     "message": "Formato"
@@ -78,63 +78,105 @@
     "message": "Entrada"
   },
   "message_when_blocked": {
-    "message": "Mensagem\x20quando\x20bloquear"
+    "message": "Mensagem quando bloquear"
   },
   "nav_about": {
-    "message": "Sobre\x20esta\x20extens\xe3o"
+    "message": "Sobre esta extensão"
   },
   "nav_blocking": {
-    "message": "Bloqueando\x20site"
+    "message": "Bloqueando site"
   },
   "nav_changelog": {
-    "message": "Hist\xf3rico\x20da\x20Revis\xe3o"
+    "message": "Histórico da Revisão"
   },
   "nav_function": {
-    "message": "ON\x2fOFF\x20para\x20cada\x20fun\xe7\xe3o"
+    "message": "ON/OFF para cada função"
   },
   "nav_message": {
-    "message": "Mensagens\x20quando\x20bloqueado"
+    "message": "Mensagens quando bloqueado"
   },
   "nav_password": {
     "message": "Senha"
   },
   "option_page_link_disabled": {
-    "message": "Onemogo\u010deno\x20za\x20povezavo\x20bli\u017enjico\x20do\x20strani\x20z\x20mo\u017enostmi\x2e"
+    "message": "Onemogočeno za povezavo bližnjico do strani z možnostmi."
   },
   "options": {
-    "message": "Op\xe7\xf5es"
+    "message": "Opções"
   },
   "please_support_me": {
-    "message": "Prosimo\x2c\x20da\x20me\x20podpira\x21\x20\x28PayPal\x29"
+    "message": "Prosimo, da me podpira! (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "Onemogo\u010deno\x20vsake\x20funkcije\x20nadzora\x20iz\x20pojavnega\x20strani\x2e"
+    "message": "Onemogočeno vsake funkcije nadzora iz pojavnega strani."
   },
   "save": {
-    "message": "Salvar\x20"
+    "message": "Salvar "
   },
   "save_and_close": {
-    "message": "Salvar\x20e\x20fechar"
+    "message": "Salvar e fechar"
   },
   "setting": {
-    "message": "Configura\xe7\xf5es"
+    "message": "Configurações"
   },
   "special_thanks": {
-    "message": "Posebna\x20zahvala"
+    "message": "Posebna zahvala"
   },
   "tell_a_friend": {
-    "message": "Mandar\x20para\x20um\x20amigo"
+    "message": "Mandar para um amigo"
   },
   "time_limit_disabled": {
-    "message": "Onemogo\u010di\x20funkcije\x20roku"
+    "message": "Onemogoči funkcije roku"
   },
   "title_when_blocked": {
-    "message": "T\xedtulo\x20quando\x20bloqueado"
+    "message": "Título quando bloqueado"
   },
   "websites_to_block": {
-    "message": "Sites\x20para\x20bloquear"
+    "message": "Sites para bloquear"
   },
   "with_email": {
-    "message": "com\x20E\x2dMail"
+    "message": "com E-Mail"
+  },
+  "days_of_week": {
+    "message": "Dias da semana"
+  },
+  "days_of_week_sunday": {
+    "message": "Domingo"
+  },
+  "days_of_week_monday": {
+    "message": "Segunda-feira"
+  },
+  "days_of_week_tuesday": {
+    "message": "Terça-feira"
+  },
+  "days_of_week_wednesday": {
+    "message": "Quarta-feira"
+  },
+  "days_of_week_thursday": {
+    "message": "Quinta-feira"
+  },
+  "days_of_week_friday": {
+    "message": "Sexta-feira"
+  },
+  "days_of_week_saturday": {
+    "message": "Sábado"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }

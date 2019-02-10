@@ -3,6 +3,11 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.3.1 ( 2019/02/10 PR #104 )
+  - Organized localization files
+- 0.3.0 ( 2019/02/09 PR #103 )
+  - Added feature "back button" on blocked page
+  - Removed google plus button
 - 0.2.7
   - Translated to Sinhala.  
     Special Thanks: [Rumesh Eranga](https://github.com/rehrumesh)

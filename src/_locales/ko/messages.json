@@ -3,10 +3,10 @@
     "message": "ko"
   },
   "add_block_time": {
-    "message": "\ucc28\ub2e8\x20\uc2dc\uac04\x20\uc785\ub825"
+    "message": "차단 시간 입력"
   },
   "add_blockthis": {
-    "message": "\ucc28\ub2e8\ud560\x20\uacf3\x20\uc785\ub825\x21"
+    "message": "차단할 곳 입력!"
   },
   "add_time_1": {
     "message": ""
@@ -18,123 +18,165 @@
     "message": ""
   },
   "applied": {
-    "message": "\uc801\uc6a9\ub410\uc2b5\ub2c8\ub2e4\x21"
+    "message": "적용됐습니다!"
   },
   "apply": {
-    "message": "\uc801\uc6a9\ud558\uae30"
+    "message": "적용하기"
   },
   "back": {
-    "message": "\ub3cc\uc544\uac00\uae30"
+    "message": "돌아가기"
   },
   "basic_settings": {
-    "message": "\uae30\ubcf8\x20\uc124\uc815"
+    "message": "기본 설정"
   },
   "block_already": {
-    "message": "\uc774\x20\ud398\uc774\uc9c0\ub294\x20\uc774\ubbf8\x20\ucc28\ub2e8\ub418\uc5b4\x20\uc788\uc2b5\ub2c8\ub2e4\x2e\x20\ud3b8\uc9d1\ud558\ub824\uba74\x20\uc635\uc158\x20\ud398\uc774\uc9c0\uc5d0\uc11c\x20\uc218\uc815\ud558\uc138\uc694\x2e"
+    "message": "이 페이지는 이미 차단되어 있습니다. 편집하려면 옵션 페이지에서 수정하세요."
   },
   "block_ng": {
-    "message": "\uc774\x20\ud398\uc774\uc9c0\ub294\x20\ucc28\ub2e8\ub420\x20\uc218\x20\uc5c6\uc2b5\ub2c8\ub2e4\x2e"
+    "message": "이 페이지는 차단될 수 없습니다."
   },
   "blocked_disabled": {
-    "message": "\ucc28\ub2e8\x20\uae30\ub2a5\x20\ube44\ud65c\uc131\ud654"
+    "message": "차단 기능 비활성화"
   },
   "blocked_message": {
-    "message": "\uc774\x20\ud398\uc774\uc9c0\uc5d0\x20\uc811\uadfc\ud560\x20\uc218\x20\uc5c6\uc2b5\ub2c8\ub2e4\x2e"
+    "message": "이 페이지에 접근할 수 없습니다."
   },
   "blocked_title": {
-    "message": "\uc774\x20\ud398\uc774\uc9c0\ub294\x20\ucc28\ub2e8\ub410\uc2b5\ub2c8\ub2e4\x2e"
+    "message": "이 페이지는 차단됐습니다."
   },
   "bug_report": {
-    "message": "\ubc84\uadf8\x20\uc81c\ubcf4\ud558\uae30"
+    "message": "버그 제보하기"
   },
   "changelog": {
-    "message": "\uc218\uc815\x20\ub0b4\uc5ed"
+    "message": "수정 내역"
   },
   "close": {
-    "message": "\ub2eb\uae30"
+    "message": "닫기"
   },
   "document": {
-    "message": "\ubb38\uc11c"
+    "message": "문서"
   },
   "example": {
-    "message": "\uc608\uc2dc\ub294\x20\uc774\ub807\uc2b5\ub2c8\ub2e4\x2e"
+    "message": "예시는 이렇습니다."
   },
   "ext_description": {
-    "message": "Website\x20Blocker\x20\ub294\x20\ub2f9\uc2e0\uc774\x20\uc77c\uc5d0\ub9cc\x20\uc9d1\uc911\ud560\x20\uc218\x20\uc788\ub3c4\ub85d\x20\ub3c4\uc640\uc90d\ub2c8\ub2e4\x2e"
+    "message": "Website Blocker 는 당신이 일에만 집중할 수 있도록 도와줍니다."
   },
   "ext_name": {
-    "message": "Website\x20Blocker\x20\x28Beta\x29"
+    "message": "Website Blocker (Beta)"
   },
   "facebook_page": {
-    "message": "\ud398\uc774\uc2a4\ubd81\x20\ud398\uc774\uc9c0"
+    "message": "페이스북 페이지"
   },
   "font_family": {
-    "message": "NanumGothic\x2c\x20Gulim"
+    "message": "NanumGothic, Gulim"
   },
   "format": {
-    "message": "\ud615\uc2dd\uc740\x20\uc774\ub807\uc2b5\ub2c8\ub2e4\x2e"
+    "message": "형식은 이렇습니다."
   },
   "input": {
-    "message": "\uc774\uacf3\uc5d0\x20\ub2f9\uc2e0\uc774\x20\uc6d0\ud558\ub294\x20\uc124\uc815\uc744\x20\uc785\ub825\ud558\uc138\uc694\x2e"
+    "message": "이곳에 당신이 원하는 설정을 입력하세요."
   },
   "message_when_blocked": {
-    "message": "\ucc28\ub2e8\ub418\uc5c8\uc744\x20\ub54c\uc758\x20\uba54\uc2dc\uc9c0"
+    "message": "차단되었을 때의 메시지"
   },
   "nav_about": {
-    "message": "\uc774\x20\ud504\ub85c\uadf8\ub7a8\uc5d0\x20\ub300\ud574"
+    "message": "이 프로그램에 대해"
   },
   "nav_blocking": {
-    "message": "\uc6f9\uc0ac\uc774\ud2b8\x20\ucc28\ub2e8\ud558\uae30"
+    "message": "웹사이트 차단하기"
   },
   "nav_changelog": {
-    "message": "\uc218\uc815\x20\ub0b4\uc5ed"
+    "message": "수정 내역"
   },
   "nav_function": {
-    "message": "\uac01\x20\uae30\ub2a5\x20\uc0c1\uc138\x20\uc124\uc815\x20\x28ON\x2fOFF\x29"
+    "message": "각 기능 상세 설정 (ON/OFF)"
   },
   "nav_message": {
-    "message": "\ucc28\ub2e8\ub418\uc5c8\uc744\x20\ub54c\uc758\x20\uba54\uc2dc\uc9c0"
+    "message": "차단되었을 때의 메시지"
   },
   "nav_password": {
-    "message": "\ud328\uc2a4\uc6cc\ub4dc"
+    "message": "패스워드"
   },
   "option_page_link_disabled": {
-    "message": "\ubc14\ub85c\uac00\uae30\x20\uc544\uc774\ucf58\x20\uc9c0\uc6b0\uae30"
+    "message": "바로가기 아이콘 지우기"
   },
   "options": {
-    "message": "\uc635\uc158"
+    "message": "옵션"
   },
   "please_support_me": {
-    "message": "\uac1c\ubc1c\uc790\x20\uc9c0\uc6d0\ud558\uae30\x20\x28PayPal\x29"
+    "message": "개발자 지원하기 (PayPal)"
   },
   "popup_page_control_disabled": {
-    "message": "\ud31d\uc5c5\uc5d0\uc11c\x20\uae30\ub2a5\uc81c\uc5b4\x20\ube44\ud65c\uc131\ud654"
+    "message": "팝업에서 기능제어 비활성화"
   },
   "save": {
-    "message": "\uc800\uc7a5\ud558\uae30"
+    "message": "저장하기"
   },
   "save_and_close": {
-    "message": "\uc800\uc7a5\x20\ud6c4\x20\ub2eb\uae30"
+    "message": "저장 후 닫기"
   },
   "setting": {
-    "message": "\uc124\uc815"
+    "message": "설정"
   },
   "special_thanks": {
-    "message": "\ud2b9\ubcc4\ud788\x20\uac10\uc0ac\ud55c\x20\ubd84\ub4e4"
+    "message": "특별히 감사한 분들"
   },
   "tell_a_friend": {
-    "message": "\uce5c\uad6c\ub4e4\uc5d0\uac8c\x20\ud504\ub85c\uadf8\ub7a8\x20\uc54c\ub9ac\uae30"
+    "message": "친구들에게 프로그램 알리기"
   },
   "time_limit_disabled": {
-    "message": "\uc2dc\uac04\x20\uc81c\ud55c\x20\uae30\ub2a5\x20\ube44\ud65c\uc131\ud654"
+    "message": "시간 제한 기능 비활성화"
   },
   "title_when_blocked": {
-    "message": "\ucc28\ub2e8\ub418\uc5c8\uc744\x20\ub54c\uc758\x20\ud0c0\uc774\ud2c0\x20\uba54\uc2dc\uc9c0"
+    "message": "차단되었을 때의 타이틀 메시지"
   },
   "websites_to_block": {
-    "message": "\ucc28\ub2e8\ud560\x20\uc6f9\uc0ac\uc774\ud2b8"
+    "message": "차단할 웹사이트"
   },
   "with_email": {
-    "message": "\uc774\uba54\uc77c"
+    "message": "이메일"
+  },
+  "days_of_week": {
+    "message": "Day's of the week"
+  },
+  "days_of_week_sunday": {
+    "message": "Sunday"
+  },
+  "days_of_week_monday": {
+    "message": "Monday"
+  },
+  "days_of_week_tuesday": {
+    "message": "Tuesday"
+  },
+  "days_of_week_wednesday": {
+    "message": "Wednesday"
+  },
+  "days_of_week_thursday": {
+    "message": "Thursday"
+  },
+  "days_of_week_friday": {
+    "message": "Friday"
+  },
+  "days_of_week_saturday": {
+    "message": "Saturday"
+  },
+  "redirect_when_blocked": {
+    "message": "URL to redirect when blocked"
+  },
+  "enabled_block_function": {
+    "message": "Enable of the block function"
+  },
+  "enabled_time_group_function": {
+    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+  },
+  "enabled_shortcut_link_options_page_function": {
+    "message": "Enable of shortcut link to the options page"
+  },
+  "temporary_unlock_function": {
+    "message": "Temporary unlock with input password"
+  },
+  "enabled_temporary_unlock_function": {
+    "message": "Enable of temporary unlock with input password"
   }
 }
