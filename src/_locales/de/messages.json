@@ -27,7 +27,7 @@
     "message": "Zurück"
   },
   "basic_settings": {
-    "message": "Basic Einstellungen"
+    "message": "Basis Einstellungen"
   },
   "block_already": {
     "message": "Diese Seite wurde bereits gesperrt. Dieser Block aus Daten bearbeiten tun [Optionen]-Seite."
@@ -42,13 +42,13 @@
     "message": "Kein Zugriff auf diese Seite."
   },
   "blocked_title": {
-    "message": "This page is blocked."
+    "message": "Diese Seite ist blockiert."
   },
   "bug_report": {
     "message": "Bug Bericht"
   },
   "changelog": {
-    "message": "Revision History"
+    "message": "Revisionsverlauf"
   },
   "close": {
     "message": "Schließen"
@@ -60,10 +60,10 @@
     "message": "Beispiel"
   },
   "ext_description": {
-    "message": "Webseite Blocher ist nützlich, wenn Sie auf seine Arbeit konzentrieren wollen."
+    "message": "Webseite Blocker ist nützlich, wenn Sie auf seine Arbeit konzentrieren wollen."
   },
   "ext_name": {
-    "message": "Webseite Blocher (Beta)"
+    "message": "Webseite Blocker (Beta)"
   },
   "facebook_page": {
     "message": "Facebook Seite"
@@ -75,25 +75,25 @@
     "message": "Format"
   },
   "input": {
-    "message": "Input"
+    "message": "Eingabe"
   },
   "message_when_blocked": {
-    "message": "Meldung bei blockierten"
+    "message": "Meldung bei blockierten Seiten"
   },
   "nav_about": {
     "message": "Über diese Erweiterung"
   },
   "nav_blocking": {
-    "message": "Blocking Webseite"
+    "message": "Webseiten blockieren"
   },
   "nav_changelog": {
-    "message": "Revision History"
+    "message": "Revisionsverlauf"
   },
   "nav_function": {
-    "message": "EIN / AUS Funktionen jedes"
+    "message": "Funktionen einzeln Ein- oder Ausschalten / Funktionen einzeln aktivieren"
   },
   "nav_message": {
-    "message": "Nachrichten, wann gesperrt"
+    "message": "Nachrichten bei gesperrten Seiten / Gesperrt-Nachricht"
   },
   "nav_password": {
     "message": "Kennwort"
@@ -111,13 +111,13 @@
     "message": "Behinderte jeder Funktion Steuerung von Popup-Seite."
   },
   "save": {
-    "message": "sparen"
+    "message": "Speichern"
   },
   "save_and_close": {
-    "message": "Speichern und schließen"
+    "message": "Speichern und Schließen"
   },
   "setting": {
-    "message": "Einstellung"
+    "message": "Einstellungen"
   },
   "special_thanks": {
     "message": "Besonderer Dank"
@@ -129,49 +129,49 @@
     "message": "Deaktivieren der Frist Funktion."
   },
   "title_when_blocked": {
-    "message": "Title bei blockierten"
+    "message": "Titel bei blockierten Seiten"
   },
   "websites_to_block": {
-    "message": "Websites zu blockieren"
+    "message": "Zu blockierende Webseiten"
   },
   "with_email": {
     "message": "mit E-Mail"
   },
   "days_of_week": {
-    "message": "Day's of the week"
+    "message": "Wochentage"
   },
   "days_of_week_sunday": {
-    "message": "Sunday"
+    "message": "Sonntag"
   },
   "days_of_week_monday": {
-    "message": "Monday"
+    "message": "Montag"
   },
   "days_of_week_tuesday": {
-    "message": "Tuesday"
+    "message": "Dienstag"
   },
   "days_of_week_wednesday": {
-    "message": "Wednesday"
+    "message": "Mittwoch"
   },
   "days_of_week_thursday": {
-    "message": "Thursday"
+    "message": "Donnerstag"
   },
   "days_of_week_friday": {
-    "message": "Friday"
+    "message": "Freitag"
   },
   "days_of_week_saturday": {
-    "message": "Saturday"
+    "message": "Samstag"
   },
   "redirect_when_blocked": {
-    "message": "URL to redirect when blocked"
+    "message": "URL zur Weiterleitung bei gesperrten Seiten."
   },
   "enabled_block_function": {
-    "message": "Enable of the block function"
+    "message": "Blockier-Funktion aktivieren"
   },
   "enabled_time_group_function": {
-    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+    "message": "Zeitgesteuertes Blockieren aktivieren (z.B. 0000-2359 ...)"
   },
   "enabled_shortcut_link_options_page_function": {
-    "message": "Enable of shortcut link to the options page"
+    "message": "Link auf die Optionssite aktivieren"
   },
   "temporary_unlock_function": {
     "message": "Temporary unlock with input password"
