@@ -105,7 +105,7 @@
     "message": "Opciones"
   },
   "please_support_me": {
-    "message": "Por favor, me apoyen! (PayPal)"
+    "message": "¡Por favor, colabora con nosotros! (PayPal)"
   },
   "popup_page_control_disabled": {
     "message": "Inhabilitar las funciones de control en la ventana emergente"
@@ -138,28 +138,28 @@
     "message": "con correo electrónico"
   },
   "days_of_week": {
-    "message": "Day's of the week"
+    "message": "Días de la semana"
   },
   "days_of_week_sunday": {
-    "message": "Sunday"
+    "message": "Domingo"
   },
   "days_of_week_monday": {
-    "message": "Monday"
+    "message": "Lunes"
   },
   "days_of_week_tuesday": {
-    "message": "Tuesday"
+    "message": "Martes"
   },
   "days_of_week_wednesday": {
-    "message": "Wednesday"
+    "message": "Miércoles"
   },
   "days_of_week_thursday": {
-    "message": "Thursday"
+    "message": "Jueves"
   },
   "days_of_week_friday": {
-    "message": "Friday"
+    "message": "Viernes"
   },
   "days_of_week_saturday": {
-    "message": "Saturday"
+    "message": "Sábado"
   },
   "redirect_when_blocked": {
     "message": "URL to redirect when blocked"
