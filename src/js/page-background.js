@@ -34,9 +34,9 @@ if (ls.get('_explain') !== 1) {
     ls.set('_explain', 1);
 }
 
-if (!ls.get('_read_news') || ls.get('_read_news') < NEWS_VERSION) {
-    chrome.tabs.create({ url: 'news.html#news-version-' + NEWS_VERSION, selected: true })
-    ls.set('_read_news', NEWS_VERSION);
+if (!ls.get('_read_news') || ls.get('_read_news') < ENV_NEWS_VERSION) {
+    chrome.tabs.create({ url: 'news.html#news-version-' + ENV_NEWS_VERSION, selected: true })
+    ls.set('_read_news', ENV_NEWS_VERSION);
 }
 
 // ---- Background ---- //

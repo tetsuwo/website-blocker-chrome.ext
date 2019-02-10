@@ -4,7 +4,7 @@
  * @author Tetsuwo OISHI
  */
 
-Controller = new function() {
+var Controller = new function() {
     var beforepage;
     var that = this;
     var WB = new WebsiteBlocker();
@@ -178,7 +178,7 @@ Controller = new function() {
     this.sharePage = function() {
         beforepage = getBeforeLocation();
         applyFont();
-        buildPage();
+        //buildPage();
         applyEvent();
     };
 
