@@ -1,7 +1,7 @@
 Website Blocker Chrome Extension
 ================================
 
-`Website Blocker` is useful when you want to concentrate on work.
+*Website Blocker* is useful when you want to concentrate on work.
 
 [Chrome Webstore](https://chrome.google.com/webstore/detail/hclgegipaehbigmbhdpfapmjadbaldib) |
 [GitHub Page](http://tetsuwo.github.io/website-blocker-chrome.ext/)
@@ -13,13 +13,13 @@ Website Blocker Chrome Extension
 SETTING EXAMPLE
 ---------------
 
-    (facebook|twitter|hootsuite).com 0930-1259,1300-1530
+    (facebook|twitter|reddit).com 0930-1259,1300-1530
     (www|b).hatena.ne.jp 1000-1259
     yahoo.com
 
 Above and below is the same meaning.
 
-    Can't access 'facebook.com' and 'twitter.com' and 'hootsuite.com' until 12:59 from 9:30 and until 15:30 from 13:00.
+    Can't access 'facebook.com' and 'twitter.com' and 'reddit.com' until 12:59 from 9:30 and until 15:30 from 13:00.
     Can't access 'www.hatena.ne.jp' and 'b.hatena.ne.jp' until 10:00 from 12:59.
     Can't access 'yahoo.com'
 
@@ -74,7 +74,4 @@ ELSEWHERE
 AUTHOR
 ------
 
-Tetsuwo OISHI - tetsuwo.oishi@gmail.com
-[Facebook](http://fb.me/tetsuwo) / [Twitter](http://twitter.com/tetsukamp)
-
-- hoge
+Tetsuwo OISHI

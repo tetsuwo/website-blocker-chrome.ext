@@ -35,6 +35,10 @@ $('.go-option a').click(function() {
     goOptions(encodeURIComponent(url));
 });
 
+$('.go-back').click(function() {
+    window.history.go(-2);
+});
+
 $('#password-check').click(function() {
     var valid = chrome.extension.getBackgroundPage().WB.matchPassphrase($('#password-target').val(), $('#password-typing').val());
     if (valid === true) {

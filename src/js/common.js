@@ -5,10 +5,10 @@
  */
 
 // Set Environment Vars
-MIGRATION_VERSION = 1;
-NEWS_VERSION = 1;
-STORAGE_NAMESPACE = '__wb_' + MIGRATION_VERSION;
-//db.change(STORAGE_NAMESPACE);
+const ENV_APP_VERSION = '0.3.0';
+const ENV_MIGRATION_VERSION = 1;
+const ENV_NEWS_VERSION = 1;
+const ENV_STORAGE_NAMESPACE = '__wb_' + ENV_MIGRATION_VERSION;
 
 // Google Analytics
 var _gaq = _gaq || [];
@@ -30,17 +30,5 @@ function _trace(category, action, label) {
     } catch (e) {;}
 }
 
-//_trace('SETTING', 'MIGRATION_VERSION', MIGRATION_VERSION);
-
-//if (!CommonDB.get('migration_version')) {
-//    console.log('low migration');
-//
-//    switch (MIGRATION_VERSION) {
-//        case 1:
-//            ;
-//            break;
-//    }
-//
-//    CommonDB.set('migration_version', MIGRATION_VERSION);
-//}
-
+_trace('Environment', 'ENV_MIGRATION_VERSION', ENV_MIGRATION_VERSION);
+_trace('Environment', 'ENV_APP_VERSION', ENV_APP_VERSION);

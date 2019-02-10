@@ -39,7 +39,6 @@ window.ls = new function() {
         window.localStorage.setItem(a, JSON.stringify(b));
     };
     this.get = function(a) {
-//        console.log(a + ' >> ' + window.localStorage[a]);
         return window.localStorage[a] ? JSON.parse(window.localStorage[a]) : false;
     };
     this.i18n = function(a) {
