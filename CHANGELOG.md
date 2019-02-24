@@ -3,6 +3,8 @@ CHANGE LOG:
 
 - 1.0.0 (planning)
   - Change Production from Beta
+- 0.3.3 ( 2019/02/24 PR #102 )
+  - Modified translation for French( Issue #102 )
 - 0.3.2 ( 2019/02/11 PR #105 )
   - Modified translation ( Issue #68 )
 - 0.3.1 ( 2019/02/10 PR #104 )

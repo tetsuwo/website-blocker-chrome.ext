@@ -3,10 +3,10 @@
     "message": "fr"
   },
   "add_block_time": {
-    "message": "Heure du blocage"
+    "message": "Heure bloquer"
   },
   "add_blockthis": {
-    "message": "Bloquer"
+    "message": "Bloquer!"
   },
   "add_time_1": {
     "message": "entre"
@@ -45,7 +45,7 @@
     "message": "Cette page est bloquée."
   },
   "bug_report": {
-    "message": "Rapporter un bug"
+    "message": "Signaler un defaut "
   },
   "changelog": {
     "message": "Historique des révisions"
@@ -78,22 +78,22 @@
     "message": "Input"
   },
   "message_when_blocked": {
-    "message": "Message"
+    "message": "Message quand il sera bloqué"
   },
   "nav_about": {
     "message": "A propos de cette extension"
   },
   "nav_blocking": {
-    "message": "Blocage de site Web"
+    "message": "Bloquer du site Web"
   },
   "nav_changelog": {
     "message": "Historique des révisions"
   },
   "nav_function": {
-    "message": "Gérer les fonctions"
+    "message": "Activer/Désactiver chaque fonctions"
   },
   "nav_message": {
-    "message": "Messages à afficher"
+    "message": "Messages quand t'il sera bloqué "
   },
   "nav_password": {
     "message": "Mot de passe"
@@ -120,16 +120,16 @@
     "message": "Option"
   },
   "special_thanks": {
-    "message": "Remerciement"
+    "message": "Remerciement spécial"
   },
   "tell_a_friend": {
-    "message": "Envoyer à un ami"
+    "message": "Informer un ami"
   },
   "time_limit_disabled": {
     "message": "Désactivation de la fonction de limite de temps."
   },
   "title_when_blocked": {
-    "message": "Titre"
+    "message": "Titre quand t'il sera bloquer"
   },
   "websites_to_block": {
     "message": "Sites internet à bloquer"
@@ -138,45 +138,45 @@
     "message": "par email"
   },
   "days_of_week": {
-    "message": "Day's of the week"
+    "message": "Jour de la semaine"
   },
   "days_of_week_sunday": {
-    "message": "Sunday"
+    "message": "Dimanche"
   },
   "days_of_week_monday": {
-    "message": "Monday"
+    "message": "Lundi"
   },
   "days_of_week_tuesday": {
-    "message": "Tuesday"
+    "message": "Mardi"
   },
   "days_of_week_wednesday": {
-    "message": "Wednesday"
+    "message": "Mercredi"
   },
   "days_of_week_thursday": {
-    "message": "Thursday"
+    "message": "Jeudi"
   },
   "days_of_week_friday": {
-    "message": "Friday"
+    "message": "Vendredi"
   },
   "days_of_week_saturday": {
-    "message": "Saturday"
+    "message": "Samedi"
   },
   "redirect_when_blocked": {
-    "message": "URL to redirect when blocked"
+    "message": "La redirection de l'URL quand t'il sera bloqué."
   },
   "enabled_block_function": {
-    "message": "Enable of the block function"
+    "message": "Activer lorsque la fonction sera bloqué."
   },
   "enabled_time_group_function": {
-    "message": "Enable of the time-group function (ex) 0000-2359 ..."
+    "message": "Activer la fonction time-group (ex) 0000-2359 ..."
   },
   "enabled_shortcut_link_options_page_function": {
-    "message": "Enable of shortcut link to the options page"
+    "message": "Activer les lien de racrousie lors vers la page d'option."
   },
   "temporary_unlock_function": {
-    "message": "Temporary unlock with input password"
+    "message": "Temporairement débloquer avec le input mot de passe."
   },
   "enabled_temporary_unlock_function": {
-    "message": "Enable of temporary unlock with input password"
+    "message": "Activer temporairement avec le input mot de passe."
   }
 }
