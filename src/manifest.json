@@ -11,11 +11,11 @@
     "default_icon": "images/19.png"
   },
   "icons": {
-    "16": "images/16.png",
-    "19": "images/19.png",
-    "48": "images/48.png",
-    "64": "images/64.png",
-    "72": "images/72.png",
+    "16": "images/128.png",
+    "19": "images/128.png",
+    "48": "images/128.png",
+    "64": "images/128.png",
+    "72": "images/128.png",
     "128": "images/128.png"
   },
   "permissions": [
