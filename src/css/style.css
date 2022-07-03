@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Arial, Verdana, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -32,7 +32,6 @@ a {
   padding: .5em 1em;
   letter-spacing: 1px;
   border: 1px solid #000;
-  background-color: #777;
   border-radius: 3px;
   text-shadow: 0 -1px -1px rgba(0, 0, 0, .4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
@@ -59,7 +58,6 @@ a {
   padding: .5em 1em;
   /*border: 1px solid #900;*/
   border: 1px solid #000;
-  background-color: #d00;
   border-radius: 3px;
   text-shadow: 0px -1px -1px rgba(0, 0, 0, .4);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
