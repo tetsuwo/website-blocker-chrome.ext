@@ -12,10 +12,6 @@
   },
   "icons": {
     "16": "images/128.png",
-    "19": "images/128.png",
-    "48": "images/128.png",
-    "64": "images/128.png",
-    "72": "images/128.png",
     "128": "images/128.png"
   },
   "permissions": [
